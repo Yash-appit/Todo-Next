@@ -1,0 +1,130 @@
+/* DownloadResumeModal.css */
+.download-resume-modal .modal-dialog {
+    max-width: 95%;
+    height: 95vh;
+  }
+  
+  .download-resume-modal .modal-content {
+    height: 100%;
+  }
+  
+  .download-resume-modal .modal-body {
+    padding: 1rem;
+    height: calc(100% - 60px);
+    overflow: hidden;
+  }
+  
+  .download-resume-modal .row {
+    height: 100%;
+  }
+  
+  .download-controls-section {
+    border-right: 1px solid #dee2e6;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .preview-section {
+    height: 100%;
+    padding-left: 1.5rem;
+  }
+  
+  .resume-preview-container {
+    height: 100%;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .resume-content-preview {
+    background: white !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .resume-content-preview.edit-mode {
+    outline: 2px dashed #007bff;
+  }
+  
+  .resume-content-preview [contenteditable="true"]:hover {
+    background-color: #f8f9fa;
+    outline: 1px dashed #007bff;
+  }
+  
+  .resume-content-preview [contenteditable="true"]:focus {
+    background-color: #fff;
+    outline: 2px solid #007bff;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .download-resume-modal .modal-dialog {
+      max-width: 100%;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .download-controls-section {
+      border-right: none;
+      border-bottom: 1px solid #dee2e6;
+      padding-right: 0;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      height: auto;
+    }
+    
+    .preview-section {
+      padding-left: 0;
+      height: calc(100% - 300px);
+    }
+    
+    .resume-preview-container {
+      padding: 0.5rem;
+    }
+    
+    .resume-content-preview {
+      padding: 15px;
+      max-height: 100%;
+    }
+    
+    .download-buttons-section .btn {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Print Styles for Resume Content */
+  @media print {
+    .download-resume-modal,
+    .modal-backdrop {
+      display: none !important;
+    }
+    
+    body * {
+      visibility: hidden;
+    }
+    
+    .resume-content-preview,
+    .resume-content-preview * {
+      visibility: visible;
+    }
+    
+    .resume-content-preview {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  
+  /* Ensure background colors print correctly */
+  @media print {
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+  }

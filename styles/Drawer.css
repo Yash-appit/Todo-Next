@@ -1,0 +1,91 @@
+/* jQuery-style page transitions */
+.page-transition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .page-slide-in {
+    animation: slideInRight 0.3s ease-in-out;
+  }
+  
+  .page-slide-out {
+    animation: slideOutLeft 0.3s ease-in-out;
+  }
+  
+  .sidebar-slide-in {
+    animation: slideInLeft 0.3s ease-in-out;
+  }
+  
+  .sidebar-slide-out {
+    animation: slideOutRight 0.3s ease-in-out;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Drawer styles */
+  .drawer-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+  }
+
+  .page-container .section .drag-handle {
+    display: block;
+  }
+
+  .MuiDrawer-modal .prim-but {
+    font-size: 15px !important;
+    padding: 4px 20px 2px 20px !important;
+  }
+
+  .MuiDrawer-modal .alert-info small {
+    font-size: 14px !important;
+  }

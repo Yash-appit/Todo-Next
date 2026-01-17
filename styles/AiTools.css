@@ -1,0 +1,320 @@
+.ai-bg {
+    background-image: url('../assets/Images/AITools/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ai-bg .col-lg-6 img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+
+.ai-bg .col-lg-6 .bg {
+    background: #fff;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.ai-bg .col-lg-6 h4, .ai-bg .col-lg-6 .head-main {
+    color: #414141;
+    text-transform: capitalize;
+    font-family: Inter-Semi-bold;
+} 
+
+/* .ai-bg .col-lg-6 .head-main {
+    font-size: ;
+} */
+
+.ai-bg .col-lg-6 p {
+    color: #414141;
+    font-family: Inter-Semi-bold;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.ai-bg .col-lg-6 h1 {
+    font-family: Arial-Bold;
+}
+
+.ai-bg .col-lg-6 span {
+    font-family: Arial-Bold;
+}
+
+
+.ai-bg .rev-res .row {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.career-objective-bg .col-lg-6 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0 20px;
+}
+
+.career-objective-bg .col-lg-6 p {
+    color: #384347;
+    font-family: Inter;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.career-objective-bg .col-lg-6 li {
+    color: #384347;
+    font-family: Inter;
+    font-size: 15px;
+}
+
+.career-objective-bg .col-lg-6 h2 {
+    font-family: Roboto-Bold;
+    margin-bottom: 10px;
+}
+
+.career-objective-bg .col-lg-6 ul,
+.career-objective-bg .col-lg-6 ol {
+    padding-left: 18px;
+}
+
+.career-objective-bg .col-lg-6 {
+    margin: auto;
+}
+
+.career-objective-bg .tools .col-lg-12 {
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.career-objective-bg .tools .col {
+    background: #F9FAFB;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.career-objective-bg .gridlayout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.career-objective-bg .tools .col img {
+    background:#F0FDF4;
+    padding: 8px;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.career-objective-bg .approach img {
+    max-height: 500px;
+    width: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.career-objective-bg .approach p {
+    color:#464948;
+    font-family: Inter-Semi-bold;
+}
+
+.career-objective-bg .approach .prim-but{
+    font-family: Inter;
+    /* font-weight: 500; */
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+}
+
+.career-objective-bg .approach h1 {
+    font-family: Inter-Semi-bold;
+}
+
+.career-objective-bg .icon {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
+  width: 100%;
+}
+
+.career-objective-bg .tools .col{
+    text-decoration: none;
+}
+
+.career-objective-bg .tools .col h6 {
+    font-family: Inter-Semi-bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #000;
+}
+
+.career-objective-bg .tools .col p {
+    font-family: Inter;
+    color: #6B7280;
+}
+
+.ai-bg .package-faq img {
+    width: auto;
+    height: 280px;
+    margin-left: 40px;
+    transition: ease 0.3s;
+}
+
+.ai-bg .temp-rev .bg {
+    background: #DCE2DF;
+
+}
+
+.career-objective-bg .resume-slider .row{
+    background-image: url("../assets/Images/AITools/rs-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.career-objective-bg .resume-slider img {
+    background: #0A584033;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.career-objective-bg .slick-slide div {
+    margin: 0 10px;
+}
+
+.ai-bg .emp img {
+    height: 500px;
+    width: auto;
+}
+
+.ai-bg .main-but {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 15px 18px !important;
+    width: max-content;
+    text-decoration: none;
+}
+
+.ai-bg .main-but span {
+    font-family: Inter;
+    /* font-weight: 500; */
+    font-size: 15px !important;
+}
+
+.ai-bg .main-but svg {
+    margin-left: 20px;
+    font-size: 20px !important;
+}
+
+.ai-bg .emp .bg {
+text-align: center;
+    padding: 30px;
+}
+
+@media screen and (min-width: 991px) {
+
+    .ai-bg .col-lg-6 h4, .ai-bg .col-lg-6 .head-main {
+        font-size: 22px;
+    }
+
+    .ai-bg .col-lg-6 h1, .ai-bg .col-lg-6 .elevate-approach {
+        font-size: 55px;
+    }
+
+    .ai-bg .col-lg-6 p {
+        font-size: 16px;
+    }
+
+    .career-objective-bg .col-lg-6 h2 {
+        font-size: 40px;
+    }
+    .career-objective-bg .approach p {
+        font-size: 18px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+.ai-bg {
+    padding-top: 20px !important;
+}
+.career-objective-bg .approach .col-lg-6,
+.ai-bg .col-lg-6 {
+    padding: 0 !important;
+}
+.ai-bg .emp img {
+    width: 100%;
+    height: auto;
+}
+
+.career-objective-bg .row .col-lg-6 {
+    padding: 10px 0 !important;
+}
+
+.career-objective-bg .row:nth-child(2), .career-objective-bg .row:nth-child(4) {
+    flex-flow: column-reverse;
+}
+
+.ai-bg .col-lg-6 h4, .ai-bg .col-lg-6 .head-main {
+    padding-top: 0 !important;
+}
+.career-objective-bg .tools .col {
+    margin-top: 20px;
+    padding: 40px 15px !important;
+}
+
+.career-objective-bg .approach .col-lg-6:first-child .bg {
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.career-objective-bg .approach .col-lg-6:last-child .bg {
+    border-radius: 0 0 20px 20px !important;
+    padding-top: 10px !important;
+}
+
+.career-objective-bg .approach .col-lg-6:last-child {
+    padding: 0 !important;
+}
+
+.career-objective-bg .approach .col-lg-6:first-child {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.career-objective-bg .approach .col-lg-6:last-child h1 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+  
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .career-objective-bg .gridlayout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .career-objective-bg .gridlayout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    } 
+}
+

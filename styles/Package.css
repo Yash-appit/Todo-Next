@@ -1,0 +1,594 @@
+.sec-bg2 .cont{
+    background: #fff;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.sec-bg2 .col-lg-6 img {
+    width: 100%;
+    height: 100%;
+    transition: ease 0.3s;
+}
+
+.sec-bg2 .col-lg-6 img:hover {
+    transform: scale(1.05);
+
+}
+
+.sec-bg2 h1, .sec-bg h2 {
+    font-family: Arial-Bold;
+    font-size: 60px;
+}
+
+.sec-bg h1 span {
+    font-family: Arial-Bold;
+    color: #0A5840; 
+}
+
+.sec-bg2 .col-lg-6 .cont {
+    margin: 0 4px 0 12px;
+}
+
+
+.sec-bg2 .cont-img div {
+    border-radius: 20px;
+}
+
+.sec-bg2 .cont-img img {
+    /* min-height: 500px; */
+    /* width: auto; */
+    object-fit: fill;
+
+}
+
+.sec-bg2 .cont-img .tilted-card-inner{
+    min-height: 480px;
+}
+
+.sec-bg2 p {
+    font-size: 16px;
+    color: #414141;
+    line-height: 20px;
+}
+
+.sec-bg2 span {
+    font-family: Arial-Bold-Italic;
+}
+
+.sec-bg2 .prim {
+    font-family: Arial-Bold;
+}
+
+.sec-bg2 p, .sec-bg2 a {
+    font-family: Inter;
+    font-weight: 500;
+}
+
+.sec-bg2 a {
+    font-size: 15px !important;
+    text-decoration: none;
+    padding: 15px 60px !important;
+    /* width: 100%; */
+    min-width: 200px;
+    text-align: center;
+}
+
+@media screen and (min-width: 990px) {
+    .sec-bg2 .cont h1{
+        margin-top: 42px;
+        padding-top: 42px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .sec-bg2 .cont {
+        margin: 0 12px !important;
+    }
+
+    .sec-bg2 .cont-img {
+        padding: 0 12px;
+    }
+
+    .package-faq .MuiAccordionSummary-root{
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .sec-bg2 a {
+        padding: 12px 40px !important;
+    }
+    .sec-bg2 h1, .sec-bg h1{
+        font-size: 40px;
+    }
+    .sec-bg2 .cont-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sec-bg2 h1, .sec-bg h1{
+        font-size: 30px !important;
+    }
+}
+
+.card {
+    box-shadow: 0 9px 20px -8px rgb(32 33 36 / 30%);
+}
+
+
+.package .row .head {
+    color: #1A6966;
+    border: #1A6966 solid 1px;
+    border-radius: 30px;
+    max-width: max-content;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.package .row .head svg {
+    margin-right: 10px;
+}
+
+.package .col-lg-5 {
+    border-radius: 20px;
+    transition: transform .3s ease;
+    padding: 0 20px;
+}
+
+.package .col-lg-5:hover {
+    transform: scale(1.05);
+}
+
+.package h4 {
+    font-weight: 500 !important;
+}
+
+.package .col-lg-5 button{
+    transition: transform .2s ease;
+    /* box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%); */
+    padding: 20px 30px !important;
+    border-radius: 30px !important;
+    width: 100%;
+    background: #fff !important;
+    color: #1A6966 !important;
+    font-family: Arial;
+    font-size: 15px !important;
+    border: #1A6966 solid 1px !important;
+}
+
+.package .card {
+    background: #0A5840;
+    border: none;
+}
+
+.package .col-lg-5:nth-child(odd) .card {
+    background: #00000012;
+}
+
+.package .col-lg-5:nth-child(odd) .card p,
+.package .col-lg-5:nth-child(odd) .card h6,
+.package .col-lg-5:nth-child(odd) .card h1,
+.package .col-lg-5:nth-child(odd) .card h3,
+.package .col-lg-5:nth-child(odd) .card span,
+.package .col-lg-5:nth-child(odd) .card p,
+.package .col-lg-5:nth-child(odd) .card li,
+.package .col-lg-5:nth-child(odd) .card img  {
+    color: #1A6966 !important;
+}
+
+.package .col-lg-5:nth-child(odd) .card button{
+    background: transparent !important;
+}
+
+/* Add to your CSS file */
+.equal-height-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.equal-height-cards .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.equal-height-cards .card-body {
+    flex: 1;
+}
+
+/* .package .purch .card {
+    border: #fff solid 4px;
+    box-shadow: 0 0 1px 0;
+} */
+
+.package .card p, .package .card h6{
+color: #fff !important;
+}
+
+.package .card p {
+    text-align: start;
+    margin-bottom: 0;
+}
+
+.package .card h1{
+    color: #fff !important;
+    margin-bottom: 0;
+}
+
+.package .card h3 {
+    color: #fff !important;
+    font-family: Arial;
+}
+
+.package .pack-head {
+    /* background: #fff; */
+    padding: 15px 0;
+    border-radius: 0 30px 30px 0;
+    max-width: max-content;
+    
+}
+
+.package .pack-head h1{
+    font-family: Arial;
+}
+
+.package .col-lg-5 button:hover {
+    transform: scale(1.05);
+}
+
+.package h4 {
+    font-weight: 500 !important;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%);
+
+}
+
+.package ul li {
+    list-style: none;
+    font-weight: 500;
+    color: #FFFFFFB2 !important;
+}
+
+.package ul p, .package ul li {
+    font-size: 14px;
+}
+
+.package ul {
+    justify-content: center;
+    text-align: justify;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.package h6 {
+    margin-bottom: 10px;
+}
+
+.package li svg {
+    color: #45CCB4;
+}
+
+.package li img {
+    width: 16px;
+}
+
+.package span {
+    color: #FFFFFFB2;
+    padding: 10px 5px 0 5px;
+    text-transform: capitalize;
+    font-family: Arial;
+}
+
+.package-faq .accordion-button:not(.collapsed) {
+    background-color: #45CCB4;
+    color: #fff;
+
+}
+
+.package-faq .accordion {
+    box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%);
+}
+
+.package-faq .accordion-button{
+    font-weight: 600;
+    font-size: 18px;
+    min-height: 60px;
+}
+
+.package-faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+.package-faq .accordion-button:not(.collapsed)::after {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.package-faq .Mui-expanded .MuiAccordionSummary-root, .package-faq .Mui-expanded .MuiCollapse-wrapperInner{
+    background: rgba(0, 0, 0, 0.04);
+    
+}
+
+
+
+.pack-details .container{
+    margin: auto;
+}
+
+.prof-resume li {
+align-items: baseline;
+list-style: none;
+}
+
+.prof-resume li h6 {
+    padding: 10px 5px 0 0;
+    font-size: 19px;
+}
+
+.prof-resume .col-lg-6 {
+    overflow: hidden;
+}
+
+.prof-resume .col-lg-6 img {
+    border-radius: 10px;
+    transition: transform .3s ease;
+}
+
+.prof-resume .col-lg-6 img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* .pack2 .sec-bg2, .pack2 h1, .pack2 .head {
+    display: none !important;
+} */
+
+.pack2 .sec-bg .row {
+    margin-top: 0 !important;
+}
+
+.pack2 .col-lg-4 h1 {
+    display: block !important;
+}
+
+.pack2 .modal-body {
+    padding: 0 !important;
+}
+
+.equal-height-cards {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .equal-height-cards .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .equal-height-cards .card-body {
+    flex: 1;
+  }
+
+
+
+  .package-pop .tab{
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: Arial;
+    text-align: start;
+    padding: 0 0 5px 0 !important;
+    max-width: max-content;
+    transition: all 0.2s ease;
+  }
+
+  /* .package-pop .tab-content{
+    transition: all 0.2s ease;
+  } */
+
+  .package-pop{
+    font-family: Arial;
+  }
+
+  .package-pop .tab-active{
+    color: #0A5840;
+    font-family: Arial-Bold;
+    border-bottom: #0A5840 solid 3px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .package-pop .row{
+    background: #0A5840;
+    border-radius: 15px;
+  }
+
+  .package-pop .card-body .person{
+    height: 300px;
+    width: auto;
+  }
+
+  .package-pop .tab-content,  .package-pop .card {
+    border-radius: 15px;
+  }
+
+  .package-pop .card {
+    box-shadow: 0px 22px 24px 0px #4E2D926F;
+    background: #0A5840;
+    transition: all 0.2s ease;
+  }
+
+
+
+
+  .package-pop span {
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-family: Inter;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+
+  .package-pop p {
+    color: #FFF;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .package-pop img {
+    height: 12px;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .package-pop button {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 8px 40px !important;
+  }
+
+
+
+
+  .pack-details h2 {
+    font-family: Arial;
+    padding: 0 25px;
+    margin-bottom: 0;
+  }
+
+  .pack-details .row {
+    padding: 25px 10px;
+    border-radius: 25px;
+    font-family: Arial;
+  } 
+
+  .pack-details p {
+    padding: 20px 30px;
+    color: #0A5840B2;
+    border-top: 1px solid #0A584012;
+    margin-bottom: 0;
+    font-family: Arial;
+  }
+
+  .pack-details .sec p {
+    color: #0A5840;
+  }
+
+  .pack-details .sec {
+    border-left: 1px solid #0A584012;
+  }
+  .pack-details button {
+      font-family: Arial;
+      font-size: 13px !important;
+      font-weight: 400 !important;
+      padding: 5px 60px !important;
+      margin: 25px 30px!important;
+  }
+
+  
+
+
+  @media screen and (max-width: 767px) {
+    .pack-details .sec {
+        display: none;
+    }
+    .package-pop .card-body .person{
+        display: none;
+    }
+
+    .package-pop .card-body div{
+       padding: 5px !important;
+       margin-top: 10px !important;
+    }
+    .package-pop .card-body .flex{
+        padding: 0 !important;
+    }
+
+    .package-pop .card-body .pack-head {
+        display: grid !important;
+    }
+
+    .package-pop .pack-head h1 {
+        margin-bottom: 5px !important;
+    }
+
+    .package-pop img {
+        margin-right: 5px;
+    }
+
+    .package-pop p {
+        line-height: 25px;
+    }
+    .package-pop h1{
+        color: #fff !important;
+        font-family: Arial;
+        font-size: 40px;
+        line-height: 30px;
+        display: flex ;
+        align-items: center;
+      }
+      .packageModal .tab-content{
+        margin-top: 20px !important;
+        margin-right: 0 !important;
+      }
+  }
+
+
+  @media screen and (min-width: 767px) {
+    .package-pop h1{
+        color: #fff !important;
+        font-family: Arial;
+        font-size: 50px;
+        line-height: 40px;
+      }
+      .package-pop .card-body div{
+        padding: 10px !important;
+        margin-top: 10px !important;
+     }
+     .package-pop .card-body .flex{
+        padding: 0 !important;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .package-pop h1{
+        color: #fff !important;
+        font-family: Arial;
+        font-size: 30px;
+        line-height: 20px;
+        display: flex ;
+        align-items: center;
+      }
+
+      .package-pop span {
+        display: contents ;
+      }
+      .package-pop button{
+        min-width: max-content;
+        padding: 8px 28px !important;
+      }
+      .package-pop .tab{
+        font-size: 16px;
+      }
+  }
+
+  @media (min-width: 767px) {
+       .packageModal .modal-lg {
+        min-width: 650px;
+       }
+  }
+
+  

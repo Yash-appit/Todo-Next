@@ -1,0 +1,191 @@
+
+
+
+/* .success .lottie-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+} */
+ .thank {
+    background: #d9d9d97d;
+ }
+
+.success{
+    background: #fff;
+
+    border-radius: 20px;
+}
+
+.thank .modal-content{
+    position: relative;
+    border-radius: 20px;
+}
+
+.success .lottie-bg {
+  position: absolute;
+  top: -20%;
+  width: 100%;
+}
+
+/* .success .container {
+    position: absolute;
+    top: 7%;
+} */
+
+.success .col-lg-9 {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%);
+    padding: 20px;
+    z-index: 1;
+}
+
+.success .col-lg-9 h1 {
+    font-family: Arial-Bold;
+}
+
+.success .col-lg-9 p {
+    font-family: Inter;
+}
+
+/* .success .prim-but, .success .prim-but:focus {
+    padding: 10px 15px !important;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   background: #0A5840;
+   font-family: Inter;
+   font-size: 20px !important;
+   margin-bottom: 18px;
+} */
+
+.thank .modal-header button {
+    border: #0A5840 solid 2px;
+    border-radius: 30px;
+    padding: 10px !important;
+    z-index: 1;
+    opacity: 1;
+    color: #0A5840;
+}
+
+.success .prim-but svg {
+    margin-left: 8px;
+}
+
+.thank .modal-body {
+    padding: 0;
+}
+
+
+.success2 .bg{
+    background-color: #FFEA9F;
+    padding: 26px;
+    border-radius: 50%;
+    margin: auto;
+    width: 100px;
+}
+
+.success2 h3 {
+    font-family: Inter-Semi-bold;
+}
+
+.success2 button {
+    border-radius: 10px !important;
+    min-width: 200px;
+    font-family: Inter-Semi-bold;
+}
+
+.thank2 {
+    background: #ffffff74;
+}
+
+.thank2 .close {
+    color: #0A5840;
+    background: #E5E5E5;
+    padding: 1px 6px 3px 7px;
+    font-size: 18px;
+    border-radius: 50% !important;
+    border: none;
+    max-width: max-content;
+    min-width: 0;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.thank2 .modal-content {
+    border-radius: 18px;
+    border: #E4E4E4 solid 1px;
+}
+
+.thank2 .modal-header {
+    display: none;
+}
+
+
+.checkout-page svg{
+color: #0A5840;
+font-size: 28px;
+margin-right: 15px;
+margin-left: 25px;
+}
+
+.checkout-page .form-check-input:checked {
+    background-color: #0A5840;
+    border: #fff 2px solid;
+    outline: #0A5840 1px solid;
+}
+
+.checkout-page h4 button {
+    border-radius: 30px;
+    background: none;
+    border: 0;
+}
+
+.checkout-page h4{
+    display: flex;
+    align-items: center;
+    font-family: Roboto-Bold;
+}
+
+.checkout-page .col-lg-6 h4 {
+    border-bottom: 1px solid #ACACAC;
+    padding-bottom: 15px;
+    /* max-width: fit-content; */
+    font-family: Roboto-Bold;
+    font-size: 21px;
+}
+
+.checkout-page .col-lg-6 h5 {
+    font-size: 17px;
+}
+
+.checkout-page{
+    background: linear-gradient(90deg, #FFFFFF 50%, #F9FAFA 50%);
+    position: relative;
+    min-height: 100vh;
+}
+
+.checkout-page .form-check label {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.checkout-page .line {
+   background-color: #D9D9D9;
+   height: 1px;
+   width: 100%;
+   /* z-index: 1; */
+   position: absolute;
+   top: 6px;
+   rotate: 90deg;
+   margin: auto;
+   display: table;
+   left: 0;
+    right: 0;
+}
+
+.checkout-page .row:last-child h4 {
+    font-family: Inter-Bold;
+}
+

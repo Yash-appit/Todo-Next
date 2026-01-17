@@ -1,0 +1,311 @@
+
+.cov-let .col-lg-6 h2 span {
+    font-family: Inter-Bold;
+    color: #000;
+}
+
+.cov-let .col-lg-6 p {
+    font-family: Inter;
+    color: #000;
+    font-weight: 500;
+}
+
+@media (min-width: 992px) {
+    .cov-let .col-lg-6 h2{
+    font-size: 45px;
+    font-family: Inter-Bold;
+    color: #023122;
+    }
+    }
+
+.cov-list h4 {
+    font-family: Inter-Bold;  
+    border-bottom: #0A5840 solid 2px; 
+    width: max-content;
+}
+
+.cov-list h4 span{
+    font-family: Inter-Bold;    
+}
+
+.cov-list .cov-grid {
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 10px !important;
+}
+
+.cov-list .cov-grid img {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.cov-list .cov-grid .list {
+background: #fff;
+border-radius: 10px;
+box-shadow: 0 0 3px 0 #ccc;
+text-align: center;
+}
+
+.cov-list .cov-grid .list h5 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+.template-hover-container {
+    position: relative;
+    overflow: hidden; /* Ensures the button doesn't overflow */
+    transition: all 0.3s ease;
+  }
+  
+  .template-hover-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; /* Adjust based on your button height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%); */
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .list:hover .button-container {
+    transform: translateY(-40px);
+  }
+  
+  .use-template-btn {
+    transition: all 0.2s ease;
+    font-size: 16px !important;
+  }
+  
+  .use-template-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Adjust list item padding if needed */
+  .list {
+    position: relative;
+    overflow: hidden; /* Important for the slide-up effect */
+  }
+
+
+
+
+  .preview-container .dropdown {
+text-align: end;
+margin-bottom: 20px;
+
+  }
+
+  .preview-container .dropdown .dropdown-toggle {
+    background: #0A5840;
+    font-family: Inter-Bold;
+    padding: 3px 20px!important;
+  }
+
+  .preview-container .dropdown-toggle svg {
+    margin: 0 0 0 5px;
+    font-size: 30px;
+  }
+
+  .preview-container .dropdown-toggle::after{
+    content: none;
+  }
+
+  .preview-container .dropdown-item:hover, .preview-container .dropdown-item:focus, .preview-container  .dropdown-item {
+    color: #0a5840;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    font-family: Inter-Bold;
+    font-size: 16px !important;
+}
+
+.preview-container .dropdown-menu {
+  background-color: #fff !important;
+  border-radius: 10px;
+  left: -15px !important;
+}
+
+.preview-container a img{
+height: 30px;
+}
+
+
+  .cover-letter-container .quill .ql-editor {
+    font-size: 16px;
+    height: 100%;
+  }
+
+
+  /* Add these styles to your CoverLetter.css */
+.cover-letter-container {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.preview-container {
+  border-left: 1px solid #dee2e6;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.preview-container .prev-temp{
+    min-width: 650px;
+    max-width: 650px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #cccc;
+    overflow: hidden;
+}
+
+.tab-navigation {
+  border-top: 1px solid #dee2e6;
+  /* z-index: 1000; */
+  background: white;
+  gap: 40px;
+}
+
+.tab-navigation .btn {
+  flex-grow: 1;
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+
+.tab-navigation button{
+width: 100% !important;
+border-radius: 10px !important;
+}
+
+
+.left-content .MuiInputBase-root {
+    border-radius: 10px;
+}
+
+.left-content .row {
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+
+}
+
+
+.left-content h4 span, .left-content h4 {
+    font-family: Inter-Bold;
+}
+
+.cover-letter-container .back{
+padding: 5px !important;
+top: 30px;
+left: 30px;
+}
+
+.cover-letter-container .head{
+  border-radius: 10px 10px 0 0 ;
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .preview-container .prev-temp{
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tab-navigation button{
+        font-size: 25px !important;
+        width: auto !important;
+        padding: 15px 20px !important;
+        line-height: 15px;
+    }
+    .tab-navigation{
+        gap: 10px;
+    }
+    .left-content .row,  .left-content {
+        padding: 10px !important;
+    }
+    .preview-container{
+        padding: 0 !important;
+    }
+    .preview-container .prev-temp{
+      min-width: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+  .cov-list .cov-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+}
+
+@media screen and (max-width: 767px) {
+.cov-let .col-lg-6 h2 {
+  margin-top: 0 !important;
+}
+}
+
+.cv-title input {
+  text-align: center;
+  padding: 0 20px 0 50px;
+}
+
+.cv-title h3 {
+  word-break: break-all;
+  padding: 0 55px;
+}
+
+
+
+/* Color Settings Styles */
+
+.setting {
+  border-radius: 0 0 10px 10px;
+  background: #fff;
+}
+
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+.color-square {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+/* .left-content::-webkit-scrollbar {
+    width: 10px;
+  } */
+
+  
+ 

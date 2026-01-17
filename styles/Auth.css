@@ -1,0 +1,410 @@
+/* .login svg {
+    font-size: 65px;
+    margin-right: 5px;
+
+} */
+
+.login {
+    /* background: #fff; */
+    min-height: 100vh;
+    font-family: Inter;
+}
+
+.login label {
+    font-size: 16px;
+}
+
+.login .MuiInputBase-input,
+.reg input {
+    height: 20px !important;
+    font-size: 16px !important;
+    background: #F3F1F1;
+    border-radius: 5px;
+}
+
+.login .MuiInputBase-root {
+    border-radius: 5px;
+
+}
+
+/* .login .MuiFormControl-root {
+    width: 70%;
+} */
+
+.login .logo {
+    height: 75px;
+    width: auto;
+}
+
+/* legend {
+    padding: 0 0 0 5px !important;
+} */
+
+.reg a {
+    font-size: 15px;
+}
+
+.login .MuiInputLabel-shrink {
+    color: #000;
+    font-size: 19px;
+    background: #F3F1F1;
+}
+
+.login,
+.forget {
+    box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%);
+}
+
+.login input:focus-visible {
+    outline: none;
+}
+
+.login .sec-but {
+    padding: 15px 60px !important;
+    font-size: 22px !important;
+    box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%);
+    font-weight: 600;
+}
+
+.login .col-lg-8 button, .login .soc-but {
+    border: #0A5840 solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.login .col-lg-8 button .spinner-border, .login .soc-but .spinner-border {
+    border-color: #0A5840;
+    border-right-color: transparent;
+}
+
+/* .login .prim-but-2, .login .prim-but, .forget .prim-but {
+    padding: 12px 40px !important;
+    font-size: 19px !important;
+    width: 50%;
+    box-shadow: 0 0 5px 0 #cccc;
+    border: #fff solid 2px;
+    text-transform: uppercase;
+} */
+
+/* .login .prim-but{
+    width: 70%;
+} */
+
+.login .sec-bg {
+    /* background: #F4F4F4 !important; */
+    border-radius: 20px;
+}
+
+.login .modal-header {
+    top: 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+
+}
+
+.login img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login svg {
+    color: #808080;
+}
+
+.login .btn-close {
+    background-color: #fff;
+}
+
+/* .login .log-col {
+    background: linear-gradient(180deg, #5FD1B1 -316.36%, #35CDCA 420.91%);
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.login h2 {
+    color: #fff;
+} */
+
+.login a {
+    color: #000;
+    cursor: pointer;
+    font-family: Inter-Semi-bold;
+    font-size: 14px !important;
+    /* text-decoration: none; */
+}
+
+.login p {
+    font-family: Inter;
+    color: #313131;
+    /* opacity: 0.75; */
+}
+
+.login .slick-dots {
+    bottom: 0;
+}
+
+.login .slick-dots li {
+    margin: 0 2px;
+}
+
+.login .slick-dots li button {
+    padding: 5px 2px;
+}
+
+.login .slick-dots li button:before {
+    font-size: 10px;
+    line-height: 13px;
+    width: 32px;
+    color: #d8d5d5;
+    opacity: 1;
+}
+
+/* .login .MuiInputBase-root{
+    border: 1px solid #79747E;
+} */
+
+.login .slick-arrow {
+    display: none !important;
+}
+
+.login .slick-active button::before {
+    width: 42px;
+    height: 10px;
+    color: #0A5840 !important;
+    background: #0A5840;
+    border-radius: 10px;
+    opacity: 1 !important;
+}
+
+.login form p {
+    font-size: 15px;
+    /* text-align: center; */
+    color: #000;
+    font-weight: 500;
+}
+
+.login .modal-body {
+    padding: 0;
+}
+
+
+.login .prim-but {
+    font-size: 15px !important;
+    padding: 14px 20px !important;
+}
+
+/* .reg a {
+    color: #000!important;
+} */
+
+.login .modal-content,
+.forget .modal-content {
+    /* border-radius: 20px; */
+    box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%);
+    overflow: hidden;
+}
+
+.login .col-lg-6 {
+    overflow: hidden;
+}
+
+.login .bg-sec {
+    border-radius: 20px 0 0 20px;
+}
+
+.login .sec-bg svg {
+    width: 200px;
+    height: auto;
+    color: #35CDCA;
+}
+
+.login .form-check-label {
+    font-family: Arial;
+    padding-top: 3px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.login .form-check-input {
+    width: 18px;
+    height: 18px !important;
+    /* background: #F3F1F1; */
+    border: #313131 solid 2px;
+
+}
+
+.login .form-check-input:checked {
+    background-color: #7a7b7e;
+    /* Change to your desired color */
+    border-color: #F4F4F4;
+    /* Change to your desired color */
+}
+
+.login .MuiOutlinedInput-notchedOutline {
+    border-color: #79747E;
+    box-shadow: 0 0 1px 0;
+}
+
+.login .sec-bg p {
+    /* color: #35CDCA; */
+    font-size: 18px;
+}
+
+.forget .modal-title {
+    font-weight: 600;
+}
+
+.forget input {
+    /* border: #dee2e6 solid 1px !important; */
+    height: 50px;
+}
+
+@media screen and (min-width: 991px) {
+    .LoginModal .MuiFormControl-root, .LoginModal form p {
+        width: 100% !important;
+    }
+    .LoginModal h1 {
+        font-size: 30px;
+    }
+}
+
+.LoginModal .modal-body {
+    padding: 0 !important;
+}
+.LoginModal .col-lg-7, .LoginModal .col-lg-9, .LoginModal .col-lg-8, .LoginModal .prim-but {
+    width: 100% !important;
+}
+
+.LoginModal .login {
+    min-height: auto !important;
+}
+
+.LoginModal .red {
+    display: none;
+}
+
+.LoginModal .modal-header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+} 
+.LoginModal .modal-content {
+    border-radius: 20px;
+}
+/* .modal-content {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%);
+} */
+.conf h1,
+.conf span,
+.logout h1 {
+    font-family: Arial-Bold;
+}
+
+.logout h1 {
+    color: #313131;
+
+}
+
+.conf p {
+    font-family: Inter;
+    color: #313131;
+    opacity: 0.75;
+}
+
+.conf button {
+    font-family: Inter-Bold;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+}
+
+.conf .modal-content {
+    border-radius: 20px !important;
+}
+
+
+.conf .modal-header {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.conf .modal-header button {
+    border: #0A5840 solid 2px;
+    border-radius: 30px;
+    padding: 10px !important;
+    z-index: 1;
+    opacity: 1;
+    color: #0A5840;
+}
+
+.conf {
+    background: #d9d9d97d;
+
+}
+
+.login .MuiIconButton-edgeEnd svg{
+    width: auto;
+    color: #000;
+}
+
+@media screen and (max-width: 991px) {
+    .login .log-img {
+        display: none;
+    }
+
+    .conf-img {
+        display: none;
+    }
+
+    .login .prim-but {
+        width: 100%;
+        font-family: Inter-Semi-bold;
+    }
+
+    .login form p {
+        width: 100%;
+    }
+
+    .conf h1,
+    .conf span {
+        font-size: 20px !important;
+    }
+    .login {
+        text-align: center;
+    }
+    .login .log-col {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .login p {
+        font-size: 14px !important;
+        opacity: 0.75;
+    }
+
+    .login .log-col .back {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 991px) {
+    .login form {
+        padding: 20px 0;
+    }
+
+    .login .prim-but {
+        width: 70%;
+        font-family: Inter-Semi-bold;
+    }
+
+    .login .MuiFormControl-root,
+    .login form p {
+        width: 70%;
+    }
+   
+
+
+}

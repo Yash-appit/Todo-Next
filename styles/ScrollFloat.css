@@ -1,0 +1,10 @@
+.scroll-float {
+  overflow: hidden;
+}
+
+.char {
+  display: inline-block;
+}
+.scroll-float-text {
+  display: block;
+}
