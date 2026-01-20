@@ -6,16 +6,15 @@ import { fetchLegalPage } from '@/services/legal/index';
 import Loader from '@/Layout/Loader';
 import "@/styles/Other.css";
 import { useRouter, useParams } from 'next/navigation';
-import Head from 'next/head';
 
 const Legal = () => {
   const [data, setData] = useState<any | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const params = useParams();
-const router = useRouter();
-const type = params?.type as string;
+  const router = useRouter();
+  const type = params?.type as string;
 
-// console.log(params);
+  // console.log(params);
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
@@ -23,7 +22,7 @@ const type = params?.type as string;
   }, [type]);
 
   // console.log(typeof(type));
-  
+
 
 
   const fetchData = async () => {
@@ -39,29 +38,14 @@ const type = params?.type as string;
       //   type: "error",
       //   message: (error as Error).message,
       // });
-    }finally {
+    } finally {
       setIsLoading(false);
     }
   };
 
-  const Meta = () => {
 
-    if (type === "aboutUs") {
-      return (<Head>
-        <title>About TodoResume | AI Resume Builder & Career Partner</title>
-        <meta name="title" content="About TodoResume | AI Resume Builder & Career Partner" />
-        <meta
-          name="description"
-          content="Discover TodoResume’s story — a Jaipur-based AI-powered resume platform helping job seekers craft ATS-friendly resumes & grow successful careers globally."
-        />
-        <link rel="canonical" href="https://todoresume.com/aboutUs" />
-        </Head>);
-    }
-  };
 
   return (
-    <>
-    <Meta />
     <div className='container py-5 about-us'>
       {data?.data?.title &&
         <h3 className="pt-5 mt-5 head my-element" data-aos="fade-down" data-aos-delay="200">{data?.data?.title}</h3>
@@ -84,7 +68,7 @@ const type = params?.type as string;
         </>
       )}
     </div>
-    </>);
+  );
 };
 
 export default Legal;

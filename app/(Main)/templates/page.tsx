@@ -4,8 +4,8 @@ import Templates from "@/components/Templates";
 const WEBSITE_URL = process.env.NEXT_PUBLIC_WEBSITE_URL || 'https://todoresume.com';
 
 export const metadata: Metadata = {
-    title: 'Professional Resume Templates | Modern & ATS-Friendly Designs',
-    description: 'Browse modern, ATS-friendly resume templates crafted by experts. Choose executive, IT, tech, simple, or professional styles and create a standout resume easily.',
+    title: 'Free Resume Templates Online | ATS-Friendly Designs',
+    description: 'Browse free, ATS-friendly resume templates to create a professional resume online. Choose a design, customize your details, and download instantly.',
     alternates: {
       canonical: `${WEBSITE_URL}/templates`, // Update with your actual domain
     },

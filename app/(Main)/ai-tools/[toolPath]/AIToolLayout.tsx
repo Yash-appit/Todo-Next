@@ -34,28 +34,28 @@ export const generateMetadata = ({ params }: { params: { toolPath: string } }) =
 
   const metadataMap: Record<string, { title: string; description: string }> = {
     'email-template-generator': {
-      title: 'AI Email Template Generator | Write Job Emails Easily',
-      description: 'Create professional job emails with AI. Use free credits to write effective email templates for applications, follow-ups, or networking in minutes.'
+      title: 'AI Email Template Generator | Job & Professional Emails',
+      description: 'Write professional job emails using AI. Create email templates for applications, follow-ups, and networking with free credits in minutes.'
     },
     'linkedin-bio-generator': {
-      title: 'AI LinkedIn Bio Generator | Create Professional LinkedIn Summary',
-      description: 'Generate your LinkedIn bio instantly with Todo Resume\'s AI tool. Craft a professional, recruiter-ready, and unique LinkedIn summary that boosts your profile visibility.'
+      title: 'AI LinkedIn Bio Generator | Professional Profile Summary',
+      description: 'Create a professional LinkedIn bio using AI. Generate a recruiter-ready profile summary that improves visibility and credibility with free credits.'
     },
     'qa-generator': {
-      title: 'AI Interview Q&A Generator | Smart Interview Prep Tool',
-      description: 'Ace your next interview with Todo Resume\'s AI Interview Q&A Generator. Get role-specific, HR, and technical interview questions tailored to your job title.'
+      title: 'AI Interview Q&A Generator | Smart Interview Preparation',
+      description: 'Prepare for job interviews with AI-generated questions and answers. Get role-specific HR and technical interview questions using free credits.'
     },
     'job-description-generator': {
       title: 'AI Job Description Generator | Create Job Posts Instantly',
-      description: 'Generate professional, keyword-optimized job descriptions in seconds with Todo Resume\'s AI Job Description Generator. Attract top talent faster and smarter.'
+      description: 'Generate clear and professional job descriptions using AI. Create role-specific job posts quickly and attract the right candidates with free credits.'
     },
     'job-description-analyzer': {
-      title: 'AI Job Description Analyzer | Match Resume to JD Smartly',
-      description: 'Analyze job descriptions instantly with Todo Resume\'s AI Job Description Analyzer. Understand recruiter needs, optimize your resume, and boost interview chances.'
+      title: 'AI Job Description Analyzer | Match Resume to Job Role',
+      description: 'Analyze job descriptions using AI to understand skills, keywords, and requirements. Optimize your resume and improve interview shortlisting chances.'
     },
     'career-objective-generator': {
-      title: 'AI Career Objective Generator | ATS-Friendly & Custom Goals',
-      description: 'Create a tailored career objective in seconds! Our AI-powered tool writes ATS-optimized, job-ready goals for freshers, professionals & career changers.'
+      title: 'AI Career Objective Generator | ATS-Friendly Resume Goals',
+      description: 'Create a customized, ATS-friendly career objective using AI. Ideal for freshers, professionals, and career changers applying for any role.'
     }
   };
 

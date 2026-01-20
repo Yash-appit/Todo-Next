@@ -1,51 +1,30 @@
 import Legal from "@/components/Legal";
 import type { Metadata } from "next";
-import { headers } from 'next/headers';
 
-export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const pathname = headersList.get('x-invoke-path') || '';
-  const referer = headersList.get('referer') || '';
-  const host = headersList.get('host') || '';
+type Props = {
+  params: Promise<{ type: string }>;
+};
 
-  // Alternative: check the referer or reconstruct the URL
-  let currentPath = pathname;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { type } = await params;
+  const host = 'todoresume.com'; // Use your actual domain
+  const currentPath = `/${type}`;
 
-  // If x-invoke-path doesn't work, try to extract from referer
-  if (!currentPath && referer) {
-    try {
-      const url = new URL(referer);
-      currentPath = url.pathname;
-    } catch (error) {
-      console.error('Error parsing referer URL:', error);
-    }
-  }
-
-  // Log for debugging (remove in production)
-  // console.log('Current path:', currentPath);
-
-  // Check if the path is exactly '/aboutUs' or '/about-us' (common variations)
-  const isAboutUsPage =
-    currentPath === '/aboutUs' ||
-    currentPath === '/about-us' ||
-    currentPath.toLowerCase().includes('about');
-
-  // Only set TodoResume metadata for about us pages
-  if (isAboutUsPage) {
+  // About Us page
+  if (type === 'aboutUs') {
     return {
-      title: 'About TodoResume | AI Resume Builder & Career Partner',
-      description: 'Discover TodoResume\'s story — a Jaipur-based AI-powered resume platform helping job seekers craft ATS-friendly resumes & grow successful careers globally.',
-      keywords: 'TodoResume, about us, AI resume builder, career platform, Jaipur, ATS resumes, job search, resume writing',
+      title: 'About TodoResume | Resume, ATS & Career Tools Platform',
+      description: 'Learn about TodoResume—our mission to help job seekers create resumes, check ATS scores, prepare for interviews, and grow their careers with smart tools.',
       openGraph: {
-        title: 'About TodoResume | AI Resume Builder & Career Partner',
-        description: 'Discover TodoResume\'s story — a Jaipur-based AI-powered resume platform helping job seekers craft ATS-friendly resumes & grow successful careers globally.',
+        title: 'About TodoResume | Resume, ATS & Career Tools Platform',
+        description: 'Learn about TodoResume—our mission to help job seekers create resumes, check ATS scores, prepare for interviews, and grow their careers with smart tools.',
         type: 'website',
         url: `https://${host}${currentPath}`,
       },
       twitter: {
         card: 'summary_large_image',
-        title: 'About TodoResume | AI Resume Builder & Career Partner',
-        description: 'Discover TodoResume\'s story — a Jaipur-based AI-powered resume platform helping job seekers craft ATS-friendly resumes & grow successful careers globally.',
+        title: 'About TodoResume | Resume, ATS & Career Tools Platform',
+        description: 'Learn about TodoResume—our mission to help job seekers create resumes, check ATS scores, prepare for interviews, and grow their careers with smart tools.',
       },
       alternates: {
         canonical: `https://${host}${currentPath}`,
@@ -53,8 +32,72 @@ export async function generateMetadata(): Promise<Metadata> {
     };
   }
 
+  // Terms and Conditions page
+  if (type === 'termAndCondition') {
+    return {
+      title: 'Terms & Conditions | TodoResume Website Policies',
+      description: 'Read TodoResume\'s terms and conditions to understand our website usage policies, user responsibilities, services, and legal guidelines.',
+      openGraph: {
+        title: 'Terms & Conditions | TodoResume Website Policies',
+        description: 'Read TodoResume\'s terms and conditions to understand our website usage policies, user responsibilities, services, and legal guidelines.',
+        type: 'website',
+        url: `https://${host}${currentPath}`,
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: 'Terms & Conditions | TodoResume Website Policies',
+        description: 'Read TodoResume\'s terms and conditions to understand our website usage policies, user responsibilities, services, and legal guidelines.',
+      },
+      alternates: {
+        canonical: `https://${host}${currentPath}`,
+      },
+    };
+  }
 
-  // Fallback metadata for other pages
+  // Privacy Policy page
+  if (type === 'privacyPolicy') {
+    return {
+      title: 'Privacy Policy | TodoResume Data & User Privacy',
+      description: 'Read TodoResume’s privacy policy to learn how we collect, use, and protect your personal information and ensure data security.',
+      openGraph: {
+        title: 'Privacy Policy | TodoResume Data & User Privacy',
+        description: 'Read TodoResume’s privacy policy to learn how we collect, use, and protect your personal information and ensure data security.',
+        type: 'website',
+        url: `https://${host}${currentPath}`,
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: 'Privacy Policy | TodoResume Data & User Privacy',
+        description: 'Read TodoResume’s privacy policy to learn how we collect, use, and protect your personal information and ensure data security.',
+      },
+      alternates: {
+        canonical: `https://${host}${currentPath}`,
+      },
+    };
+  }
+
+  // Refund Policy page
+  if (type === 'refundPolicy') {
+    return {
+      title: 'Refund Policy | TodoResume Payments & Refund Terms',
+      description: 'Review TodoResume’s refund policy to understand payment terms, eligibility, and conditions for refunds on our services and packages.',
+      openGraph: {
+        title: 'Refund Policy | TodoResume Payments & Refund Terms',
+        description: 'Review TodoResume’s refund policy to understand payment terms, eligibility, and conditions for refunds on our services and packages.',
+        type: 'website',
+        url: `https://${host}${currentPath}`,
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: 'Refund Policy | TodoResume Payments & Refund Terms',
+        description: 'Review TodoResume’s refund policy to understand payment terms, eligibility, and conditions for refunds on our services and packages.',
+      },
+      alternates: {
+        canonical: `https://${host}${currentPath}`,
+      },
+    };
+  }
+
   return {};
 }
 

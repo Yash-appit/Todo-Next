@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   // alternates: {
   //   canonical: "https://savingsathi.com/privacy-policy", // Canonical URL
   // },
-  title: "Resume Writing & Interview Tips | AI Career Blogs 2025",
-  description: "Build a free ATS-friendly resume and cover letter in minutes. Use TodoResume tools—ATS Checker, Job Analyzer & AI Career Generators to boost your career.",
+  title: "Resume Writing & Interview Guides | Jobs & Career Blog",
+  description: "Read expert blogs on resume writing, interview preparation, job search tips, and AI career trends to stay ahead in today’s job market.",
   alternates: {
     canonical: `${WEBSITE_URL}/blogs`, // Update with your actual domain
   },
