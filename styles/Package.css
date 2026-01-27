@@ -17,14 +17,12 @@
 
 .sec-bg2 h1,
 .sec-bg h2 {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     font-size: 60px;
 }
 
 .sec-bg h1 span {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     color: #0A5840;
 }
 
@@ -55,19 +53,16 @@
 }
 
 .sec-bg2 span {
-    font-family: var(--font-arial);
-    font-weight: 700;
-    font-style: italic;
+    font-family: Arial-Bold-Italic;
 }
 
 .sec-bg2 .prim {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
 }
 
 .sec-bg2 p,
 .sec-bg2 a {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
 }
 
@@ -167,7 +162,7 @@
     width: 100%;
     background: #fff !important;
     color: #1A6966 !important;
-    font-family: var(--font-arial);
+    font-family: Arial;
     font-size: 15px !important;
     border: #1A6966 solid 1px !important;
 }
@@ -234,7 +229,7 @@
 
 .package .card h3 {
     color: #fff !important;
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 .package .pack-head {
@@ -246,7 +241,7 @@
 }
 
 .package .pack-head h1 {
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 .package .col-lg-5 button:hover {
@@ -296,7 +291,7 @@
     color: #FFFFFFB2;
     padding: 10px 5px 0 5px;
     text-transform: capitalize;
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 .package-faq .accordion-button:not(.collapsed) {
@@ -400,7 +395,7 @@
     background: transparent;
     border: none;
     font-size: 20px;
-    font-family: var(--font-arial);
+    font-family: Arial;
     text-align: start;
     padding: 0 0 5px 0 !important;
     max-width: max-content;
@@ -412,13 +407,12 @@
   } */
 
 .package-pop {
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 .package-pop .tab-active {
     color: #0A5840;
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     border-bottom: #0A5840 solid 3px;
     margin: 10px 0;
     text-align: center;
@@ -451,14 +445,14 @@
 .package-pop span {
     color: #FFFFFF;
     opacity: 0.5;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 400;
     margin-left: 10px;
 }
 
 .package-pop p {
     color: #FFF;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 400;
     font-size: 13px;
 }
@@ -470,7 +464,7 @@
 }
 
 .package-pop button {
-    font-family: var(--font-arial);
+    font-family: Arial;
     font-size: 12px;
     padding: 8px 40px !important;
 }
@@ -479,7 +473,7 @@
 
 
 .pack-details h2 {
-    font-family: var(--font-arial);
+    font-family: Arial;
     padding: 0 25px;
     margin-bottom: 0;
 }
@@ -487,7 +481,7 @@
 .pack-details .row {
     padding: 25px 10px;
     border-radius: 25px;
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 .pack-details p {
@@ -495,7 +489,7 @@
     color: #0A5840B2;
     border-top: 1px solid #0A584012;
     margin-bottom: 0;
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 .pack-details .sec p {
@@ -507,7 +501,7 @@
 }
 
 .pack-details button {
-    font-family: var(--font-arial);
+    font-family: Arial;
     font-size: 13px !important;
     font-weight: 400 !important;
     padding: 5px 60px !important;
@@ -553,7 +547,7 @@
 
     .package-pop h1 {
         color: #fff !important;
-        font-family: var(--font-arial);
+        font-family: Arial;
         font-size: 40px;
         line-height: 30px;
         display: flex;
@@ -570,7 +564,7 @@
 @media screen and (min-width: 767px) {
     .package-pop h1 {
         color: #fff !important;
-        font-family: var(--font-arial);
+        font-family: Arial;
         font-size: 50px;
         line-height: 40px;
     }
@@ -590,7 +584,7 @@
 @media screen and (max-width: 500px) {
     .package-pop h1 {
         color: #fff !important;
-        font-family: var(--font-arial);
+        font-family: Arial;
         font-size: 30px;
         line-height: 20px;
         display: flex;

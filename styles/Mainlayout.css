@@ -176,7 +176,7 @@ font-size: 30px;
 .main-offcanvas a,
 .main-offcanvas button {
     z-index: 1;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
 }
 
@@ -187,7 +187,7 @@ font-size: 30px;
 }
 
 .navbar button {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     /* min-width: 120px; */
     font-size: 18px !important;
@@ -296,7 +296,7 @@ font-size: 30px;
 }
 
 #features-dropdown div {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
 }
 
@@ -334,8 +334,7 @@ font-size: 30px;
 
 .dropdown-section-title h5 {
     font-size: 18px;
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
 
 }
 
@@ -519,8 +518,7 @@ font-size: 30px;
 
 .features-dropdown-content .col-lg-4 h4 {
     font-size: 17px !important;
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     margin-top: 10px;
     color: #000;
     transition: transform 0.3s ease;
@@ -529,7 +527,7 @@ font-size: 30px;
 .features-dropdown-content .col-lg-4 p {
     color: #000;
     font-size: 14px;
-    font-family: var(--font-arial);
+    font-family: Arial;
     margin-bottom: 10px;
 }
 
@@ -584,7 +582,7 @@ font-size: 30px;
 }
 
 .footer .copy-right p {
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 /* .footer hr {
@@ -604,7 +602,7 @@ font-size: 30px;
     margin-bottom: 15px;
     font-size: 16px !important;
     text-decoration: none;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     transition: ease 0.3s;
 }
@@ -612,7 +610,7 @@ font-size: 30px;
 .footer .col-md-4 a {
     color: #0A5840 !important;
     text-decoration: none;
-    font-family: var(--font-inter);
+    font-family: Inter;
 
 }
 
@@ -631,8 +629,7 @@ font-size: 30px;
     color: #0A5840;
     padding-bottom: 10px;
     font-size: 22px !important;
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
 }
 
 .footer .main-mail p {

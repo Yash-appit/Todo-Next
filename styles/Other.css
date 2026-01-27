@@ -4,14 +4,13 @@
 }
 
 .contact h1 {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     color: #0A5840;
     font-size: 60px;
 }
 
 .contact p {
-    font-family: var(--font-inter);
+    font-family: Inter;
     color: #717171;
 }
 
@@ -24,7 +23,7 @@
     border-radius: 5px;
     resize: none;
     font-size: 16px;
-    font-family: var(--font-roboto), sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     border-bottom: #8D8D8D solid 1px !important;
     border-radius: 0 !important;
@@ -36,7 +35,7 @@
     border-bottom: #8D8D8D solid 1px !important;
     min-height: 40px;
     border-radius: 0 !important;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     box-shadow: none !important;
 }
@@ -44,7 +43,7 @@
 .contact label {
     width: 100%;
     color: #8D8D8D !important;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     font-size: 14px;
 }
@@ -62,8 +61,7 @@
 
 .contact .cont-inf h4 {
     color: #fff;
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     margin-bottom: 10px;
 }
 
@@ -203,7 +201,7 @@
     .contact h1 {
         font-size: 24px !important;
         color: #000;
-        font-family: var(--font-arial);
+        font-family: Arial;
         font-weight: 900;
     }
 
@@ -222,35 +220,31 @@
 
 
 .career-advice h1 {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     font-size: 50px;
 }
 
 .career-advice .head {
     text-transform: uppercase;
     color: #263238;
-    font-family: var(--font-satoshi);
-    font-weight: 700 !important;
+    font-family: Satoshi-bold !important;
     font-size: 20px !important;
 }
 
 .career-advice p {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
 }
 
 .career-advice .col-lg-4 h4 {
-    font-family: var(--font-satoshi);
-    font-weight: 700;
+    font-family: Satoshi-bold;
     font-size: 25px;
 }
 
 
 .career-advice .gridlay p,
 .career-advice .gridlay li {
-    font-family: var(--font-roboto);
-    font-weight: 500;
+    font-family: Roboto-Medium;
     font-size: 11px;
 }
 
@@ -436,20 +430,20 @@
 
 
 .temp-head h1 {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-size: 34px;
 
 }
 
 .temp-head p {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-size: 19px;
     color: #3F3F3F;
 
 }
 
 .temp-head a {
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
     font-weight: 500 !important;
     font-size: 16px !important;
     padding: 15px 30px !important;
@@ -490,7 +484,7 @@
 }
 
 .temp-rev h3 {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-size: 22px;
 }
 
@@ -526,14 +520,13 @@
 
 
 .temp-rev .gridlay p {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-size: 14px;
 }
 
 .temp-rev-head p,
 .temp-rev-head span {
-    font-family: var(--font-roboto);
-    font-weight: 700;
+    font-family: Roboto-Bold;
 }
 
 .review-slider h4 {
@@ -556,7 +549,7 @@
 
 .res-work h2,
 .res-work p {
-    font-family: var(--font-inter);
+    font-family: Inter;
     color: #3F3F3F;
     font-weight: 400;
 }
@@ -566,7 +559,7 @@
 }
 
 .res-work a {
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
     font-weight: 500 !important;
     font-size: 16px !important;
     padding: 15px 30px !important;
@@ -770,8 +763,7 @@
 
 .templat .col h4 {
     color: #313B47;
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
     font-size: 28px;
 }
 
@@ -781,15 +773,14 @@
 
 .templat .col p {
     color: #757575;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-size: 15px;
 }
 
 .about-us .head {
     text-align: center;
     text-transform: capitalize;
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     color: #0A5840;
 }
 
@@ -812,7 +803,7 @@
 }
 
 .about-us .det {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     font-size: 18px;
     line-height: 38.4px;
@@ -831,8 +822,7 @@
 
     .ats-sec h1,
     .ats-sec h1 span {
-        font-family: var(--font-roboto);
-        font-weight: 700;
+        font-family: Roboto-Bold;
         font-size: 40px !important;
     }
 
@@ -872,33 +862,28 @@
 }
 
 .ats-sec h1 {
-    font-family: var(--font-roboto);
-    font-weight: 700;
+    font-family: Roboto-Bold;
     font-size: 55px;
 }
 
 .ats-sec h1 span {
-    font-family: var(--font-roboto);
-    font-weight: 700;
+    font-family: Roboto-Bold;
     font-size: 55px;
 }
 
 .ats-sec2 .head {
     color: #4D4D4D;
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
 }
 
 .ats-sec2 h2 {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     margin: 25px 0;
 
 }
 
 .ats-sec2 p {
-    font-family: var(--font-inter);
-    font-weight: 600;
+    font-family: Inter-Semi-bold;
 }
 
 .ats-sec2 .tilted-card-inner img {
@@ -920,8 +905,7 @@
 
 .ats-sec2 .ats2 h2,
 .ats-sec2 .ats2 h3 {
-    font-family: var(--font-arial);
-    font-weight: 900 !important;
+    font-family: Arial-Black !important;
 
 }
 
@@ -1154,7 +1138,7 @@
 }
 
 .res-write .hired .col h4 {
-    font-family: var(--font-inter);
+    font-family: Inter;
     text-align: center;
     color: #1E2532 !important;
     font-weight: 400;
@@ -1325,12 +1309,11 @@
 }
 
 .res-write-form h2 {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
 }
 
 .res-write-form p {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     color: #717171;
 }
@@ -1340,7 +1323,7 @@
     font-size: 13px !important;
     background-color: #0A5840;
     padding: 3px 25px !important;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -1348,15 +1331,15 @@
 .res-write-form .col-lg-12 .prim-but {
     min-width: 250px;
     font-size: 15px !important;
-    font-family: var(--font-inter);
+    font-family: Inter;
 }
 
 .res-write-form label {
-    font-family: var(--font-inter);
+    font-family: Inter;
 }
 
 .res-write h2 span {
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 .res-write .star {
@@ -1378,11 +1361,11 @@
 }
 
 .ready-start .col-lg-5 h2 {
-    font-family: var(--font-arial);
+    font-family: Arial;
 }
 
 .ready-start .col-lg-5 button {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-size: 15px !important;
 }
 
@@ -1408,18 +1391,17 @@
 }
 
 .faq-section p {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     padding-left: 10px;
 }
 
 .faq-list p {
-    font-family: var(--font-inter);
+    font-family: Inter;
 }
 
 .faq-list h2 {
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
 }
 
 .faq-list .MuiPaper-root {
@@ -1445,8 +1427,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
 }
 
 .faq-list a svg {
@@ -1499,7 +1480,7 @@
 }
 
 .res-build .res-but span {
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
     font-size: 15px !important;
 
 }
@@ -1524,8 +1505,7 @@
 
 .res-build .package-faq h4 {
     color: #0A5941 !important;
-    font-family: var(--font-inter) !important;
-    font-weight: 700 !important;
+    font-family: Inter-bold !important;
     font-size: 32px !important;
 }
 
@@ -1535,8 +1515,7 @@
 
 .res-build .steps h5,
 .res-build .steps .second-main {
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
     color: #414141;
 }
 
@@ -1546,20 +1525,17 @@
 
 .res-build .steps span,
 .res-build .steps h1 {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
 }
 
 .res-build .steps .approach span,
 .res-build .steps .approach {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
     font-size: 40px;
 }
 
 .res-build .elevate {
-    font-family: var(--font-arial) !important;
-    font-weight: 700 !important;
+    font-family: Arial-Bold !important;
     font-size: 55px !important;
 }
 
@@ -1582,8 +1558,7 @@
     border: 1.25px solid #B3B3B3;
     width: max-content;
     padding: 8px 18px;
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
     font-size: 28px;
     margin: auto;
 }
@@ -1602,8 +1577,7 @@
 .news-letter-dialog .prim-but2 {
     background: #0A5840 !important;
     border-radius: 5px;
-    font-family: var(--font-inter);
-    font-weight: 600;
+    font-family: Inter-Semi-bold;
     font-size: 17px;
     padding: 8px 30px;
 }
@@ -1613,17 +1587,16 @@
     border-radius: 5px;
     outline: #0A5840 !important;
     border: #0A5840 solid 1px !important;
-    font-family: var(--font-inter);
-    font-weight: 600;
+    font-family: Inter-Semi-bold;
 }
 
 .news-letter-dialog p {
-    font-family: var(--font-inter);
+    font-family: Inter;
 }
 
 .news-letter-dialog input,
 .news-letter-dialog span {
-    font-family: var(--font-roboto);
+    font-family: Roboto;
 }
 
 .news-letter-dialog .close-but {
@@ -1639,8 +1612,7 @@
 }
 
 .news-letter-dialog .col-lg-6 .MuiTypography-h5 {
-    font-family: var(--font-satoshi);
-    font-weight: 700;
+    font-family: Satoshi-bold;
     font-size: 30px !important;
     margin: 10px 0 20px 0;
     color: #0A5840;
@@ -1691,7 +1663,7 @@
 }
 
 .digital-business-card .rev-slider p {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-size: 13px;
     color: #272829BF;
 }
@@ -1705,14 +1677,12 @@
 }
 
 .digital-business-card h2 span {
-    font-family: var(--font-roboto);
-    font-weight: 700;
+    font-family: Roboto-Bold;
 }
 
 .digital-business-card .main h1,
 .digital-business-card .main h1 span {
-    font-family: var(--font-satoshi);
-    font-weight: 900;
+    font-family: Satoshi-Black;
 }
 
 .digital-business-card .prof {

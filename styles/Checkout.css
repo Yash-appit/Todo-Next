@@ -37,12 +37,11 @@
 }
 
 .success .col-lg-9 h1 {
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
 }
 
 .success .col-lg-9 p {
-    font-family: var(--font-inter);
+    font-family: Inter;
 }
 
 /* .success .prim-but, .success .prim-but:focus {
@@ -83,15 +82,13 @@
 }
 
 .success2 h3 {
-    font-family: var(--font-inter);
-    font-weight: 600;
+    font-family: Inter-Semi-bold;
 }
 
 .success2 button {
     border-radius: 10px !important;
     min-width: 200px;
-    font-family: var(--font-inter);
-    font-weight: 600;
+    font-family: Inter-Semi-bold;
 }
 
 .thank2 {
@@ -144,16 +141,14 @@
 .checkout-page h4 {
     display: flex;
     align-items: center;
-    font-family: var(--font-roboto);
-    font-weight: 700;
+    font-family: Roboto-Bold;
 }
 
 .checkout-page .col-lg-6 h4 {
     border-bottom: 1px solid #ACACAC;
     padding-bottom: 15px;
     /* max-width: fit-content; */
-    font-family: var(--font-roboto);
-    font-weight: 700;
+    font-family: Roboto-Bold;
     font-size: 21px;
 }
 
@@ -168,7 +163,7 @@
 }
 
 .checkout-page .form-check label {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
     font-size: 16px;
 }
@@ -188,6 +183,5 @@
 }
 
 .checkout-page .row:last-child h4 {
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
 }

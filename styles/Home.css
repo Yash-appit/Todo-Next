@@ -58,8 +58,7 @@ li {
   margin-bottom: 0;
   line-height: 32px;
   color: #5C5C5C;
-  font-family: var(--font-arial);
-  font-weight: 700;
+  font-family: Arial-Bold;
 }
 
 .rev-res .col-lg-3 {
@@ -67,7 +66,7 @@ li {
 }
 
 .rev-res p {
-  font-family: var(--font-inter);
+  font-family: Inter;
   font-size: 16px;
   color: #414141;
 
@@ -105,8 +104,7 @@ li {
   text-align: center;
   margin-bottom: 20px;
   color: #5C5C5C;
-  font-family: var(--font-arial);
-  font-weight: 600;
+  font-family: Arial-Bold;
 }
 
 .rev-res .resp hr {
@@ -133,8 +131,7 @@ li {
 
 
 .rev-res h5 {
-  font-family: var(--font-satoshi);
-  font-weight: 700;
+  font-family: Satoshi-bold;
   text-transform: capitalize;
 }
 
@@ -143,8 +140,7 @@ li {
 } */
 
 .rev-res h2 {
-  font-family: var(--font-arial);
-  font-weight: 700;
+  font-family: Arial-Bold;
 }
 
 .rev-res .lottie {
@@ -153,7 +149,7 @@ li {
 
 .rev-res a,
 .rev-bg button {
-  font-family: var(--font-inter);
+  font-family: Inter;
   font-size: 15px !important;
   z-index: 2;
   line-height: inherit;
@@ -416,6 +412,11 @@ li {
   }
 }
 
+/* 
+@media screen and (min-width: 767px) {
+ 
+} */
+
 @media screen and (max-width: 500px) {
   .rev-res h2 {
     font-size: 35px !important;
@@ -426,6 +427,10 @@ li {
   .view-pack h2 {
     font-size: 30px !important;
   }
+
+  /* .rev-res-bg div {
+    padding-top: 20px !important;
+  } */
 
   .package-faq img {
     height: 200px !important;
@@ -552,8 +557,7 @@ li {
 }
 
 .view-pack h2 {
-  font-family: var(--font-arial);
-  font-weight: 700;
+  font-family: Arial-Bold;
   font-size: 52px;
 }
 
@@ -576,8 +580,7 @@ li {
 .view-pack h2 span {
   /* color: #0A5941; */
   /* font-weight: 600; */
-  font-family: var(--font-arial);
-  font-weight: 700;
+  font-family: Arial-Bold;
   font-size: 52px;
 
 }
@@ -611,7 +614,7 @@ li {
 
 .view-pack a {
   padding: 14px 28px 14px 28px !important;
-  font-family: var(--font-inter);
+  font-family: Inter;
   font-size: 16px !important;
 }
 
@@ -627,8 +630,7 @@ li {
 
 .view-pack .col h3 {
   padding: 70px 0 0 0;
-  font-family: var(--font-satoshi);
-  font-weight: 500;
+  font-family: Satoshi-Medium;
   font-size: 21px;
   text-align: end;
   color: #0A5941;
@@ -637,8 +639,7 @@ li {
 
 .view-pack p {
   color: #4D4D4D;
-  font-family: var(--font-satoshi);
-  font-weight: 500;
+  font-family: Satoshi-Medium;
   font-size: 18px;
 }
 
@@ -659,8 +660,7 @@ li {
 } */
 
 .how-work h2 span {
-  font-family: var(--font-satoshi);
-  font-weight: 700;
+  font-family: Satoshi-bold;
   padding: 0 0 20px 0;
   color: #fff !important;
   font-size: 60px;
@@ -674,8 +674,7 @@ li {
 .how-work .col-lg-6 h3 {
   color: #000;
   margin-bottom: 18px;
-  font-family: var(--font-satoshi);
-  font-weight: 700;
+  font-family: Satoshi-bold;
   margin-top: 10px;
   font-size: 20px !important;
 
@@ -683,8 +682,7 @@ li {
 
 .how-work .col-lg-6 p {
   font-size: 17px;
-  font-family: var(--font-satoshi);
-  font-weight: 500;
+  font-family: Satoshi-Medium;
   margin-bottom: 28px !important;
 }
 
@@ -721,21 +719,18 @@ li {
 }
 
 .how-work p {
-  font-family: var(--font-roboto);
-  font-weight: 500;
+  font-family: Roboto-Medium;
 }
 
 .how-work a {
   color: #0A5941 !important;
-  font-family: var(--font-satoshi);
-  font-weight: 700;
+  font-family: Satoshi-bold;
   margin-left: 0;
   padding-top: 20px;
 }
 
 .how-work span {
-  font-family: var(--font-satoshi);
-  font-weight: 700;
+  font-family: Satoshi-bold;
   color: #EAE3E3;
   font-size: 24px;
 }
@@ -778,26 +773,22 @@ li {
 
 .package-faq .any {
   font-size: 32px !important;
-  font-family: var(--font-inter);
-  font-weight: 700 !important;
+  font-family: Inter-bold !important;
 }
 
 .package-faq .ques h4 {
   color: #0A5941;
-  font-family: var(--font-inter);
-  font-weight: 700;
+  font-family: Inter-bold;
   font-size: 32px;
 }
 
 .package-faq .ques p {
   color: #0A5941;
-  font-family: var(--font-inter);
-  font-weight: 600;
+  font-family: Inter-Semi-bold;
 }
 
 .package-faq .MuiAccordionSummary-root p {
-  font-family: var(--font-inter);
-  font-weight: 600;
+  font-family: Inter-Semi-bold;
   font-size: 18px;
   text-align: left;
   display: flex;
@@ -816,7 +807,7 @@ li {
 
 .package-faq a {
   padding: 8px 20px !important;
-  font-family: var(--font-inter);
+  font-family: Inter;
   font-size: 15px !important;
 }
 
@@ -841,13 +832,12 @@ li {
 }
 
 .package-faq h2 {
-  font-family: var(--font-arial);
-  font-weight: 600;
+  font-family: Arial-Bold;
 }
 
 .package-faq h2 span {
-  font-family: var(--font-roboto);
-  font-weight: 600;
+  font-family: Roboto-Bold;
+  /* font-weight: 600; */
 }
 
 
@@ -874,7 +864,7 @@ li {
 
 .package-faq .MuiAccordionDetails-root p {
   color: #414141;
-  font-family: var(--font-roboto);
+  font-family: Roboto;
 }
 
 .package-faq .accordion {
@@ -882,7 +872,7 @@ li {
 }
 
 .package-faq .accordion-header {
-  font-family: var(--font-satoshi) !important;
+  font-family: Satoshi-Regular !important;
 }
 
 .second-bg {
@@ -971,17 +961,15 @@ li {
   }
 
   .career-sec .col-lg-6 h2 {
-    font-family: var(--font-gambetta);
+    font-family: Gambetta-VariableItalic;
     color: #0A5941;
-    font-weight: 500;
     font-size: 68px;
   }
 
   .career-sec .col-lg-6 h2 span {
     color: #000;
-    font-family: var(--font-gambetta);
+    font-family: Gambetta-VariableItalic;
     font-size: 68px;
-    font-weight: 500;
   }
 }
 
@@ -995,8 +983,7 @@ li {
 
 .career-sec .career span {
   color: #3D3939B2;
-  font-family: var(--font-inter);
-  font-weight: 600;
+  font-family: Inter-Semi-bold;
   font-size: 20px;
   /* margin: 10px 0; */
 }
@@ -1066,9 +1053,7 @@ li {
 }
 
 .ats-score .upload p {
-  /* font-family: Inter-bold; */
-  font-family: var(--font-inter);
-  font-weight: 700;
+  font-family: Inter-bold;
   margin: 25px 0;
 }
 

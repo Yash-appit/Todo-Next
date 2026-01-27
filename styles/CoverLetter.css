@@ -1,11 +1,10 @@
 .cov-let .col-lg-6 h2 span {
-  font-family: var(--font-inter);
-  font-weight: 700;
+  font-family: Inter-Bold;
   color: #000;
 }
 
 .cov-let .col-lg-6 p {
-  font-family: var(--font-inter);
+  font-family: Inter;
   color: #000;
   font-weight: 500;
 }
@@ -13,22 +12,19 @@
 @media (min-width: 992px) {
   .cov-let .col-lg-6 h2 {
     font-size: 45px;
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
     color: #023122;
   }
 }
 
 .cov-list h4 {
-  font-family: var(--font-inter);
-  font-weight: 700;
+  font-family: Inter-Bold;
   border-bottom: #0A5840 solid 2px;
   width: max-content;
 }
 
 .cov-list h4 span {
-  font-family: var(--font-inter);
-  font-weight: 700;
+  font-family: Inter-Bold;
 }
 
 .cov-list .cov-grid {
@@ -114,8 +110,7 @@
 
 .preview-container .dropdown .dropdown-toggle {
   background: #0A5840;
-  font-family: var(--font-inter);
-  font-weight: 700;
+  font-family: Inter-Bold;
   padding: 3px 20px !important;
 }
 
@@ -135,8 +130,7 @@
   background: #fff;
   display: flex;
   align-items: center;
-  font-family: var(--font-inter);
-  font-weight: 700;
+  font-family: Inter-Bold;
   font-size: 16px !important;
 }
 
@@ -223,8 +217,7 @@
 
 .left-content h4 span,
 .left-content h4 {
-  font-family: var(--font-inter);
-  font-weight: 700;
+  font-family: Inter-Bold;
 }
 
 .cover-letter-container .back {

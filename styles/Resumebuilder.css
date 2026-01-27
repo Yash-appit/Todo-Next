@@ -62,8 +62,7 @@
     justify-content: center;
     border: none;
     font-size: 25px;
-    font-family: var(--font-roboto);
-    font-weight: 700;
+    font-family: Roboto-Bold;
 }
 
 .resume-main .ql-editor {
@@ -236,7 +235,7 @@
 
 .tabbing span,
 .templates .tabbing span {
-    font-family: var(--font-inter);
+    font-family: "Inter";
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
@@ -431,8 +430,7 @@
 .download-pop .prim-but-2 {
     display: flex;
     align-items: center;
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
 }
 
 /* .download-pop  .prim-but-2 {
@@ -446,8 +444,7 @@
 }
 
 .resume-sidebar span {
-    font-family: var(--font-roboto);
-    font-weight: 500;
+    font-family: Roboto-Medium;
     font-weight: 500;
 
 }
@@ -534,7 +531,7 @@
     padding: 0;
     width: 100%;
     font-size: 15px;
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
 }
 
 .resume-main .quill .ql-editor {
@@ -556,8 +553,7 @@
 } */
 
 .resume-main button {
-    font-family: var(--font-satoshi);
-    font-weight: 500;
+    font-family: Satoshi-Medium;
 }
 
 .react-datepicker-popper {
@@ -579,11 +575,11 @@
 .ql-toolbar.ql-snow,
 .ql-container.ql-snow {
     border-color: #0A584099 !important;
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
 }
 
 .ql-editor.ql-blank::before {
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
     font-style: normal !important;
     font-weight: 500;
     font-size: 15px;
@@ -606,13 +602,13 @@
 }
 
 .resume-main .progress-slid {
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-size: 13px;
 }
 
 .resume-main .progress-slid span {
     color: #0A5840;
-    font-family: var(--font-inter);
+    font-family: Inter;
     font-weight: 500;
 }
 
@@ -622,7 +618,7 @@
     border-width: 1.07px;
     /* border: 1.07px solid #0A584099; */
     border-radius: 5px;
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
     font-weight: 500;
     font-size: 15px !important;
     box-shadow: 0 0 0.5px 0;
@@ -631,7 +627,7 @@
 
 .resume-main .MuiFormLabel-root {
     color: #5B5B5B !important;
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
     font-weight: 500;
     z-index: 1;
 }
@@ -639,8 +635,7 @@
 .resume-main input::placeholder,
 .resume-main textarea::placeholder {
     color: #5B5B5B;
-    font-family: var(--font-satoshi);
-    font-weight: 500;
+    font-family: Satoshi-Medium;
 }
 
 /* .resume-main input {
@@ -696,7 +691,7 @@
 }
 
 .resume-main .btn span {
-    font-family: var(--font-inter) !important;
+    font-family: Inter !important;
     font-weight: 500;
 }
 
@@ -757,8 +752,7 @@
 }
 
 .templates button {
-    font-family: var(--font-inter);
-    font-weight: 700;
+    font-family: Inter-Bold;
     font-size: 17px;
     z-index: 1;
 }
@@ -766,8 +760,7 @@
 .templates h6,
 .templates h5 {
     color: #000 !important;
-    font-family: var(--font-arial);
-    font-weight: 700;
+    font-family: Arial-Bold;
 }
 
 .templates .col-lg-6 {
