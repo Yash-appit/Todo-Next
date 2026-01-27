@@ -8,16 +8,23 @@ import { LuDot } from "react-icons/lu";
 import { saveAs } from 'file-saver';
 
 
-
 interface ElementStyles {
   [key: string]: string;
 }
+
+
+const getFromLocalStorage = (key: string): string | null => {
+    if (typeof window !== 'undefined') {
+        return localStorage.getItem(key);
+    }
+    return null;
+};
 
 const Finalize: React.FC = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [resumeContent, setResumeContent] = useState<string>('');
-  const [resumeName, setResumeName] = useState<string>(localStorage.getItem('resumeName') || 'Untitled');
+  const [resumeName, setResumeName] = useState<string>(getFromLocalStorage('resumeName') || 'Untitled');
   const [isEditMode, setIsEditMode] = useState<boolean>(false);
   const [originalContent, setOriginalContent] = useState<string>('');
   const [isGeneratingPDF, setIsGeneratingPDF] = useState<boolean>(false);
