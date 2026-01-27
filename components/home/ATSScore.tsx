@@ -87,28 +87,28 @@ declare global {
 
 
 const setToLocalStorage = (key: string, value: string): void => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(key, value);
-    }
-  };
+  if (typeof window !== 'undefined') {
+    localStorage.setItem(key, value);
+  }
+};
 
-  const setToSessionStorage = (key: string, value: string): void => {
-    if (typeof window !== 'undefined') {
-      sessionStorage.setItem(key, value);
-    }
-  };
-  const getFromSessionStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return sessionStorage.getItem(key);
-    }
-    return null;
-  };
-  const getFromLocalStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
-    }
-    return null;
-  };
+const setToSessionStorage = (key: string, value: string): void => {
+  if (typeof window !== 'undefined') {
+    sessionStorage.setItem(key, value);
+  }
+};
+const getFromSessionStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return sessionStorage.getItem(key);
+  }
+  return null;
+};
+const getFromLocalStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem(key);
+  }
+  return null;
+};
 
 const ATSScore: React.FC = () => {
   const [uploadedFiles, setUploadedFiles] = useState<ATSScoreFile[]>([]);
@@ -138,7 +138,7 @@ const ATSScore: React.FC = () => {
 
       const script = document.createElement('script');
       script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
-      
+
       script.onload = async () => {
         try {
           if (!window.pdfjsLib) {
@@ -178,7 +178,7 @@ const ATSScore: React.FC = () => {
           reject(error);
         }
       };
-      
+
       script.onerror = () => reject(new Error('Failed to load PDF.js'));
       document.head.appendChild(script);
     });
@@ -216,7 +216,7 @@ const ATSScore: React.FC = () => {
       // Create higher quality canvas
       const canvas = document.createElement('canvas');
       const ctx = canvas.getContext('2d');
-      
+
       if (!ctx) {
         throw new Error('Could not get canvas context');
       }
@@ -311,8 +311,8 @@ const ATSScore: React.FC = () => {
         continue;
       }
 
-      if (fileType === 'application/pdf' || 
-          fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+      if (fileType === 'application/pdf' ||
+        fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
         try {
           const id = Math.random().toString(36).substring(2, 11);
           let thumbnail: string;
@@ -355,7 +355,7 @@ const ATSScore: React.FC = () => {
 
   const uploadFilesToAts = async (filesToUpload?: ATSScoreFile[]) => {
     const files = filesToUpload || uploadedFiles;
-    
+
     if (files.length === 0) {
       ToastMessage({
         type: 'error',
@@ -419,7 +419,7 @@ const ATSScore: React.FC = () => {
               ? { ...file, atsScore: mockScore }
               : file
           ));
-          
+
           if (fetchDashboard) {
             fetchDashboard();
           }
@@ -457,20 +457,20 @@ const ATSScore: React.FC = () => {
     }
 
     let transformedResumeData = { ...resumeData };
-    
+
     if (transformedResumeData?.personalDetails) {
       transformedResumeData.personaldetails = transformedResumeData.personalDetails;
       delete transformedResumeData.personalDetails;
     }
-    
-    const resumedata = { 
-      resume_data: transformedResumeData 
+
+    const resumedata = {
+      resume_data: transformedResumeData
     };
-    
+
     if (typeof window !== 'undefined') {
       setToLocalStorage('resumeData', JSON.stringify(resumedata));
     }
-    
+
     router.push('/create-resume');
   };
 
@@ -478,17 +478,17 @@ const ATSScore: React.FC = () => {
     if (!issues) {
       return "No issues found";
     }
-    
+
     if (Array.isArray(issues)) {
       return issues.length > 1 ? issues.join(', ') : issues[0];
     }
-    
+
     if (typeof issues === 'object') {
       return Object.entries(issues)
         .map(([key, value]) => `${key}: ${value}`)
         .join(', ');
     }
-    
+
     return String(issues);
   };
 
@@ -496,17 +496,17 @@ const ATSScore: React.FC = () => {
     if (!solutions) {
       return "No solutions found";
     }
-    
+
     if (Array.isArray(solutions)) {
       return solutions.length > 1 ? solutions.join(', ') : solutions[0];
     }
-    
+
     if (typeof solutions === 'object') {
       return Object.entries(solutions)
         .map(([key, value]) => `${key}: ${value}`)
         .join(', ');
     }
-    
+
     return String(solutions);
   };
 
@@ -543,7 +543,7 @@ const ATSScore: React.FC = () => {
                           />
                           <label htmlFor="file-upload" className="cursor-pointer w-100 justify-content-center">
                             <TbCloudUpload />
-                            <p className="my-0">Upload your resume <br/>PDFs only (up to 2MB)</p>
+                            <p className="my-0">Upload your resume <br />PDFs only (up to 2MB)</p>
                           </label>
                         </div>
                       </div>
@@ -686,10 +686,10 @@ const ATSScore: React.FC = () => {
                                       />
                                     </div>
                                   </div>
-                                  {item?.issues && ( 
+                                  {item?.issues && (
                                     <Typography variant="body2" sx={{ mb: 1 }}>
-                                    <strong>Issues:</strong> {formatIssues(item?.issues)}
-                                  </Typography>
+                                      <strong>Issues:</strong> {formatIssues(item?.issues)}
+                                    </Typography>
                                   )}
 
                                   {item?.explanation &&
@@ -731,7 +731,7 @@ const ATSScore: React.FC = () => {
                   {!apiError && score && (
                     <>
                       {isUploading && !score && (
-                        <div className="col-lg-8 justify-content-center" style={{ 
+                        <div className="col-lg-8 justify-content-center" style={{
                           opacity: !score ? 1 : 0,
                           transition: 'opacity 0.3s ease-in'
                         }}>
@@ -761,7 +761,7 @@ const ATSScore: React.FC = () => {
                               width={400}
                               height={580}
                               className="img-fluid rounded border"
-                              style={{ 
+                              style={{
                                 objectFit: 'cover' as const,
                                 maxHeight: "580px",
                                 position: 'sticky',
@@ -779,7 +779,7 @@ const ATSScore: React.FC = () => {
               ) : (
                 !apiError && isUploading && (
                   <>
-                    <div className="col-lg-8 justify-content-center" style={{ 
+                    <div className="col-lg-8 justify-content-center" style={{
                       opacity: !score ? 1 : 0,
                       transition: 'opacity 0.3s ease-in'
                     }}>
@@ -803,7 +803,7 @@ const ATSScore: React.FC = () => {
                             width={400}
                             height={580}
                             className="img-fluid rounded border"
-                            style={{ 
+                            style={{
                               objectFit: 'cover' as const,
                               maxHeight: "580px",
                               position: 'sticky',
@@ -824,7 +824,7 @@ const ATSScore: React.FC = () => {
       </section>
 
       <CustomModal show={LoginModal} onHide={() => setLoginModal(false)} custom='LoginModal' title="">
-        <Login close={() => setLoginModal(false)}/>
+        <Login close={() => setLoginModal(false)} />
       </CustomModal>
     </>
   );
