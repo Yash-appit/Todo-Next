@@ -7,9 +7,10 @@ a {
 .snackbar-container .MuiAlert-message {
     padding: 12px 0 0 0 !important;
 }
+
 .snackbar-container .MuiAlert-icon {
     padding: 9px 0 0 0 !important;
-    }
+}
 
 .navbar {
     position: fixed;
@@ -23,6 +24,7 @@ a {
     font-size: 18px !important;
     padding: 0 !important;
 }
+
 .main-offcanvas .offcanvas-header {
     background: #0A5840;
 }
@@ -36,6 +38,7 @@ a {
     color: #fff;
     font-size: 35px;
 }
+
 /* .main-offcanvas .btn-close {
 border: solid 2px #fff;
 border-radius: 50%;
@@ -173,7 +176,7 @@ font-size: 30px;
 .main-offcanvas a,
 .main-offcanvas button {
     z-index: 1;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
 }
 
@@ -184,7 +187,7 @@ font-size: 30px;
 }
 
 .navbar button {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     /* min-width: 120px; */
     font-size: 18px !important;
@@ -293,7 +296,7 @@ font-size: 30px;
 }
 
 #features-dropdown div {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
 }
 
@@ -331,12 +334,13 @@ font-size: 30px;
 
 .dropdown-section-title h5 {
     font-size: 18px;
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
 
 }
 
 .dropdown-section-title p {
-    color:#D7D3D3;
+    color: #D7D3D3;
 }
 
 .features-nav-dropdown .dropdown-menu {
@@ -352,7 +356,7 @@ font-size: 30px;
     border: 1px solid #fff;
     padding: 5px 8px;
     border-radius: 10px;
-    
+
 }
 
 .dropdown-section {
@@ -515,7 +519,8 @@ font-size: 30px;
 
 .features-dropdown-content .col-lg-4 h4 {
     font-size: 17px !important;
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
     margin-top: 10px;
     color: #000;
     transition: transform 0.3s ease;
@@ -524,7 +529,7 @@ font-size: 30px;
 .features-dropdown-content .col-lg-4 p {
     color: #000;
     font-size: 14px;
-    font-family: Arial;
+    font-family: var(--font-arial);
     margin-bottom: 10px;
 }
 
@@ -579,7 +584,7 @@ font-size: 30px;
 }
 
 .footer .copy-right p {
-    font-family: Arial;
+    font-family: var(--font-arial);
 }
 
 /* .footer hr {
@@ -599,7 +604,7 @@ font-size: 30px;
     margin-bottom: 15px;
     font-size: 16px !important;
     text-decoration: none;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     transition: ease 0.3s;
 }
@@ -607,7 +612,7 @@ font-size: 30px;
 .footer .col-md-4 a {
     color: #0A5840 !important;
     text-decoration: none;
-    font-family: Inter;
+    font-family: var(--font-inter);
 
 }
 
@@ -626,7 +631,8 @@ font-size: 30px;
     color: #0A5840;
     padding-bottom: 10px;
     font-size: 22px !important;
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
 }
 
 .footer .main-mail p {

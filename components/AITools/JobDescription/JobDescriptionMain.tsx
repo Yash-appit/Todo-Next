@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import jd from "@/assets/Images/AITools/job-description/jb-main.svg";
+import Image from 'next/image';
 import { FaArrowRight } from "react-icons/fa6";
 import {
     TextField,
@@ -33,12 +34,12 @@ import { HiArrowRight } from 'react-icons/hi';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-  const getFromLocalStorage = (key: string) => {
+const getFromLocalStorage = (key: string) => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
+        return localStorage.getItem(key);
     }
     return null;
-  };
+};
 
 
 const JobDescriptionMain = () => {
@@ -79,14 +80,14 @@ const JobDescriptionMain = () => {
             const response = await IndustryType();
             setIndustryTypes(response?.data || []);
             fetchDashboard();
-        } catch (err:any) {
+        } catch (err: any) {
             setError(err.response?.data?.message || 'Failed to load industry types');
         } finally {
             setIsFetchingTypes(false);
         }
     };
 
-    const handleGenerateTemplate = async (e:any) => {
+    const handleGenerateTemplate = async (e: any) => {
         e.preventDefault();
 
 
@@ -143,7 +144,7 @@ const JobDescriptionMain = () => {
             if (isMobile) {
                 setOpenDialog(true);
             }
-        } catch (err:any) {
+        } catch (err: any) {
             // setError(err.response?.data?.message || 'An error occurred while generating the template');
             ToastMessage({
                 type: "error",
@@ -228,7 +229,7 @@ const JobDescriptionMain = () => {
                                         <MenuItem value="">
                                             <em>Select an Industry type</em>
                                         </MenuItem>
-                                        {industryTypes.map((type:any) => (
+                                        {industryTypes.map((type: any) => (
                                             <MenuItem key={type.id} value={type.id}>
                                                 {type.industry_name}
                                             </MenuItem>
@@ -251,7 +252,7 @@ const JobDescriptionMain = () => {
                                         disabled={isLoading}
                                         className='prim-but'
                                     >
-                                     {isLoading ? 'Generating...' : <>Generate <HiArrowRight className='mx-2 me-0'/> </>}
+                                        {isLoading ? 'Generating...' : <>Generate <HiArrowRight className='mx-2 me-0' /> </>}
                                     </button>
                                 </Box>
 
@@ -268,7 +269,7 @@ const JobDescriptionMain = () => {
 
 
 
-        <SafeAds />
+                            <SafeAds />
 
 
                         }
@@ -301,7 +302,7 @@ const JobDescriptionMain = () => {
 
 
 
-        <SafeAds />
+                            <SafeAds />
 
                             {/* {!jobDescription &&
                                     <div className='p-5 pt-0 text-center empty'>
@@ -318,51 +319,51 @@ const JobDescriptionMain = () => {
                 {!jobDescription &&
                     <div className="col-lg-6 mb-4 pe-0">
                         <div className="bg">
-                            <img src={jd.src} alt="" className='p-5 pb-0 mt-3' />
+                            <Image src={jd} alt="" className='p-5 pb-0 mt-3' />
                         </div>
                     </div>
                 }
             </div>
         </div>
 
-        
-{isMobile && (
-    <Dialog
-        open={openDialog}
-        onClose={() => setOpenDialog(false)}
-        fullWidth
-        maxWidth="md"
-        fullScreen={isMobile}
-        className='ai-dialog'
-    >
-        <DialogTitle>
-            <Box display="flex" justifyContent="space-between" alignItems="center">
-                Generated Job Description
-                <IconButton onClick={() => setOpenDialog(false)}>
-                    <BsX />
-                </IconButton>
-            </Box>
-        </DialogTitle>
-        <DialogContent>
-            <div className='p-3 rounded-3 form text-start mt-4'>
-                {/* <Typography variant="h5" gutterBottom>
+
+        {isMobile && (
+            <Dialog
+                open={openDialog}
+                onClose={() => setOpenDialog(false)}
+                fullWidth
+                maxWidth="md"
+                fullScreen={isMobile}
+                className='ai-dialog'
+            >
+                <DialogTitle>
+                    <Box display="flex" justifyContent="space-between" alignItems="center">
+                        Generated Job Description
+                        <IconButton onClick={() => setOpenDialog(false)}>
+                            <BsX />
+                        </IconButton>
+                    </Box>
+                </DialogTitle>
+                <DialogContent>
+                    <div className='p-3 rounded-3 form text-start mt-4'>
+                        {/* <Typography variant="h5" gutterBottom>
                     Generated Job Description
                 </Typography> */}
-                <Paper elevation={2} sx={{ p: 3, mb: 2, whiteSpace: 'pre-wrap' }}>
-                    {jobDescription}
-                </Paper>
+                        <Paper elevation={2} sx={{ p: 3, mb: 2, whiteSpace: 'pre-wrap' }}>
+                            {jobDescription}
+                        </Paper>
 
-                <Button
-                    variant="outlined"
-                    className='sec-but'
-                    onClick={copy.copyJobDescription}
-                >
-                    Copy to Clipboard
-                </Button>
-            </div>
-        </DialogContent>
-    </Dialog>
-)}
+                        <Button
+                            variant="outlined"
+                            className='sec-but'
+                            onClick={copy.copyJobDescription}
+                        >
+                            Copy to Clipboard
+                        </Button>
+                    </div>
+                </DialogContent>
+            </Dialog>
+        )}
 
 
     </>)

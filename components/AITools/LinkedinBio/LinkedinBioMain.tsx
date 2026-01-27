@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import lin from "@/assets/Images/AITools/linkedin-bio/lin-bio.svg";
+import Image from 'next/image';
 import { FaArrowRight, FaTrash } from "react-icons/fa6";
 import { useForm } from 'react-hook-form';
 import {
@@ -51,12 +52,12 @@ const VisuallyHiddenInput = styled('input')({
 });
 
 
-  const getFromLocalStorage = (key: string) => {
+const getFromLocalStorage = (key: string) => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
+        return localStorage.getItem(key);
     }
     return null;
-  };
+};
 
 const LinkedinBioMain = () => {
     const [token, setToken] = React.useState(getFromLocalStorage('token'));
@@ -177,10 +178,10 @@ const LinkedinBioMain = () => {
                                                     />
                                                 </Button>
                                             ) : (
-                                                <Box 
-                                                    sx={{ 
-                                                        display: 'flex', 
-                                                        alignItems: 'center', 
+                                                <Box
+                                                    sx={{
+                                                        display: 'flex',
+                                                        alignItems: 'center',
                                                         justifyContent: 'space-between',
                                                         p: 2,
                                                         border: '1px solid #e0e0e0',
@@ -194,8 +195,8 @@ const LinkedinBioMain = () => {
                                                             Selected file: {file.name}
                                                         </Typography>
                                                     </Box>
-                                                    <IconButton 
-                                                        size="small" 
+                                                    <IconButton
+                                                        size="small"
                                                         onClick={handleRemoveFile}
                                                         sx={{ color: '#f44336' }}
                                                         title="Remove file"
@@ -241,7 +242,7 @@ const LinkedinBioMain = () => {
                                                 disabled={isLoading || (!file && description.trim().length === 0)}
                                                 className='prim-but'
                                             >
-                                                {isLoading ? 'Generating...' : <> Generate <HiArrowRight className='mx-2 me-0'/></>}
+                                                {isLoading ? 'Generating...' : <> Generate <HiArrowRight className='mx-2 me-0' /></>}
                                             </button>
                                         </Box>
                                     </div>
@@ -290,7 +291,7 @@ const LinkedinBioMain = () => {
                 {!bio &&
                     <div className="col-lg-6 mb-4 pe-0 emp border-0">
                         <div className="bg p-4 pb-0">
-                            <img src={lin.src} alt="" className='p-4' />
+                            <Image src={lin} alt="" className='p-4' />
                         </div>
                     </div>
                 }

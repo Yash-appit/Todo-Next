@@ -6,6 +6,7 @@ import { HiMiniMagnifyingGlassPlus } from "react-icons/hi2";
 // import ResumeLoader from '../ResumeLoader';
 import blank from "@/assets/Images/blank.jpg";
 import "@/styles/Shimmer.css";
+import Image from 'next/image';
 // Set the app element for accessibility (required by react-modal)
 // Modal.setAppElement('#root'); // Replace '#root' with your app's root element ID
 
@@ -16,29 +17,29 @@ interface TemplatesProps {
     setShowModal: (value: boolean) => void;
 }
 
-  const setToLocalStorage = (key: string, value: string): void => {
+const setToLocalStorage = (key: string, value: string): void => {
     if (typeof window !== 'undefined') {
-      localStorage.setItem(key, value);
+        localStorage.setItem(key, value);
     }
-  };
+};
 
-  const setToSessionStorage = (key: string, value: string): void => {
+const setToSessionStorage = (key: string, value: string): void => {
     if (typeof window !== 'undefined') {
-      sessionStorage.setItem(key, value);
+        sessionStorage.setItem(key, value);
     }
-  };
-  const getFromSessionStorage = (key: string) => {
+};
+const getFromSessionStorage = (key: string) => {
     if (typeof window !== 'undefined') {
-      return sessionStorage.getItem(key);
-    }
-    return null;
-  };
-  const getFromLocalStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
+        return sessionStorage.getItem(key);
     }
     return null;
-  };
+};
+const getFromLocalStorage = (key: string) => {
+    if (typeof window !== 'undefined') {
+        return localStorage.getItem(key);
+    }
+    return null;
+};
 
 const Templates = ({ save, setStep1, setStep2, setShowModal }: TemplatesProps) => {
     const [templates, setTemplates] = useState<any[]>([]);  // Initialize as an empty array
@@ -88,10 +89,10 @@ const Templates = ({ save, setStep1, setStep2, setShowModal }: TemplatesProps) =
             if (templatesData.length > 0) {
                 // Set the first template as selected by default
                 setSelectedTemplateId(Number(templateId));
-                if (templateId){
-                setToSessionStorage('selectedTemplateId', templateId);
-                setToLocalStorage('templateId', templateId);
-            }
+                if (templateId) {
+                    setToSessionStorage('selectedTemplateId', templateId);
+                    setToLocalStorage('templateId', templateId);
+                }
             }
 
             setIsLoading(false);
@@ -107,7 +108,7 @@ const Templates = ({ save, setStep1, setStep2, setShowModal }: TemplatesProps) =
 
     const handleCheckboxChange = (id: number) => {
         setSelectedTemplateId(id);
-          setToSessionStorage('selectedTemplateId', id.toString());
+        setToSessionStorage('selectedTemplateId', id.toString());
         setToSessionStorage('templateId', id.toString());
         setToLocalStorage('templateId', id.toString());
     };
@@ -142,7 +143,7 @@ const Templates = ({ save, setStep1, setStep2, setShowModal }: TemplatesProps) =
                 } */}
             </div>
 
-     
+
             {templates?.length > 0 ? (
                 templates.map((temp: any, index) => (
                     <div className={`col-lg-6 mb-3 ${selectedTemplateId === temp?.id ? 'checked' : ''}`} key={temp.id} >
@@ -165,19 +166,23 @@ const Templates = ({ save, setStep1, setStep2, setShowModal }: TemplatesProps) =
                                 <div className="shimmer-wrapper">
                                     <div className="shimmer-img"></div>
                                 </div>
-                                 <div className="shimmer-wrapper">
-                                 <div className="shimmer-img"></div>
-                             </div>
-                             </>)}
-                            <img
+                                <div className="shimmer-wrapper">
+                                    <div className="shimmer-img"></div>
+                                </div>
+                            </>)}
+                            <Image
                                 src={temp?.image || blank}
                                 alt={temp.name || "Template Image"}
-                                loading="lazy"
                                 onLoad={() => handleImageLoad(temp.id)}
+                                onLoadingComplete={() => handleImageLoad(temp.id)}
+                                width={300}
+                                height={400}
                                 style={{
                                     opacity: loadedImages.has(temp.id) ? 1 : 0,
                                     transition: 'opacity 0.3s ease-in',
                                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                                    width: '100%',
+                                    height: 'auto'
                                 }}
                             />
                             {/* <p className='text-white'>{temp.id}</p> */}
@@ -217,10 +222,12 @@ const Templates = ({ save, setStep1, setStep2, setShowModal }: TemplatesProps) =
             >
                 <div style={{ position: 'relative' }}>
                     {selectedImage && (
-                        <img
+                        <Image
                             src={selectedImage}
                             alt="Full Size Template"
-                            style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: '10px' }}
+                            width={800}
+                            height={1000}
+                            style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: '10px', width: 'auto', height: 'auto' }}
                         />
                     )}
                     <button

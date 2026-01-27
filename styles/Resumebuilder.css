@@ -62,10 +62,11 @@
     justify-content: center;
     border: none;
     font-size: 25px;
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 700;
 }
 
-.resume-main .ql-editor{
+.resume-main .ql-editor {
     min-height: 150px;
 }
 
@@ -159,6 +160,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
+
 .templates .head {
     color: #fff !important;
 }
@@ -234,7 +236,7 @@
 
 .tabbing span,
 .templates .tabbing span {
-    font-family: "Inter";
+    font-family: var(--font-inter);
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
@@ -429,7 +431,8 @@
 .download-pop .prim-but-2 {
     display: flex;
     align-items: center;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 700;
 }
 
 /* .download-pop  .prim-but-2 {
@@ -443,7 +446,8 @@
 }
 
 .resume-sidebar span {
-    font-family: Roboto-Medium;
+    font-family: var(--font-roboto);
+    font-weight: 500;
     font-weight: 500;
 
 }
@@ -530,7 +534,7 @@
     padding: 0;
     width: 100%;
     font-size: 15px;
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
 }
 
 .resume-main .quill .ql-editor {
@@ -552,7 +556,8 @@
 } */
 
 .resume-main button {
-    font-family: Satoshi-Medium;
+    font-family: var(--font-satoshi);
+    font-weight: 500;
 }
 
 .react-datepicker-popper {
@@ -574,11 +579,11 @@
 .ql-toolbar.ql-snow,
 .ql-container.ql-snow {
     border-color: #0A584099 !important;
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
 }
 
 .ql-editor.ql-blank::before {
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
     font-style: normal !important;
     font-weight: 500;
     font-size: 15px;
@@ -601,13 +606,13 @@
 }
 
 .resume-main .progress-slid {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 13px;
 }
 
 .resume-main .progress-slid span {
     color: #0A5840;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
 }
 
@@ -617,7 +622,7 @@
     border-width: 1.07px;
     /* border: 1.07px solid #0A584099; */
     border-radius: 5px;
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
     font-weight: 500;
     font-size: 15px !important;
     box-shadow: 0 0 0.5px 0;
@@ -626,7 +631,7 @@
 
 .resume-main .MuiFormLabel-root {
     color: #5B5B5B !important;
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
     font-weight: 500;
     z-index: 1;
 }
@@ -634,7 +639,8 @@
 .resume-main input::placeholder,
 .resume-main textarea::placeholder {
     color: #5B5B5B;
-    font-family: Satoshi-Medium;
+    font-family: var(--font-satoshi);
+    font-weight: 500;
 }
 
 /* .resume-main input {
@@ -690,7 +696,7 @@
 }
 
 .resume-main .btn span {
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
     font-weight: 500;
 }
 
@@ -751,7 +757,8 @@
 }
 
 .templates button {
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 700;
     font-size: 17px;
     z-index: 1;
 }
@@ -759,7 +766,8 @@
 .templates h6,
 .templates h5 {
     color: #000 !important;
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
 }
 
 .templates .col-lg-6 {
@@ -1333,8 +1341,8 @@ border-radius: 5px;
 }
 
 .download-pop .prim-but {
-  padding: 5px 40px !important;
-  font-family: Inter-Bold;
+    padding: 5px 40px !important;
+    font-family: Inter-Bold;
 }
 
 .download-pop .h4 {
@@ -1454,7 +1462,9 @@ border-radius: 5px;
     display: none;
 }
 
-.spacing-setting .MuiSlider-root {margin-bottom: 0;}
+.spacing-setting .MuiSlider-root {
+    margin-bottom: 0;
+}
 
 
 .skill-section .MuiTabs-flexContainer .Mui-selected {
@@ -1519,88 +1529,88 @@ border-radius: 5px;
 
 
 .resume-generated-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 20px;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    position: relative;
 }
 
 .transition-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 4px;
 }
 
 .resume-preview-wrapper {
-  flex: 1;
-  overflow: hidden;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 20px;
-  position: relative;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+    position: relative;
 }
 
 .page-container {
-  position: relative;
-  margin: 0;
+    position: relative;
+    margin: 0;
 }
 
 .resume-preview-iframe {
-  border: none;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .page-shadow {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: -5px;
-  bottom: -5px;
-  background-color: rgba(0,0,0,0.03);
-  z-index: -1;
-  border-radius: 2px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: rgba(0, 0, 0, 0.03);
+    z-index: -1;
+    border-radius: 2px;
 }
 
 @media print {
-  .resume-generated-container {
-    display: none;
-  }
+    .resume-generated-container {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 428px) and (-webkit-min-device-pixel-ratio: 2) {
-  .resume-generated-container {
-    padding: 10px 5px;
-  }
-  
-  .resume-preview-wrapper {
-    padding: 0 5px;
-  }
-  
-  .page-container {
-    max-width: 100%;
-    overflow-x: auto;
-  }
+    .resume-generated-container {
+        padding: 10px 5px;
+    }
+
+    .resume-preview-wrapper {
+        padding: 0 5px;
+    }
+
+    .page-container {
+        max-width: 100%;
+        overflow-x: auto;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  .resume-preview-wrapper {
-    padding: 0 15px;
-  }
+    .resume-preview-wrapper {
+        padding: 0 15px;
+    }
 }
 
 /* iOS specific styles */
@@ -1608,12 +1618,12 @@ border-radius: 5px;
 .ios-input select,
 .ios-input textarea,
 .ios-input button {
-  font-size: 16px !important;
+    font-size: 16px !important;
 }
 
 .prim-but-2,
 .dropdown-toggle {
-  min-height: 44px !important;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
+    min-height: 44px !important;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }

@@ -31,10 +31,10 @@ import Link from 'next/link';
 
 const getFromLocalStorage = (key: string) => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
+        return localStorage.getItem(key);
     }
     return null;
-  };
+};
 
 const ResumeBuilder = () => {
     const [reviews, setReviews] = useState<any>([]);
@@ -55,93 +55,93 @@ const ResumeBuilder = () => {
         }
     }
 
-     const handleCreateResume = () => {
-           const CheckGuest = getFromLocalStorage('GuestData');
-           if (CheckGuest === "true") {
-             localStorage.removeItem('resumeId');
-             localStorage.removeItem('GuestData');
-             localStorage.removeItem('resumeData');
-           }
-           sessionStorage.removeItem('templateId');
-           localStorage.removeItem('templateId');
-            sessionStorage.removeItem('selectedTemplateId');
-           sessionStorage.removeItem('ResumeId');
-           localStorage.removeItem("resumeName");
-           sessionStorage.removeItem('GuestId');
-           
-           const resume_id = getFromLocalStorage('resumeId');
-           const resumeData = getFromLocalStorage('resumeData');
-       
-           if (resumeData) {
-             const parsedData = JSON.parse(resumeData);
-       
-             const sanitizeResumeData = (resumeData: any) => {
-               const isEmptyObject = (obj: any) =>
-                 Object.values(obj).every((value) => value === null || value === "");
-       
-               const sanitizedData = Object.fromEntries(
-                 Object.entries(resumeData).map(([key, value]) => {
-                   if (Array.isArray(value)) {
-                     const filteredArray = value.filter((item) => !isEmptyObject(item));
-                     return [key, filteredArray];
-                   }
-                   return [key, value];
-                 })
-               );
-       
-               return sanitizedData;
-             };
-       
-             const cleanedData = sanitizeResumeData(parsedData.resume_data);
-             const filteredResumeData = Object.fromEntries(
-               Object.entries(cleanedData).filter(([key, value]) => {
-                 if (Array.isArray(value)) {
-                   return value.length > 0;
-                 }
-                 return true;
-               })
-             );
-       
-             const resume_data = { resume_data: { ...filteredResumeData } };
-       
-             const isResumeDataEmpty = (resumeData: any): boolean => {
-               if (typeof resumeData !== 'object' || resumeData === null) {
-                 return resumeData === null || resumeData === '' || resumeData === undefined;
-               }
-       
-               if (Array.isArray(resumeData)) {
-                 if (resumeData.length === 0) {
-                   return true;
-                 }
-                 return resumeData.every((item) => isResumeDataEmpty(item));
-               }
-       
-               return Object.values(resumeData).every((value) => isResumeDataEmpty(value));
-             };
-       
-             const isEmpty = isResumeDataEmpty(resume_data);
-       
-             if (!isEmpty) {
-               if (resume_id) {
-                 addResume({ resume_id, resume_name: 'Untitled', ...resume_data })
-                   .then((response) => {
-                     console.log('Resume updated successfully:');
-                     sessionStorage.setItem('ResumeId', response?.data?.data?.id);
-                   })
-                   .catch((error) => {
-                     console.error('Error updating resume:', error);
-                   });
-               } 
-             }
-       
-             localStorage.removeItem('resumeId');
-             localStorage.removeItem('resumeData');
-             localStorage.removeItem('resumeName');
-             localStorage.removeItem('resumeImage');
-             localStorage.removeItem('customHeading');
-             localStorage.removeItem('settings');
-           }
-         };
+    const handleCreateResume = () => {
+        const CheckGuest = getFromLocalStorage('GuestData');
+        if (CheckGuest === "true") {
+            localStorage.removeItem('resumeId');
+            localStorage.removeItem('GuestData');
+            localStorage.removeItem('resumeData');
+        }
+        sessionStorage.removeItem('templateId');
+        localStorage.removeItem('templateId');
+        sessionStorage.removeItem('selectedTemplateId');
+        sessionStorage.removeItem('ResumeId');
+        localStorage.removeItem("resumeName");
+        sessionStorage.removeItem('GuestId');
+
+        const resume_id = getFromLocalStorage('resumeId');
+        const resumeData = getFromLocalStorage('resumeData');
+
+        if (resumeData) {
+            const parsedData = JSON.parse(resumeData);
+
+            const sanitizeResumeData = (resumeData: any) => {
+                const isEmptyObject = (obj: any) =>
+                    Object.values(obj).every((value) => value === null || value === "");
+
+                const sanitizedData = Object.fromEntries(
+                    Object.entries(resumeData).map(([key, value]) => {
+                        if (Array.isArray(value)) {
+                            const filteredArray = value.filter((item) => !isEmptyObject(item));
+                            return [key, filteredArray];
+                        }
+                        return [key, value];
+                    })
+                );
+
+                return sanitizedData;
+            };
+
+            const cleanedData = sanitizeResumeData(parsedData.resume_data);
+            const filteredResumeData = Object.fromEntries(
+                Object.entries(cleanedData).filter(([key, value]) => {
+                    if (Array.isArray(value)) {
+                        return value.length > 0;
+                    }
+                    return true;
+                })
+            );
+
+            const resume_data = { resume_data: { ...filteredResumeData } };
+
+            const isResumeDataEmpty = (resumeData: any): boolean => {
+                if (typeof resumeData !== 'object' || resumeData === null) {
+                    return resumeData === null || resumeData === '' || resumeData === undefined;
+                }
+
+                if (Array.isArray(resumeData)) {
+                    if (resumeData.length === 0) {
+                        return true;
+                    }
+                    return resumeData.every((item) => isResumeDataEmpty(item));
+                }
+
+                return Object.values(resumeData).every((value) => isResumeDataEmpty(value));
+            };
+
+            const isEmpty = isResumeDataEmpty(resume_data);
+
+            if (!isEmpty) {
+                if (resume_id) {
+                    addResume({ resume_id, resume_name: 'Untitled', ...resume_data })
+                        .then((response) => {
+                            console.log('Resume updated successfully:');
+                            sessionStorage.setItem('ResumeId', response?.data?.data?.id);
+                        })
+                        .catch((error) => {
+                            console.error('Error updating resume:', error);
+                        });
+                }
+            }
+
+            localStorage.removeItem('resumeId');
+            localStorage.removeItem('resumeData');
+            localStorage.removeItem('resumeName');
+            localStorage.removeItem('resumeImage');
+            localStorage.removeItem('customHeading');
+            localStorage.removeItem('settings');
+        }
+    };
 
 
     const settings = {
@@ -194,7 +194,7 @@ const ResumeBuilder = () => {
     }, []);
 
     return (<>
-    
+
         <div className='pt-5'></div>
         <section className='ai-bg res-build pt-4 mt-5'>
             <div className="container-fluid">
@@ -204,23 +204,23 @@ const ResumeBuilder = () => {
                             <p className='pt-5 mt-2 head-main'>highlights your strengths, shows your personality.</p>
                             <h1 className='my-4'>Online Resume<span className='sec-col'> Builder</span> Tool</h1>
                             <p>To Do Resume's cover letter maker helps you share your story. Simply answer a few questions, customize the design, and save as a PDF.</p>
-                           
-                                <Link href="/create-resume" type="button" className='res-but mt-5' onClick={handleCreateResume}><span>Create a Resume</span> <FaArrowRight /></Link>
-                               
+
+                            <Link href="/create-resume" type="button" className='res-but mt-5' onClick={handleCreateResume}><span>Create a Resume</span> <FaArrowRight /></Link>
+
                             {/* <Link to="/login" type="button" className='prim-but mt-5'><span>Create A Resume</span> <FaArrowRight /></Link> */}
                         </div>
                     </div>
                     <div className="col-lg-6 mb-4 pe-0 emp">
                         <div className="bg">
-                            <Image src={res} alt=""/>
+                            <Image src={res} alt="" />
                         </div>
                     </div>
                 </div>
             </div>
 
-         
-      <SafeAds />
-          
+
+            <SafeAds />
+
 
             <div className='steps'>
                 <div className="container my-4">
@@ -285,18 +285,18 @@ const ResumeBuilder = () => {
                     </div>
 
 
-                   
-                        <div className='resp py-3 mx-3 me-0'>
-                            <h2 className='mb-3 short'>Resume Shortlisted By</h2>
-                            <hr />
-                            <Slider {...settings} className='mt-4'>
-                                <Image src={h1} alt="" loading="lazy" />
-                                <Image src={h2} alt="" loading="lazy" />
-                                <Image src={h3} alt="" loading="lazy" />
-                                <Image src={h4} alt="" loading="lazy" />
-                                {/* <Image src={h1} alt="" loading="lazy" /> */}
-                            </Slider>
-                        </div>
+
+                    <div className='resp py-3 mx-3 me-0'>
+                        <h2 className='mb-3 short'>Resume Shortlisted By</h2>
+                        <hr />
+                        <Slider {...settings} className='mt-4'>
+                            <Image src={h1} alt="" loading="lazy" />
+                            <Image src={h2} alt="" loading="lazy" />
+                            <Image src={h3} alt="" loading="lazy" />
+                            <Image src={h4} alt="" loading="lazy" />
+                            {/* <Image src={h1} alt="" loading="lazy" /> */}
+                        </Slider>
+                    </div>
                 </div>
             </div>
 
@@ -384,7 +384,7 @@ const ResumeBuilder = () => {
                                                     <Image key={index} src={start} alt="" className='rev-star' />
                                                 ))}
                                             </div>
-                                            <img src={item.image_url} alt="" className='prof' />
+                                            <Image src={item.image_url} alt="" className='prof' width={50} height={50} />
                                         </div>
                                         <h6 className='mt-2'>{item.reviewer_title}</h6>
                                         <p>{item.review_text}</p>
@@ -401,8 +401,8 @@ const ResumeBuilder = () => {
 
 
 
-      <SafeAds />
-              
+            <SafeAds />
+
 
             <section className='career-objective-bg'>
                 <div className="approach container-fluid">
@@ -420,9 +420,9 @@ const ResumeBuilder = () => {
                                 <p className='mb-5'>Create a standout resume tailored to your unique skills and <br /> experiences. Our intuitive resume maker simplifies the process, <br /> ensuring you present your best self to potential employers.</p>
 
 
-                              
-                                    <Link href="/create-resume" className='prim-but mt-5' onClick={handleCreateResume}>Get Started Now</Link>
-                                  
+
+                                <Link href="/create-resume" className='prim-but mt-5' onClick={handleCreateResume}>Get Started Now</Link>
+
                             </div>
                         </div>
                     </div>
@@ -433,9 +433,9 @@ const ResumeBuilder = () => {
                 <Faq />
             </ScrollReveal>
 
-     
-      <SafeAds />
-             
+
+            <SafeAds />
+
 
         </section>
     </>

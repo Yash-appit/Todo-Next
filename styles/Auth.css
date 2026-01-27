@@ -7,7 +7,7 @@
 .login {
     /* background: #fff; */
     min-height: 100vh;
-    font-family: Inter;
+    font-family: var(--font-inter);
 }
 
 .login label {
@@ -66,13 +66,15 @@
     font-weight: 600;
 }
 
-.login .col-lg-8 button, .login .soc-but {
+.login .col-lg-8 button,
+.login .soc-but {
     border: #0A5840 solid 1px;
     border-radius: 5px;
     padding: 5px;
 }
 
-.login .col-lg-8 button .spinner-border, .login .soc-but .spinner-border {
+.login .col-lg-8 button .spinner-border,
+.login .soc-but .spinner-border {
     border-color: #0A5840;
     border-right-color: transparent;
 }
@@ -129,13 +131,14 @@
 .login a {
     color: #000;
     cursor: pointer;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     font-size: 14px !important;
     /* text-decoration: none; */
 }
 
 .login p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     color: #313131;
     /* opacity: 0.75; */
 }
@@ -220,7 +223,7 @@
 }
 
 .login .form-check-label {
-    font-family: Arial;
+    font-family: var(--font-arial);
     padding-top: 3px;
     padding-left: 5px;
     font-size: 14px;
@@ -261,9 +264,12 @@
 }
 
 @media screen and (min-width: 991px) {
-    .LoginModal .MuiFormControl-root, .LoginModal form p {
+
+    .LoginModal .MuiFormControl-root,
+    .LoginModal form p {
         width: 100% !important;
     }
+
     .LoginModal h1 {
         font-size: 30px;
     }
@@ -272,7 +278,11 @@
 .LoginModal .modal-body {
     padding: 0 !important;
 }
-.LoginModal .col-lg-7, .LoginModal .col-lg-9, .LoginModal .col-lg-8, .LoginModal .prim-but {
+
+.LoginModal .col-lg-7,
+.LoginModal .col-lg-9,
+.LoginModal .col-lg-8,
+.LoginModal .prim-but {
     width: 100% !important;
 }
 
@@ -288,10 +298,12 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-} 
+}
+
 .LoginModal .modal-content {
     border-radius: 20px;
 }
+
 /* .modal-content {
     border-radius: 20px;
     box-shadow: 0 10px 20px -8px rgb(32 33 36 / 50%);
@@ -299,7 +311,8 @@
 .conf h1,
 .conf span,
 .logout h1 {
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
 }
 
 .logout h1 {
@@ -308,13 +321,14 @@
 }
 
 .conf p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     color: #313131;
     opacity: 0.75;
 }
 
 .conf button {
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 700;
     font-size: 15px !important;
     padding: 12px 20px !important;
 }
@@ -344,7 +358,7 @@
 
 }
 
-.login .MuiIconButton-edgeEnd svg{
+.login .MuiIconButton-edgeEnd svg {
     width: auto;
     color: #000;
 }
@@ -360,7 +374,8 @@
 
     .login .prim-but {
         width: 100%;
-        font-family: Inter-Semi-bold;
+        font-family: var(--font-inter);
+        font-weight: 600;
     }
 
     .login form p {
@@ -371,9 +386,11 @@
     .conf span {
         font-size: 20px !important;
     }
+
     .login {
         text-align: center;
     }
+
     .login .log-col {
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -397,14 +414,15 @@
 
     .login .prim-but {
         width: 70%;
-        font-family: Inter-Semi-bold;
+        font-family: var(--font-inter);
+        font-weight: 600;
     }
 
     .login .MuiFormControl-root,
     .login form p {
         width: 70%;
     }
-   
+
 
 
 }

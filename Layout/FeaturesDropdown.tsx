@@ -13,13 +13,14 @@ import pt from '@/assets/Images/Navbar/pt.svg';
 import cl from '@/assets/Images/Navbar/cl.svg';
 import roc from "@/assets/Images/Navbar/roc.svg";
 import Link from 'next/link';
+import Image from 'next/image';
 
-  const getFromLocalStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
-    }
-    return null;
-  };
+const getFromLocalStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem(key);
+  }
+  return null;
+};
 const FeaturesDropdown = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   // const dropdownRef = useRef(null);
@@ -63,7 +64,7 @@ const FeaturesDropdown = () => {
       className="features-dropdown-container"
       ref={dropdownRef}
       onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave}
+      onMouseLeave={handleMouseLeave}
     >
       <NavDropdown
         title={
@@ -88,12 +89,12 @@ const FeaturesDropdown = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
               onMouseEnter={handleMouseEnter} // Keep open when hovering dropdown
-            onMouseLeave={handleMouseLeave}
+              onMouseLeave={handleMouseLeave}
             >
               <div className="features-dropdown-content pb-3">
 
                 <div className="dropdown-section-title px-5 py-4 d-flex ">
-                  <img src={roc.src} alt="" />
+                  <Image src={roc} alt="" />
 
                   <div className='px-2'>
                     <h5>
@@ -105,7 +106,7 @@ const FeaturesDropdown = () => {
 
                 <div className="row px-4 pt-2">
                   <Link href="/resume-builder" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={rb.src} alt="" />
+                    <Image src={rb} alt="" />
                     <div>
                       <h4>Resume Builder</h4>
                       <p>Build Your Professional Resume in Minutes — Quick,Simple & Free!</p>
@@ -115,7 +116,7 @@ const FeaturesDropdown = () => {
 
 
                   <Link href="/ats-score" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={ats.src} alt="" />
+                    <Image src={ats} alt="" />
                     <div>
                       <h4>ATS Checker</h4>
                       <p>Smart Resume Optimization — ATS-Ready, Recruiter-Approved.</p>
@@ -126,7 +127,7 @@ const FeaturesDropdown = () => {
 
 
                   <Link href="/cover-letter" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={cl.src} alt="" />
+                    <Image src={cl} alt="" />
                     <div>
                       <h4>Cover Letter Builder</h4>
                       <p>Create a Powerful Cover Letter — Tailored to Your Resume & Job Role.</p>
@@ -137,7 +138,7 @@ const FeaturesDropdown = () => {
 
 
                   <Link href="/ai-tools/email-template-generator" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={pt.src} alt="" />
+                    <Image src={pt} alt="" />
                     <div>
                       <h4>Email Template Generator</h4>
                       <p>Professional Template Generator — Written to Impress, Built to Win.</p>
@@ -148,7 +149,7 @@ const FeaturesDropdown = () => {
 
 
                   <Link href="/ai-tools/linkedin-bio-generator" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={rw.src} alt="" />
+                    <Image src={rw} alt="" />
                     <div>
                       <h4>Linkedin Bio Generator</h4>
                       <p>Generate a Professionally Written Linkedin Bio — Custom-Fit to Your Career Goals.</p>
@@ -159,7 +160,7 @@ const FeaturesDropdown = () => {
 
 
                   <Link href="/ai-tools/qa-generator" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={qa.src} alt="" />
+                    <Image src={qa} alt="" />
                     <div>
                       <h4>Q/A Generator</h4>
                       <p>Generate a Professionally Written Question & Answer — Custom-Fit to Your Career Goals.</p>
@@ -170,7 +171,7 @@ const FeaturesDropdown = () => {
 
 
                   <Link href="/ai-tools/job-description-generator" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={jdg.src} alt="" />
+                    <Image src={jdg} alt="" />
                     <div>
                       <h4>Job Description Generator</h4>
                       <p>Get your perfect Job Description — Describe The Perfect Job Role.</p>
@@ -179,8 +180,8 @@ const FeaturesDropdown = () => {
 
 
 
-                  <Link href= "/ai-tools/job-description-analyzer" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={jda.src} alt="" />
+                  <Link href="/ai-tools/job-description-analyzer" onClick={() => setShowDropdown(false)} className="col-lg-4">
+                    <Image src={jda} alt="" />
                     <div>
                       <h4>Job Description Analyzer</h4>
                       <p>Get your perfect Job Description — Describe The Perfect Job Role.</p>
@@ -189,7 +190,7 @@ const FeaturesDropdown = () => {
 
 
                   <Link href="/ai-tools/career-objective-generator" onClick={() => setShowDropdown(false)} className="col-lg-4">
-                    <img src={cl.src} alt="" />
+                    <Image src={cl} alt="" />
                     <div>
                       <h4>Career Objective Generator</h4>
                       <p>Generate Objective — Describe The Perfect Objective.</p>

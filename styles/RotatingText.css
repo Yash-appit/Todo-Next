@@ -1,44 +1,45 @@
 .text-rotate {
-    display: flex;
-    flex-wrap: wrap;
-    white-space: pre-wrap;
-    position: relative;
-  }
-  
-  .text-rotate-sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-  
-  .text-rotate-word {
-    display: inline-flex;
-    font-family: Arial-Bold !important;
-  }
-  
-  .text-rotate-lines {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .text-rotate-element {
-    display: inline-block;
-    font-family: Arial-Bold !important;
-    color: #0A5840 !important;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  position: relative;
+}
 
-  /* .second  .text-rotate-element {
+.text-rotate-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-rotate-word {
+  display: inline-flex;
+  font-family: var(--font-arial) !important;
+  font-weight: 700;
+}
+
+.text-rotate-lines {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-rotate-element {
+  display: inline-block;
+  font-family: var(--font-arial) !important;
+  font-weight: 700;
+  color: #0A5840 !important;
+}
+
+/* .second  .text-rotate-element {
     font-style: italic;
   } */
-  
-  .text-rotate-space {
-    white-space: pre;
-  }
 
+.text-rotate-space {
+  white-space: pre;
+}

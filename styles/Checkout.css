@@ -1,30 +1,27 @@
-
-
-
 /* .success .lottie-bg {
     position: absolute;
     top: 0;
     width: 100%;
 } */
- .thank {
+.thank {
     background: #d9d9d97d;
- }
+}
 
-.success{
+.success {
     background: #fff;
 
     border-radius: 20px;
 }
 
-.thank .modal-content{
+.thank .modal-content {
     position: relative;
     border-radius: 20px;
 }
 
 .success .lottie-bg {
-  position: absolute;
-  top: -20%;
-  width: 100%;
+    position: absolute;
+    top: -20%;
+    width: 100%;
 }
 
 /* .success .container {
@@ -40,11 +37,12 @@
 }
 
 .success .col-lg-9 h1 {
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
 }
 
 .success .col-lg-9 p {
-    font-family: Inter;
+    font-family: var(--font-inter);
 }
 
 /* .success .prim-but, .success .prim-but:focus {
@@ -76,7 +74,7 @@
 }
 
 
-.success2 .bg{
+.success2 .bg {
     background-color: #FFEA9F;
     padding: 26px;
     border-radius: 50%;
@@ -85,13 +83,15 @@
 }
 
 .success2 h3 {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .success2 button {
     border-radius: 10px !important;
     min-width: 200px;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .thank2 {
@@ -107,9 +107,9 @@
     border: none;
     max-width: max-content;
     min-width: 0;
-  position: absolute;
-  right: -10px;
-  top: -10px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
 }
 
 .thank2 .modal-content {
@@ -122,11 +122,11 @@
 }
 
 
-.checkout-page svg{
-color: #0A5840;
-font-size: 28px;
-margin-right: 15px;
-margin-left: 25px;
+.checkout-page svg {
+    color: #0A5840;
+    font-size: 28px;
+    margin-right: 15px;
+    margin-left: 25px;
 }
 
 .checkout-page .form-check-input:checked {
@@ -141,17 +141,19 @@ margin-left: 25px;
     border: 0;
 }
 
-.checkout-page h4{
+.checkout-page h4 {
     display: flex;
     align-items: center;
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 700;
 }
 
 .checkout-page .col-lg-6 h4 {
     border-bottom: 1px solid #ACACAC;
     padding-bottom: 15px;
     /* max-width: fit-content; */
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 700;
     font-size: 21px;
 }
 
@@ -159,33 +161,33 @@ margin-left: 25px;
     font-size: 17px;
 }
 
-.checkout-page{
+.checkout-page {
     background: linear-gradient(90deg, #FFFFFF 50%, #F9FAFA 50%);
     position: relative;
     min-height: 100vh;
 }
 
 .checkout-page .form-check label {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     font-size: 16px;
 }
 
 .checkout-page .line {
-   background-color: #D9D9D9;
-   height: 1px;
-   width: 100%;
-   /* z-index: 1; */
-   position: absolute;
-   top: 6px;
-   rotate: 90deg;
-   margin: auto;
-   display: table;
-   left: 0;
+    background-color: #D9D9D9;
+    height: 1px;
+    width: 100%;
+    /* z-index: 1; */
+    position: absolute;
+    top: 6px;
+    rotate: 90deg;
+    margin: auto;
+    display: table;
+    left: 0;
     right: 0;
 }
 
 .checkout-page .row:last-child h4 {
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 700;
 }
-

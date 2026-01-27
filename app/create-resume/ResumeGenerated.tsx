@@ -20,29 +20,30 @@ import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
 import { MdKeyboardArrowDown } from "react-icons/md";
 import down from "@/assets/Images/resume-builder/download.svg";
 import { Spinner } from 'react-bootstrap';
+import Image from 'next/image';
 
 interface ResumeGeneratedProps {
   GeneratedResume: any;
   ResumeLoading?: boolean;
 }
 
-  const setToLocalStorage = (key: string, value: string): void => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(key, value);
-    }
-  };
-  const getFromSessionStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return sessionStorage.getItem(key);
-    }
-    return null;
-  };
-  const getFromLocalStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
-    }
-    return null;
-  };
+const setToLocalStorage = (key: string, value: string): void => {
+  if (typeof window !== 'undefined') {
+    localStorage.setItem(key, value);
+  }
+};
+const getFromSessionStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return sessionStorage.getItem(key);
+  }
+  return null;
+};
+const getFromLocalStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem(key);
+  }
+  return null;
+};
 
 const ResumeGenerated = ({ GeneratedResume, ResumeLoading }: ResumeGeneratedProps) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -293,7 +294,7 @@ const ResumeGenerated = ({ GeneratedResume, ResumeLoading }: ResumeGeneratedProp
   const fetchShareableLink = async () => {
     const resumeId = getFromSessionStorage("ResumeId") || getFromLocalStorage("resumeId");
     setIsLinkLoading(true);
-    try {   
+    try {
       const param = {
         resume_id: resumeId?.toString(),
       }
@@ -726,7 +727,7 @@ const ResumeGenerated = ({ GeneratedResume, ResumeLoading }: ResumeGeneratedProp
       <div className="row mx-0">
         <div className="col-lg-6">
           <div className='d-flex align-items-center'>
-            <img src={pdf} alt="" className='img-fluid' />
+            <Image src={pdf} alt="" className='img-fluid' />
             <p className='mb-0 px-2'>resume .(pdf)</p>
           </div>
           <div className="share-link-section mt-4">
@@ -791,7 +792,7 @@ const ResumeGenerated = ({ GeneratedResume, ResumeLoading }: ResumeGeneratedProp
         </div>
 
         <div className="col-lg-6 pb-4 img-block">
-          <img src={down} alt="" className='img-fluid' />
+          <Image src={down} alt="" className='img-fluid' />
         </div>
       </div>
 

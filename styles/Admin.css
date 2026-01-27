@@ -51,13 +51,14 @@
 }
 
 .sidebar .active p {
-    font-family: Arial-Bold !important;
+    font-family: var(--font-arial) !important;
+    font-weight: 700;
 }
 
 .sidebar a p {
     margin-bottom: 0;
     font-size: 13px;
-    font-family: Arial !important;
+    font-family: var(--font-arial) !important;
 }
 
 .sidebar a svg {
@@ -79,7 +80,8 @@
 
 .admin-nav h4,
 .admin-nav .sec-col {
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
 }
 
 
@@ -91,7 +93,7 @@
     position: relative !important;
     /* justify-content: end !important; */
     padding-right: 20px !important;
-    
+
 }
 
 .admin-nav img {
@@ -109,7 +111,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    font-family: Inter;
+    font-family: var(--font-inter);
 }
 
 .admin-nav h4 svg {
@@ -129,15 +131,16 @@
     padding: 5px !important;
 }
 
-.update-resume .pagination-container .page-link{
+.update-resume .pagination-container .page-link {
     color: #0A5840;
-    font-family: Inter-Semi-bold !important;
+    font-family: var(--font-inter) !important;
+    font-weight: 600;
 }
 
-.update-resume .pagination-container .active .page-link{
+.update-resume .pagination-container .active .page-link {
     color: #FFF !important;
     background-color: #0A5840 !important;
-    border-color: #0A5840; 
+    border-color: #0A5840;
 }
 
 
@@ -147,7 +150,7 @@
     .sidebar .logo2 {
         display: none;
     }
-  
+
 }
 
 
@@ -155,7 +158,7 @@
     .admin-nav h4 {
         font-size: 17px !important;
     }
-  
+
     /* .update-resume {
         display: flex;
         justify-content: center;
@@ -199,10 +202,7 @@
 
 /* --------------------Dashboard-------------------- */
 
-@font-face {
-    font-family: "Roboto-Bold";
-    src: url("../assets/Fonts/Roboto-Bold.ttf");
-}
+/* Font loaded in layout.tsx */
 
 .dashboard .line {
     width: 100%;
@@ -213,14 +213,16 @@
 
 .page-head h3 {
     color: #000;
-    font-family: "Arial-Bold";
+    font-family: var(--font-arial);
+    font-weight: 700;
     /* font-size: 45px; */
     width: max-content;
 }
 
 .dashboard h2 {
     color: #414141;
-    font-family: "Roboto-Bold";
+    font-family: var(--font-roboto);
+    font-weight: 700;
 }
 
 .dashboard .no-img {
@@ -229,7 +231,8 @@
 
 .dashboard h2 span {
     color: #0A5840;
-    font-family: "Arial-Bold";
+    font-family: var(--font-arial);
+    font-weight: 700;
     font-size: inherit;
 }
 
@@ -237,7 +240,8 @@
 .page-head h3 span {
     color: #0A5840;
     font-size: inherit;
-    font-family: "Arial-Bold";
+    font-family: var(--font-arial);
+    font-weight: 700;
     /* border-bottom: #0A5840 solid 4px; */
 }
 
@@ -249,7 +253,8 @@
 .page-head h6 span {
     color: #0A5840;
     font-size: inherit;
-    font-family: "Arial-Bold";
+    font-family: var(--font-arial);
+    font-weight: 700;
     /* border-bottom: #0A5840 solid 4px; */
 }
 
@@ -276,7 +281,8 @@
     text-align: center;
     width: max-content;
     padding: 12px 20px 14px 20px !important;
-    font-family: "Roboto-Bold";
+    font-family: var(--font-roboto);
+    font-weight: 700;
 }
 
 .dashboard span {
@@ -346,11 +352,12 @@
 
 .update-resume .active {
     color: #0A5840 !important;
-    font-family: Inter-Semi-bold !important;
+    font-family: var(--font-inter) !important;
+    font-weight: 600;
 }
 
 .update-resume .nav-link {
-    font-family: Inter;
+    font-family: var(--font-inter);
     color: #7D7D7D;
 }
 
@@ -465,7 +472,7 @@ background-color: #D9D9D9;
 .update-resume .create-res p {
     color: #578F7E;
     margin-top: 4px;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     font-size: 15px;
 }
@@ -596,7 +603,7 @@ background-color: #D9D9D9;
 }
 
 .change-pass .prim-but:disabled {
-   cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 .packageModal .modal-body {
@@ -663,12 +670,14 @@ background-color: #D9D9D9;
     border: #5C5C5C solid 1px;
     font-size: 16px;
     padding: 8px 20px;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     width: max-content;
 
 }
 
-.change-pass .pic-upload button, .change-pass .pic-upload button:focus {
+.change-pass .pic-upload button,
+.change-pass .pic-upload button:focus {
     background: #0A5840;
     min-width: 0;
     padding: 0px 8px 3px 8px !important;
@@ -677,7 +686,8 @@ background-color: #D9D9D9;
 
 .change-pass h6 {
     color: #5A5A5A;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .change-pass .pic-upload label {
@@ -823,19 +833,20 @@ background-color: #D9D9D9;
 .manage-subs table td:nth-child(1),
 .manage-subs table td:nth-child(2),
 .manage-subs table th {
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 600;
 }
 
 .manage-subs p {
     font-size: 14px;
     color: #1C1B1FCC;
-    font-family: Arial;
+    font-family: var(--font-arial);
 }
 
 .manage-subs .pay-his td {
     font-size: 12px;
     color: #1C1B1FCC;
-    font-family: Arial !important;
+    font-family: var(--font-arial) !important;
     padding: 15px 0 !important;
     border-top: 1px solid #00000033;
 }
@@ -858,7 +869,7 @@ background-color: #D9D9D9;
 
 .manage-subs a {
     text-decoration: none;
-    font-family: Arial;
+    font-family: var(--font-arial);
 }
 
 .manage-subs table td {
@@ -867,7 +878,7 @@ background-color: #D9D9D9;
 
 .manage-subs td {
     padding-bottom: 20px;
-    font-family: Arial;
+    font-family: var(--font-arial);
 }
 
 .manage-subs table td:nth-child(2) {
@@ -942,7 +953,8 @@ background-color: #D9D9D9;
 
 .delete .modal-body span,
 .delete .modal-body h4 {
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .delete .modal-body p {
@@ -962,7 +974,7 @@ background-color: #D9D9D9;
 
     .delete .modal-body button {
         padding: 5px 30px !important;
-        font-family: Inter;
+         font-family: var(--font-inter);
     }
 
     .delete .modal-body img {
@@ -1034,7 +1046,8 @@ background-color: #D9D9D9;
 }
 
 .ats .col-lg-8 p {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .ats .file-drop-area {
@@ -1052,7 +1065,8 @@ background-color: #D9D9D9;
 
 
 .ats .file-upload-container h5 {
-    font-family: Inter-Semi-bold;
+  font-family: var(--font-inter);
+    font-weight: 600;
     font-size: 20px;
     text-align: center;
 }
@@ -1065,7 +1079,8 @@ background-color: #D9D9D9;
 
 .ats .file-drop-area p {
     font-size: 13px;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .ats label {
@@ -1086,12 +1101,14 @@ background-color: #D9D9D9;
 
 .ats .score h4 {
     border: none;
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 500;
     padding: 10px;
 }
 
 .ats .score .value-text text {
-    font-family: Satoshi-Medium;
+    font-family: var(--font-satoshi);
+    font-weight: 500;
     padding: 10px 0;
     fill: #0A5840 !important;
     font-size: 40px !important;
@@ -1123,7 +1140,7 @@ background-color: #D9D9D9;
     /* min-height: 92%; */
     border-radius: 5px;
     background: transparent;
-    font-family: Inter;
+    font-family: var(--font-inter);
     /* overflow: hidden; */
     font-weight: 500;
     font-size: 16px;
@@ -1190,7 +1207,7 @@ background-color: #D9D9D9;
     font-size: 16px !important;
 }
 
-.ats .main-score .col{
+.ats .main-score .col {
     text-align: -webkit-center;
 }
 
@@ -1253,12 +1270,13 @@ background-color: #D9D9D9;
         height: 35px;
         width: auto;
     }
+
     .change-pass form {
         padding: 10px !important;
         margin-top: 10px !important;
     }
 
-    .change-pass .container:nth-child(2){
+    .change-pass .container:nth-child(2) {
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
@@ -1270,9 +1288,11 @@ background-color: #D9D9D9;
     .generate-tool .gen-but {
         font-size: 14px;
     }
+
     .change-pass form {
         padding: 10px 5px !important;
     }
+
     .feedback-page .star {
         height: 32px;
         width: auto;
@@ -1336,17 +1356,20 @@ background-color: #D9D9D9;
 
 
 .feedback-page h5 {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 
 }
 
 .feedback-page h5 span {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+       font-weight: 600;
     color: #0A5840;
 }
 
 .feedback-page .form-label {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+       font-weight: 500;
 }
 
 .feedback-page .main-star {
@@ -1360,14 +1383,16 @@ background-color: #D9D9D9;
 .generate-tool h4 {
     border-bottom: 1px solid #0a584188;
     padding: 10px 40px;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     text-align: left;
     font-size: 20px;
     margin-bottom: 0;
 }
 
 .generate-tool h4 span {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+        font-weight: 600;
 }
 
 .generate-tool .form {
@@ -1381,12 +1406,14 @@ background-color: #D9D9D9;
 
 .generate-tool h5 {
     text-align: left;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+        font-weight: 600;
     font-size: 18px;
 }
 
 .generate-tool h5 span {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+        font-weight: 600;
     color: #007bff;
 }
 
@@ -1410,7 +1437,8 @@ background-color: #D9D9D9;
     color: #0A5840;
     border-radius: 30px;
     border: #0A5840 solid 1px;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
     padding: 5px 10px;
     background: transparent;
     min-width: min-content;
@@ -1446,14 +1474,16 @@ background-color: #D9D9D9;
     color: #5B5B5B !important;
     font-size: 14px;
     padding: 20px 10px;
-    font-family: Inter-Semi-bold;
+     font-family: var(--font-inter);
+        font-weight: 500;
 }
 
 .generate-tool .sec-but {
     font-size: 14px !important;
     padding: 7px 15px !important;
-    font-family: Inter-Semi-bold;
-text-transform: capitalize;
+   font-family: var(--font-inter);
+        font-weight: 500;
+    text-transform: capitalize;
 }
 
 .generate-tool .et {
@@ -1461,21 +1491,25 @@ text-transform: capitalize;
 }
 
 .generate-tool .empty h6 {
-    font-family: Inter-Bold;
+     font-family: var(--font-inter);
+        font-weight: 600;
     font-size: 17px;
 }
+
 .generate-tool .empty p {
-    font-family: Inter;
+     font-family: var(--font-inter);
     font-family: 500;
     font-size: 15px;
 }
 
 .ai-dialog .MuiDialogTitle-root div {
-    font-family: Inter-Semi-bold;
+     font-family: var(--font-inter);
+        font-weight: 500;
 }
 
 .ai-modal .modal-title {
-    font-family: Inter-Semi-bold;
+   font-family: var(--font-inter);
+        font-weight: 500;
     font-size: 20px;
 }
 
@@ -1621,7 +1655,7 @@ text-transform: capitalize;
 }
 
 .resume-writer table {
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-weight: 600;
     color: #4C4B4B;
     font-size: 15px;
@@ -1635,11 +1669,13 @@ text-transform: capitalize;
     font-size: 16px;
 }
 
-.resume-writer th, .resume-writer td {
+.resume-writer th,
+.resume-writer td {
     padding: 8px 12px;
-} 
+}
 
-.resume-writer th:last-child, .resume-writer td:last-child {
+.resume-writer th:last-child,
+.resume-writer td:last-child {
     border-right: none;
 }
 
@@ -1662,7 +1698,7 @@ text-transform: capitalize;
 }
 
 .resume-writer td span {
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-weight: 700;
 }
 
@@ -1681,7 +1717,8 @@ text-transform: capitalize;
     margin-bottom: 2px;
 }
 
-.MuiDialog-paperFullScreen .close, .MuiDialog-paperFullScreen .close:hover {
+.MuiDialog-paperFullScreen .close,
+.MuiDialog-paperFullScreen .close:hover {
     background: #0A5840;
     color: #fff;
     font-size: 28px;
@@ -1690,11 +1727,11 @@ text-transform: capitalize;
 .req-form-dialog .MuiDialogTitle-root {
     display: flex;
     align-items: baseline;
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
 }
 
 .req-form-dialog .MuiDialogTitle-root p {
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
 }
 
 .req-form-dialog .MuiDialogTitle-root {
@@ -1710,17 +1747,20 @@ text-transform: capitalize;
 .req-form-dialog .status span {
     color: #212121;
     padding: 3px 5px;
-    font-family: Inter-Bold;
+      font-family: var(--font-inter);
+        font-weight: 600;
     border-radius: 4px;
 }
 
-.MuiDialog-paperWidthXl  .MuiDialogTitle-root {
+.MuiDialog-paperWidthXl .MuiDialogTitle-root {
     padding-bottom: 10px;
     /* height: 50px; */
 }
 
-.req-form-dialog .col-lg-4 p, .req-form-dialog .col-lg-8 p {
-    font-family: Inter-Bold;
+.req-form-dialog .col-lg-4 p,
+.req-form-dialog .col-lg-8 p {
+       font-family: var(--font-inter);
+        font-weight: 600;
     font-size: 20px;
 }
 
@@ -1735,17 +1775,17 @@ text-transform: capitalize;
     padding: 4px;
 }
 
-.req-form-dialog .prim-but{
+.req-form-dialog .prim-but {
     min-width: 160px;
     padding: 4px 10px !important;
     font-size: 18px !important;
 }
 
-.req-form-dialog .sec-but{
+.req-form-dialog .sec-but {
     min-width: 160px;
     padding: 4px 10px !important;
     font-size: 18px !important;
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-weight: 700 !important;
 }
 
@@ -1758,7 +1798,8 @@ text-transform: capitalize;
     color: #0A5840;
     padding: 3px 8px 5px 8px;
     border-radius: 50%;
-    font-family: Inter-Semi-bold;
+     font-family: var(--font-inter);
+        font-weight: 500;
     font-size: 16px;
     box-shadow: 0 0 2px 0;
     width: max-content;
@@ -1770,7 +1811,7 @@ text-transform: capitalize;
 
 @media only screen and (max-width: 767px) {
 
-    .resume-writer{
+    .resume-writer {
         padding: 20px !important;
     }
 }

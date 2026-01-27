@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import cb from "@/assets/Images/AITools/cb.svg";
+import Image from 'next/image';
 import { FaArrowRight } from "react-icons/fa6";
 import {
     TextField,
@@ -29,12 +30,12 @@ import Link from 'next/link';
 
 // import Ads from '../../../Home/Ads';
 
-  const getFromLocalStorage = (key: string) => {
+const getFromLocalStorage = (key: string) => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
+        return localStorage.getItem(key);
     }
     return null;
-  };
+};
 
 const EmailTempMain = () => {
     const [token, setToken] = React.useState(getFromLocalStorage('token'));
@@ -85,7 +86,7 @@ const EmailTempMain = () => {
         }
     };
 
-    const handleGenerateTemplate = async (e:any) => {
+    const handleGenerateTemplate = async (e: any) => {
         e.preventDefault();
 
         if (!industryTypeId || !company.trim() || !experienceLevel) {
@@ -131,7 +132,7 @@ const EmailTempMain = () => {
         }
         setToken(getFromLocalStorage('token') || '');
     }, [token]);
-    
+
 
     return (<>
         <div className="container-fluid">
@@ -217,7 +218,7 @@ const EmailTempMain = () => {
 
 
 
-                                    <Box sx={{ mt: 3, alignItems: "center", display: "flex" , gap: 2 }}>
+                                    <Box sx={{ mt: 3, alignItems: "center", display: "flex", gap: 2 }}>
                                         {isMobile && jobDescription &&
                                             <button
                                                 onClick={() => setOpenDialog(true)}
@@ -232,7 +233,7 @@ const EmailTempMain = () => {
                                             disabled={isLoading}
                                             className='prim-but'
                                         >
-                                            {isLoading ? 'Generating...' : <>Generate <HiArrowRight className='mx-2 me-0'/></>}
+                                            {isLoading ? 'Generating...' : <>Generate <HiArrowRight className='mx-2 me-0' /></>}
                                         </button>
                                     </Box>
 
@@ -262,7 +263,7 @@ const EmailTempMain = () => {
 
                     {!success && !jobDescription && (
                         <div className="bg">
-                            <img src={cb.src} alt="" />
+                            <Image src={cb} alt="" />
                         </div>
                     )}
 

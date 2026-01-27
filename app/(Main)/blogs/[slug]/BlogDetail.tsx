@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
+import Image from 'next/image';
 import "@/styles/Other.css";
 import BlogDetailAds from './BlogDetailAds';
 import "@/styles/BlogDetails.css";
@@ -115,11 +116,14 @@ const BlogDetail: React.FC<BlogDetailsProps> = ({ initialData, initialError }) =
 
                     {data.data.image && (
                         <div className="blog-featured-image mb-4">
-                            <img
+                            <Image
                                 src={data.data.image}
                                 alt={data.data.title || "Blog featured image"}
                                 className="img-fluid featured-image"
-                                loading="lazy"
+                                width={800}
+                                height={600}
+                                unoptimized
+                                style={{ width: '100%', height: 'auto' }}
                             />
                         </div>
                     )}

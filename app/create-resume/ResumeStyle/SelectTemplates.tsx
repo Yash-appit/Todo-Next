@@ -246,18 +246,20 @@ const SelectTemplates = ({ step3, setStep3, step4, setStep4, Generate }: SelectT
                                         <div className="shimmer-img"></div>
                                     </div>
                                 )}
-                                <img
+                                <Image
                                     src={temp.image}
                                     alt={temp.name || "Template Image"}
-                                    loading="lazy"
                                     className='temp-img'
-                                    onLoad={() => handleImageLoad(temp.id)}
+                                    onLoadingComplete={() => handleImageLoad(temp.id)}
+                                    width={300}
+                                    height={400}
                                     style={{
                                         opacity: loadedImages.has(temp.id) ? 1 : 0,
                                         transition: 'opacity 0.3s ease-in',
                                         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                                        width: '100%',
+                                        height: 'auto'
                                     }}
-
                                 />
                             </label>
                         </div>
@@ -294,10 +296,12 @@ const SelectTemplates = ({ step3, setStep3, step4, setStep4, Generate }: SelectT
             >
                 <div style={{ position: 'relative' }}>
                     {selectedImage && (
-                        <img
+                        <Image
                             src={selectedImage}
                             alt="Full Size Template"
-                            style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: '10px' }}
+                            width={800}
+                            height={1000}
+                            style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: '10px', width: 'auto', height: 'auto' }}
                         />
                     )}
                     <button

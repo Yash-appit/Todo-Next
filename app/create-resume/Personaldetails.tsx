@@ -600,13 +600,14 @@ const Personaldetails: React.FC<PersonaldetailsProps> = ({ setResumeData, Genera
                 <Image src={prof} alt="Default profile" width={150} height={150} />
               ) : (
                 <>
-                  <img
+                  <Image
                     src={ResumeImage}
                     alt="Profile"
                     className="mt-2"
                     width={150}
                     height={150}
                     style={{ objectFit: 'cover', borderRadius: '50%' }}
+                    unoptimized
                   />
                   <button
                     type="button"

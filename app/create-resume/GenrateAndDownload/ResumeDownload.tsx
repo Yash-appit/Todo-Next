@@ -12,6 +12,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { Spinner } from 'react-bootstrap';
 import pdf from "@/assets/Images/resume-builder/pdf.svg";
 import down from "@/assets/Images/resume-builder/download.svg";
+import Image from 'next/image';
 
 interface DownloadResumeModalProps {
   show: boolean;
@@ -21,12 +22,12 @@ interface DownloadResumeModalProps {
   GeneratedResume: any;
 }
 
-const ResumeDownload = ({ 
-  show, 
-  onHide, 
-  onDownloadStart, 
+const ResumeDownload = ({
+  show,
+  onHide,
+  onDownloadStart,
   GeneratedResume,
-  onDownloadEnd 
+  onDownloadEnd
 }: DownloadResumeModalProps) => {
   const [isDownloading, setIsDownloading] = useState(false);
   const [isForgetOpen, setForgetOpen] = useState(false);
@@ -66,7 +67,7 @@ const ResumeDownload = ({
     }
   };
 
-  
+
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(shareableLink)
@@ -354,10 +355,10 @@ const ResumeDownload = ({
 
     printWindow.document.write(editableHTML);
     printWindow.document.close();
-    
+
     // Focus the new window
     printWindow.focus();
-    
+
     return printWindow;
   };
 
@@ -387,81 +388,81 @@ const ResumeDownload = ({
     }
   };
 
-  
+
   // Alternative: Using html2pdf.js for better multi-page support
 
   // console.log(GeneratedResume);
-  
 
-  
+
+
   return (
     <>
-    
-        <div className="row mx-0">
-          <div className="col-lg-6">
-            <div className='d-flex align-items-center'>
-              <img src={pdf} alt="" className='img-fluid' />
-              <p className='mb-0 px-2'>resume .(pdf)</p>
-            </div>
-            <div className="share-link-section mt-4">
-              <Accordion
-                expanded={expanded === 'share'}
-                onChange={handleAccordionChange('share')}
+
+      <div className="row mx-0">
+        <div className="col-lg-6">
+          <div className='d-flex align-items-center'>
+            <img src={pdf} alt="" className='img-fluid' />
+            <p className='mb-0 px-2'>resume .(pdf)</p>
+          </div>
+          <div className="share-link-section mt-4">
+            <Accordion
+              expanded={expanded === 'share'}
+              onChange={handleAccordionChange('share')}
+              sx={{
+                boxShadow: 'none',
+                border: '1px solid #ddd',
+                borderRadius: '4px !important',
+                '&:before': {
+                  display: 'none'
+                }
+              }}
+            >
+              <AccordionSummary
+                expandIcon={<MdKeyboardArrowDown />}
+                aria-controls="share-content"
+                id="share-header"
                 sx={{
-                  boxShadow: 'none',
-                  border: '1px solid #ddd',
-                  borderRadius: '4px !important',
-                  '&:before': {
-                    display: 'none'
+                  minHeight: '44px !important',
+                  '& .MuiAccordionSummary-content': {
+                    alignItems: 'center',
+                    margin: '8px 0'
                   }
                 }}
               >
-                <AccordionSummary
-                  expandIcon={<MdKeyboardArrowDown />}
-                  aria-controls="share-content"
-                  id="share-header"
-                  sx={{
-                    minHeight: '44px !important',
-                    '& .MuiAccordionSummary-content': {
-                      alignItems: 'center',
-                      margin: '8px 0'
-                    }
-                  }}
-                >
-                  <span>Shareable Link</span>
-                </AccordionSummary>
-                <AccordionDetails>
-                  {isLinkLoading ? (
-                    <div className="text-center py-2 prim-txt2">
-                      <Spinner size='sm' /> Generating link...
-                    </div>
-                  ) : (
-                    <TextField
-                      fullWidth
-                      variant="outlined"
-                      value={shareableLink}
-                      InputProps={{
-                        readOnly: true,
-                        endAdornment: (
-                          <InputAdornment position="end">
-                            <IconButton
-                              onClick={copyToClipboard}
-                              edge="end"
-                              color="primary"
-                            >
-                              <IoCopy />
-                            </IconButton>
-                          </InputAdornment>
-                        ),
-                      }}
-                    />
-                  )}
-                </AccordionDetails>
-              </Accordion>
-            </div>
+                <span>Shareable Link</span>
+              </AccordionSummary>
+              <AccordionDetails>
+                {isLinkLoading ? (
+                  <div className="text-center py-2 prim-txt2">
+                    <Spinner size='sm' /> Generating link...
+                  </div>
+                ) : (
+                  <TextField
+                    fullWidth
+                    variant="outlined"
+                    value={shareableLink}
+                    InputProps={{
+                      readOnly: true,
+                      endAdornment: (
+                        <InputAdornment position="end">
+                          <IconButton
+                            onClick={copyToClipboard}
+                            edge="end"
+                            color="primary"
+                          >
+                            <IoCopy />
+                          </IconButton>
+                        </InputAdornment>
+                      ),
+                    }}
+                  />
+                )}
+              </AccordionDetails>
+            </Accordion>
+          </div>
 
-            <div className='justify-content-center text-center d-flex flex-column align-items-center mt-4'>
-              {/* <button 
+          <div className='justify-content-center text-center d-flex flex-column align-items-center mt-4'>
+            {/* <button 
                 onClick={() => downloadResume('pdf')} 
                 disabled={isDownloading} 
                 className='prim-but py-1'
@@ -469,19 +470,19 @@ const ResumeDownload = ({
                 {isDownloading ? "...Downloading" : "Download"}
               </button> */}
 
-              <button 
-                onClick={downloadGeneratedAsPDF} 
-                disabled={isDownloading} 
-                className='prim-but py-1'
-              >
-                {isDownloading ? "...Downloading" : "Preview & Download"}
-              </button>
-            
-            </div>
-          </div>
+            <button
+              onClick={downloadGeneratedAsPDF}
+              disabled={isDownloading}
+              className='prim-but py-1'
+            >
+              {isDownloading ? "...Downloading" : "Preview & Download"}
+            </button>
 
-          
+          </div>
         </div>
+
+
+      </div>
     </>
   );
 };

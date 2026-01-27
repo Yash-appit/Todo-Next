@@ -1,124 +1,38 @@
-/* Font preload links should be added in HTML head - see HTML section */
-
-@font-face {
-  font-family: Roboto;
-  src: url("../assets/Fonts/Roboto-Regular.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Roboto-Bold;
-  src: url("../assets/Fonts/Roboto-Bold.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Roboto-Medium;
-  src: url("../assets/Fonts/Roboto-Medium.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Satoshi-bold;
-  src: url("../assets/Fonts/Satoshi-Bold.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Satoshi-Medium;
-  src: url("../assets/Fonts/Satoshi-Medium.ttf") format("truetype");
-  font-display: swap;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Arial;
-  src: url("../assets/Fonts/Arial.TTF") format("truetype");
-  font-display: swap;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Arial-Bold;
-  src: url("../assets/Fonts/Arial-bold.TTF") format("truetype");
-  font-display: swap;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Arial-Bold-Italic;
-  src: url("../assets/Fonts/Arial-Bold-Italic.TTF") format("truetype");
-  font-display: swap;
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Arial-Black;
-  src: url("../assets/Fonts/Arial-Black.TTF") format("truetype");
-  font-display: swap;
-  font-weight: 900;
-}
-
-
-@font-face {
-  font-family: Satoshi-Black;
-  src: url("../assets/Fonts/Satoshi-Black.ttf") format("truetype");
-  /* font-display: swap; */
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: Inter;
-  src: url("../assets/Fonts/Inter-Regular.woff2") format("woff2");
-  /* font-display: swap; */
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Inter-Semi-bold;
-  src: url("../assets/Fonts/Inter-SemiBold.woff2") format("woff2");
-  /* font-display: swap; */
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Inter-Bold;
-  src: url("../assets/Fonts/Inter-Bold.ttf") format("truetype");
-  /* font-display: swap; */
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Gambetta-VariableItalic;
-  src: url("../assets/Fonts/Gambetta-VariableItalic.ttf") format("truetype");
-  /* font-display: swap; */
-  font-style: italic;
-}
+/* Font preload links managed by Next.js */
 
 /* Rest of your CSS remains the same */
-body, a, p, div, button, span, input {
-  font-family: Roboto;
+body,
+a,
+p,
+div,
+button,
+span,
+input {
+  font-family: var(--font-roboto), sans-serif;
 }
 
 .italic {
-  font-family: Arial-Bold-Italic;
+  font-family: var(--font-arial);
+  font-weight: 700;
+  font-style: italic;
 }
 
-body{
+body {
   overflow-x: hidden;
   background-color: #F3F1F1 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Roboto-Bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-roboto), sans-serif;
+  font-weight: 700;
 }
 
-.prim-col{
+.prim-col {
   background: -webkit-linear-gradient(180deg, #0A5941, #0A5941);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -132,21 +46,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #0A5840;
 }
 
-.prim-but{
+.prim-but {
   background: #0A5840;
   border-radius: 30px !important;
   border: 3px solid #0A5840 !important;
-  font-size: 1.118em !important; 
+  font-size: 1.118em !important;
   padding: 10px 25px !important;
   text-decoration: none;
   transition: ease 0.3s;
   color: #fff !important;
-  font-weight: 400 !important;
-  font-family: Inter-Semi-bold;
+  font-weight: 600 !important;
+  font-family: var(--font-inter), sans-serif;
 }
 
 .prim-txt2 {
-  font-family: Inter;
+  font-family: var(--font-inter), sans-serif;
 }
 
 .prim-but-2 {
@@ -163,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 25px !important;
   border-radius: 30px !important;
   border: 0 !important;
-  font-size: 1.118em !important; 
+  font-size: 1.118em !important;
   color: #0A5840 !important;
   border: 2px solid #0A5840 !important;
   font-weight: 400 !important;
@@ -175,14 +89,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 25px !important;
   border-radius: 30px !important;
   border: 0 !important;
-  font-size: 1.118em !important; 
+  font-size: 1.118em !important;
   color: #fff !important;
   border: 2px solid #fff !important;
   font-weight: 400 !important;
   transition: ease 0.3s;
 }
 
-.prim-but:hover, 
+.prim-but:hover,
 .prim-but-2:hover,
 .sec-but:hover {
   transform: scale(1.05) !important;
@@ -192,18 +106,18 @@ h1, h2, h3, h4, h5, h6 {
   background: -webkit-linear-gradient(180deg, #3EA8E0, #1083e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: transparent !important; 
+  background-color: transparent !important;
   border-radius: 5px !important;
-  font-size: 1.118em; 
+  font-size: 1.118em;
   padding: 5px 20px !important;
-  border:0 !important;
+  border: 0 !important;
   text-decoration: none;
   transform: scale(1.05);
 }
 
 .sec-txt {
   color: #BCBAC3 !important;
-} 
+}
 
 .sec-bg {
   background-color: #F3F1F1;
@@ -220,10 +134,12 @@ h1, h2, h3, h4, h5, h6 {
 .MuiFormControl-root .Mui-focused {
   color: #79747E !important;
 }
+
 .Mui-focused .MuiOutlinedInput-notchedOutline {
   border: #79747E solid 1px !important;
 }
-.MuiInputBase-input{
+
+.MuiInputBase-input {
   color: #1C1B1F !important;
 }
 
@@ -239,6 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   width: auto !important;
 }
 
-input::-ms-reveal, input::-ms-clear {
+input::-ms-reveal,
+input::-ms-clear {
   display: none;
 }

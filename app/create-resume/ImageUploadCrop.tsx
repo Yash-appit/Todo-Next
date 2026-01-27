@@ -4,6 +4,7 @@ import Cropper from 'react-cropper';
 import 'cropperjs/dist/cropper.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FiEdit3 } from "react-icons/fi";
+import Image from 'next/image';
 
 
 interface ImageUploadCropProps {
@@ -140,72 +141,72 @@ const ImageUploadCrop: React.FC<ImageUploadCropProps> = ({
   };
 
   return (
-<>
-          {!image ? (
-            <div className='pic-upload'>
-               <label><FiEdit3 /></label>
-               <input type="file" accept="image/*" onChange={handleFileChange} />
-            </div>
-          ) : (
-            <div>
-              <Cropper
-                src={image}
-                style={{ height: 400, width: '100%' }}
-                aspectRatio={16 / 9}
-                guides={true}
-                crop={undefined}
-                onInitialized={(instance) => setCropper(instance)}
-                minCropBoxWidth={100}
-                minCropBoxHeight={100}
-              />
-              <div className="d-flex justify-content-end gap-2 mt-3">
-                <Button
-                  variant="secondary"
-                  onClick={handleReset}
-                  disabled={loading}
-                >
-                  Cancel
-                </Button>
-                <Button
-                  variant="primary"
-                  onClick={handleCropAndUpload}
-                  disabled={loading}
-                >
-                  {loading ? (
-                    <>
-                      <Spinner
-                        as="span"
-                        animation="border"
-                        size="sm"
-                        role="status"
-                        aria-hidden="true"
-                        className="me-2"
-                      />
-                      Uploading...
-                    </>
-                  ) : (
-                    'Upload Cropped Image'
-                  )}
-                </Button>
-              </div>
-              {preview && (
-                <div className="mt-3">
-                  <h6>Preview of Cropped Image:</h6>
-                  <img
-                    src={preview}
-                    alt="Cropped Preview"
-                    style={{
-                      maxWidth: '100%',
-                      maxHeight: '300px',
-                      border: '1px solid #ccc',
-                    }}
+    <>
+      {!image ? (
+        <div className='pic-upload'>
+          <label><FiEdit3 /></label>
+          <input type="file" accept="image/*" onChange={handleFileChange} />
+        </div>
+      ) : (
+        <div>
+          <Cropper
+            src={image}
+            style={{ height: 400, width: '100%' }}
+            aspectRatio={16 / 9}
+            guides={true}
+            crop={undefined}
+            onInitialized={(instance) => setCropper(instance)}
+            minCropBoxWidth={100}
+            minCropBoxHeight={100}
+          />
+          <div className="d-flex justify-content-end gap-2 mt-3">
+            <Button
+              variant="secondary"
+              onClick={handleReset}
+              disabled={loading}
+            >
+              Cancel
+            </Button>
+            <Button
+              variant="primary"
+              onClick={handleCropAndUpload}
+              disabled={loading}
+            >
+              {loading ? (
+                <>
+                  <Spinner
+                    as="span"
+                    animation="border"
+                    size="sm"
+                    role="status"
+                    aria-hidden="true"
+                    className="me-2"
                   />
-                </div>
+                  Uploading...
+                </>
+              ) : (
+                'Upload Cropped Image'
               )}
+            </Button>
+          </div>
+          {preview && (
+            <div className="mt-3">
+              <h6>Preview of Cropped Image:</h6>
+              <img
+                src={preview}
+                alt="Cropped Preview"
+                style={{
+                  maxWidth: '100%',
+                  maxHeight: '300px',
+                  border: '1px solid #ccc',
+                }}
+              />
             </div>
           )}
-       
-       </>);
+        </div>
+      )}
+
+    </>);
 };
 
 export default ImageUploadCrop;

@@ -12,33 +12,33 @@ import Image from 'next/image';
 
 interface TemplatesProps {
     Generate: () => void;
-  }
+}
 
 
-   
-  const getFromSessionStorage = (key: string) => {
+
+const getFromSessionStorage = (key: string) => {
     if (typeof window !== 'undefined') {
-      return sessionStorage.getItem(key);
+        return sessionStorage.getItem(key);
     }
     return null;
-  };
+};
 
-   
-  const getFromLocalStorage = (key: string) => {
+
+const getFromLocalStorage = (key: string) => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
+        return localStorage.getItem(key);
     }
     return null;
-  };
+};
 
-  const setToSessionStorage = (key: string, value: string): void => {
+const setToSessionStorage = (key: string, value: string): void => {
     if (typeof window !== 'undefined') {
         sessionStorage.setItem(key, value);
     }
 };
 
 const SelectTemplates: React.FC<TemplatesProps> = ({ Generate }) => {
-// const SelectTemplates = () => {
+    // const SelectTemplates = () => {
     const [templates, setTemplates] = useState<any[]>([]);  // Initialize as an empty array
     const [isLoading, setIsLoading] = useState(true);
     const [selectedTemplateId, setSelectedTemplateId] = useState<number | null>(getFromSessionStorage('CLtemplateId') ? Number(getFromSessionStorage('CLtemplateId')) : null); // State to track selected template
@@ -46,7 +46,7 @@ const SelectTemplates: React.FC<TemplatesProps> = ({ Generate }) => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null); // State to store the selected image URL
     const [token, setToken] = useState(getFromSessionStorage('token'));
     const [templateId, sTemplateId] = useState(getFromSessionStorage('templateId'));
-    
+
 
     useEffect(() => {
         fetchData();
@@ -120,13 +120,14 @@ const SelectTemplates: React.FC<TemplatesProps> = ({ Generate }) => {
                                     />
                                 </div>
                                 <h6>{temp.name}</h6>
-                                <img
+                                <Image
                                     src={temp.image}
                                     alt={temp.name || "Template Image"}
-                                    loading="lazy"
                                     className='temp-img'
-                                // Open modal on image click
-                                // Add pointer cursor to indicate clickability
+                                    width={300}
+                                    height={400}
+                                    unoptimized
+                                    style={{ width: '100%', height: 'auto' }}
                                 />
                                 {/* <p>{temp.id}</p> */}
                             </label>
@@ -164,10 +165,13 @@ const SelectTemplates: React.FC<TemplatesProps> = ({ Generate }) => {
             >
                 <div style={{ position: 'relative' }}>
                     {selectedImage && (
-                        <img
+                        <Image
                             src={selectedImage}
                             alt="Full Size Template"
-                            style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: '10px' }}
+                            width={800}
+                            height={1000}
+                            unoptimized
+                            style={{ maxWidth: '90vw', maxHeight: '90vh', borderRadius: '10px', width: 'auto', height: 'auto' }}
                         />
                     )}
                     <button

@@ -101,7 +101,7 @@ const CoverLetter = () => {
                 recipientPhone: "1234567890",
                 recipientEmail: "ABC@gmail.com",
                 content: "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>"
-              }
+            }
 
             const response = await addCoverLetter({
                 templale_id: templateId,
@@ -124,7 +124,7 @@ const CoverLetter = () => {
 
 
     return (<>
-      {/* <Helmet>
+        {/* <Helmet>
         <title>Free Cover Letter Builder | Create Cover Letters Online</title>
      
       <meta
@@ -146,18 +146,18 @@ const CoverLetter = () => {
             </div>
         </section>
 
-     
-      <SafeAds />
-           
+
+        <SafeAds />
+
 
         <section className='container-fluid cov-list'>
-          
+
             <h4>Cover <span className='sec-col'>Letter</span></h4>
             <div className="cov-grid">
                 {ResumeList && ResumeList.map((list: any) => (
                     <div key={list.id} className='list'>
                         <div className="template-hover-container">
-                            <img src={list.image} alt="" />
+                            <Image src={list.image} alt="" width={300} height={400} style={{ width: '100%', height: 'auto' }} />
                             <h5>{list.name}</h5>
                             {list.id &&
                                 <div className="button-container">
@@ -168,13 +168,13 @@ const CoverLetter = () => {
                     </div>
                 ))}
             </div>
-          
+
         </section>
 
 
-    
-      <SafeAds />
-         
+
+        <SafeAds />
+
 
         {reviews.length > 0 &&
             <section className='temp-rev mb-4 pb-1'>
@@ -256,7 +256,7 @@ const CoverLetter = () => {
                                                 <Image key={index} src={start} alt="" className='rev-star' />
                                             ))}
                                         </div>
-                                        <img src={item.image_url} alt="" className='prof' />
+                                        <Image src={item.image_url} alt="" className='prof' width={50} height={50} />
                                     </div>
                                     <h6 className='mt-2'>{item.reviewer_title}</h6>
                                     <p>{item.review_text}</p>
@@ -271,9 +271,9 @@ const CoverLetter = () => {
 
 
         <Faq />
- 
-      <SafeAds />
-         
+
+        <SafeAds />
+
     </>)
 }
 

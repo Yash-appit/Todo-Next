@@ -138,13 +138,13 @@ const Blogs = () => {
       setIsLoading(true);
       const response = await blogList();
       setCareerAdvice(response?.data);
-// console.log(response.data);
+      // console.log(response.data);
 
       // Cache the response data
       if (response?.data) {
         setCachedBlogData(response.data);
       }
-      
+
       // Mark meta tags as ready after data is loaded
       setTimeout(() => setMetaTagsReady(true), 0);
       setIsLoading(false);
@@ -192,7 +192,7 @@ const Blogs = () => {
   return (
     <>
       {/* Meta Tags - Always render first */}
-      
+
 
       {/* Content - Conditionally render after meta tags are ready */}
       <div className='container-fluid py-5 career-advice'>
@@ -224,10 +224,14 @@ const Blogs = () => {
                     return (
                       <Link href={`/blogs/${item?.slug}`} className="mt-4 pt-4 mx-0 my-element" key={item?.id} data-aos="fade-down">
                         <div className="bg-white p-4 rounded-4">
-                          <img
+                          <Image
                             src={item?.image || noImage.src}
                             alt={item.title}
                             className="img-fluid mb-3"
+                            width={400}
+                            height={300}
+                            unoptimized
+                            style={{ width: '100%', height: 'auto' }}
                           />
 
                           <div className="d-flex align-items-center py-2">

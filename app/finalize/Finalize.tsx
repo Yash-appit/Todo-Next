@@ -2,10 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
 import { LuDot } from "react-icons/lu";
-import { saveAs } from 'file-saver';
 
 
 interface ElementStyles {
@@ -14,10 +11,10 @@ interface ElementStyles {
 
 
 const getFromLocalStorage = (key: string): string | null => {
-    if (typeof window !== 'undefined') {
-        return localStorage.getItem(key);
-    }
-    return null;
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem(key);
+  }
+  return null;
 };
 
 const Finalize: React.FC = () => {
@@ -245,7 +242,7 @@ const Finalize: React.FC = () => {
   };
 
 
-  const downloadRawHTMLasDOC = () => {
+  const downloadRawHTMLasDOC = async () => {
     if (!resumeContent) return;
 
     const PAGE_GAP = 20;
@@ -352,6 +349,7 @@ const Finalize: React.FC = () => {
     });
 
     const fileName = `${resumeName.replace(/\s+/g, '_')}.doc`;
+    const { saveAs } = await import('file-saver');
     saveAs(blob, fileName);
   };
 

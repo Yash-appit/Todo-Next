@@ -12,6 +12,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { Spinner } from 'react-bootstrap';
 import pdf from "@/assets/Images/resume-builder/pdf.svg";
 import down from "@/assets/Images/resume-builder/download.svg";
+import Image from 'next/image';
 
 interface DownloadResumeModalProps {
   show: boolean;
@@ -22,30 +23,30 @@ interface DownloadResumeModalProps {
 }
 
 
-  const setToLocalStorage = (key: string, value: string): void => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(key, value);
-    }
-  };
-  const getFromSessionStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return sessionStorage.getItem(key);
-    }
-    return null;
-  };
-  const getFromLocalStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
-    }
-    return null;
-  };
+const setToLocalStorage = (key: string, value: string): void => {
+  if (typeof window !== 'undefined') {
+    localStorage.setItem(key, value);
+  }
+};
+const getFromSessionStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return sessionStorage.getItem(key);
+  }
+  return null;
+};
+const getFromLocalStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem(key);
+  }
+  return null;
+};
 
-const DownloadResumeModal = ({ 
-  show, 
-  onHide, 
-  onDownloadStart, 
+const DownloadResumeModal = ({
+  show,
+  onHide,
+  onDownloadStart,
   GeneratedResume,
-  onDownloadEnd 
+  onDownloadEnd
 }: DownloadResumeModalProps) => {
   const [isDownloading, setIsDownloading] = useState(false);
   const [isForgetOpen, setForgetOpen] = useState(false);
@@ -107,13 +108,13 @@ const DownloadResumeModal = ({
     if (!printWindow) {
       throw new Error('Could not open print window');
     }
-  
+
     const ResumeName = getFromLocalStorage('resumeName') || 'Untitled';
-    
+
     // Store the resume content in localStorage with a unique key
     const resumeStorageKey = `editableResume_${Date.now()}`;
     setToLocalStorage(resumeStorageKey, GeneratedResume);
-  
+
     // Create HTML with editing controls and styling
     const editableHTML = `
       <!DOCTYPE html>
@@ -394,13 +395,13 @@ const DownloadResumeModal = ({
       </body>
       </html>
     `;
-  
+
     printWindow.document.write(editableHTML);
     printWindow.document.close();
-    
+
     // Focus the new window
     printWindow.focus();
-    
+
     return printWindow;
   };
 
@@ -429,7 +430,7 @@ const DownloadResumeModal = ({
       onDownloadEnd?.();
     }
   };
-  
+
   return (
     <>
       <CustomModal show={show} onHide={closeDownload} custom='download-pop' title='Download Resume' size='lg'>
@@ -437,7 +438,7 @@ const DownloadResumeModal = ({
         <div className="row mx-0">
           <div className="col-lg-6">
             <div className='d-flex align-items-center'>
-              <img src={pdf} alt="" className='img-fluid' />
+              <Image src={pdf} alt="" className='img-fluid' />
               <p className='mb-0 px-2'>resume .(pdf)</p>
             </div>
             <div className="share-link-section mt-4">
@@ -498,9 +499,9 @@ const DownloadResumeModal = ({
             </div>
 
             <div className='justify-content-center text-center d-flex flex-column align-items-center mt-4'>
-              <button 
-                onClick={downloadGeneratedAsPDF} 
-                disabled={isDownloading} 
+              <button
+                onClick={downloadGeneratedAsPDF}
+                disabled={isDownloading}
                 className='prim-but py-1'
               >
                 {isDownloading ? "...Downloading" : "Preview & Download"}
@@ -509,7 +510,7 @@ const DownloadResumeModal = ({
           </div>
 
           <div className="col-lg-6 pb-4 img-block">
-            <img src={down} alt="" className='img-fluid' />
+            <Image src={down} alt="" className='img-fluid' />
           </div>
         </div>
       </CustomModal>

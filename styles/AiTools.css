@@ -17,11 +17,13 @@
     height: 100%;
 }
 
-.ai-bg .col-lg-6 h4, .ai-bg .col-lg-6 .head-main {
+.ai-bg .col-lg-6 h4,
+.ai-bg .col-lg-6 .head-main {
     color: #414141;
     text-transform: capitalize;
-    font-family: Inter-Semi-bold;
-} 
+    font-family: var(--font-inter);
+    font-weight: 600;
+}
 
 /* .ai-bg .col-lg-6 .head-main {
     font-size: ;
@@ -29,17 +31,20 @@
 
 .ai-bg .col-lg-6 p {
     color: #414141;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 0;
 }
 
 .ai-bg .col-lg-6 h1 {
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
 }
 
 .ai-bg .col-lg-6 span {
-    font-family: Arial-Bold;
+    font-family: var(--font-arial);
+    font-weight: 700;
 }
 
 
@@ -58,19 +63,20 @@
 
 .career-objective-bg .col-lg-6 p {
     color: #384347;
-    font-family: Inter;
+    font-family: var(--font-inter);
     line-height: 25px;
     font-size: 15px;
 }
 
 .career-objective-bg .col-lg-6 li {
     color: #384347;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 15px;
 }
 
 .career-objective-bg .col-lg-6 h2 {
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -103,7 +109,7 @@
 }
 
 .career-objective-bg .tools .col img {
-    background:#F0FDF4;
+    background: #F0FDF4;
     padding: 8px;
     border-radius: 10px;
     height: 40px;
@@ -118,19 +124,21 @@
 }
 
 .career-objective-bg .approach p {
-    color:#464948;
-    font-family: Inter-Semi-bold;
+    color: #464948;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
-.career-objective-bg .approach .prim-but{
-    font-family: Inter;
+.career-objective-bg .approach .prim-but {
+    font-family: var(--font-inter);
     /* font-weight: 500; */
     font-size: 16px !important;
     padding: 10px 20px !important;
 }
 
 .career-objective-bg .approach h1 {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .career-objective-bg .icon {
@@ -138,22 +146,23 @@
     top: -10%;
     left: 0;
     right: 0;
-  width: 100%;
+    width: 100%;
 }
 
-.career-objective-bg .tools .col{
+.career-objective-bg .tools .col {
     text-decoration: none;
 }
 
 .career-objective-bg .tools .col h6 {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     margin-bottom: 20px;
     font-size: 18px;
     color: #000;
 }
 
 .career-objective-bg .tools .col p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     color: #6B7280;
 }
 
@@ -169,7 +178,7 @@
 
 }
 
-.career-objective-bg .resume-slider .row{
+.career-objective-bg .resume-slider .row {
     background-image: url("../assets/Images/AITools/rs-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,7 +213,7 @@
 }
 
 .ai-bg .main-but span {
-    font-family: Inter;
+    font-family: var(--font-inter);
     /* font-weight: 500; */
     font-size: 15px !important;
 }
@@ -215,17 +224,19 @@
 }
 
 .ai-bg .emp .bg {
-text-align: center;
+    text-align: center;
     padding: 30px;
 }
 
 @media screen and (min-width: 991px) {
 
-    .ai-bg .col-lg-6 h4, .ai-bg .col-lg-6 .head-main {
+    .ai-bg .col-lg-6 h4,
+    .ai-bg .col-lg-6 .head-main {
         font-size: 22px;
     }
 
-    .ai-bg .col-lg-6 h1, .ai-bg .col-lg-6 .elevate-approach {
+    .ai-bg .col-lg-6 h1,
+    .ai-bg .col-lg-6 .elevate-approach {
         font-size: 55px;
     }
 
@@ -236,6 +247,7 @@ text-align: center;
     .career-objective-bg .col-lg-6 h2 {
         font-size: 40px;
     }
+
     .career-objective-bg .approach p {
         font-size: 18px;
     }
@@ -246,57 +258,62 @@ text-align: center;
 
 @media screen and (max-width: 991px) {
 
-.ai-bg {
-    padding-top: 20px !important;
-}
-.career-objective-bg .approach .col-lg-6,
-.ai-bg .col-lg-6 {
-    padding: 0 !important;
-}
-.ai-bg .emp img {
-    width: 100%;
-    height: auto;
-}
+    .ai-bg {
+        padding-top: 20px !important;
+    }
 
-.career-objective-bg .row .col-lg-6 {
-    padding: 10px 0 !important;
-}
+    .career-objective-bg .approach .col-lg-6,
+    .ai-bg .col-lg-6 {
+        padding: 0 !important;
+    }
 
-.career-objective-bg .row:nth-child(2), .career-objective-bg .row:nth-child(4) {
-    flex-flow: column-reverse;
-}
+    .ai-bg .emp img {
+        width: 100%;
+        height: auto;
+    }
 
-.ai-bg .col-lg-6 h4, .ai-bg .col-lg-6 .head-main {
-    padding-top: 0 !important;
-}
-.career-objective-bg .tools .col {
-    margin-top: 20px;
-    padding: 40px 15px !important;
-}
+    .career-objective-bg .row .col-lg-6 {
+        padding: 10px 0 !important;
+    }
 
-.career-objective-bg .approach .col-lg-6:first-child .bg {
-    border-radius: 20px 20px 0 0 !important;
-}
+    .career-objective-bg .row:nth-child(2),
+    .career-objective-bg .row:nth-child(4) {
+        flex-flow: column-reverse;
+    }
 
-.career-objective-bg .approach .col-lg-6:last-child .bg {
-    border-radius: 0 0 20px 20px !important;
-    padding-top: 10px !important;
-}
+    .ai-bg .col-lg-6 h4,
+    .ai-bg .col-lg-6 .head-main {
+        padding-top: 0 !important;
+    }
 
-.career-objective-bg .approach .col-lg-6:last-child {
-    padding: 0 !important;
-}
+    .career-objective-bg .tools .col {
+        margin-top: 20px;
+        padding: 40px 15px !important;
+    }
 
-.career-objective-bg .approach .col-lg-6:first-child {
-    margin-bottom: 0 !important;
-    padding: 0 !important;
-}
+    .career-objective-bg .approach .col-lg-6:first-child .bg {
+        border-radius: 20px 20px 0 0 !important;
+    }
 
-.career-objective-bg .approach .col-lg-6:last-child h1 {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-  
+    .career-objective-bg .approach .col-lg-6:last-child .bg {
+        border-radius: 0 0 20px 20px !important;
+        padding-top: 10px !important;
+    }
+
+    .career-objective-bg .approach .col-lg-6:last-child {
+        padding: 0 !important;
+    }
+
+    .career-objective-bg .approach .col-lg-6:first-child {
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+
+    .career-objective-bg .approach .col-lg-6:last-child h1 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
 }
 
 
@@ -315,6 +332,5 @@ text-align: center;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
-    } 
+    }
 }
-

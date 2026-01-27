@@ -22,28 +22,28 @@ import { useRouter } from 'next/navigation';
 
 
 const setToLocalStorage = (key: string, value: string): void => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(key, value);
-    }
-  };
+  if (typeof window !== 'undefined') {
+    localStorage.setItem(key, value);
+  }
+};
 
-  const setToSessionStorage = (key: string, value: string): void => {
-    if (typeof window !== 'undefined') {
-      sessionStorage.setItem(key, value);
-    }
-  };
-  const getFromSessionStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return sessionStorage.getItem(key);
-    }
-    return null;
-  };
-  const getFromLocalStorage = (key: string) => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem(key);
-    }
-    return null;
-  };
+const setToSessionStorage = (key: string, value: string): void => {
+  if (typeof window !== 'undefined') {
+    sessionStorage.setItem(key, value);
+  }
+};
+const getFromSessionStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return sessionStorage.getItem(key);
+  }
+  return null;
+};
+const getFromLocalStorage = (key: string) => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem(key);
+  }
+  return null;
+};
 
 const UpdatedResume: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -165,7 +165,7 @@ const UpdatedResume: React.FC = () => {
       const response = await ResumesList(page); // Assuming your API accepts page parameter
       setResumes(response?.data);
       // console.log(response?.data);
-      
+
       setPagination(response?.paginationData || {
         currentPage: 1,
         totalLength: 0,
@@ -378,11 +378,11 @@ const UpdatedResume: React.FC = () => {
     }
     sessionStorage.removeItem('templateId');
     localStorage.removeItem('templateId');
-     sessionStorage.removeItem('selectedTemplateId');
+    sessionStorage.removeItem('selectedTemplateId');
     sessionStorage.removeItem('ResumeId');
     localStorage.removeItem("resumeName");
     sessionStorage.removeItem('GuestId');
-    
+
     const resume_id = getFromLocalStorage('resumeId');
     const resumeData = getFromLocalStorage('resumeData');
 
@@ -445,7 +445,7 @@ const UpdatedResume: React.FC = () => {
             .catch((error) => {
               console.error('Error updating resume:', error);
             });
-        } 
+        }
       }
 
       localStorage.removeItem('resumeId');
@@ -456,7 +456,7 @@ const UpdatedResume: React.FC = () => {
       localStorage.removeItem('settings');
       sessionStorage.removeItem('templateId');
       localStorage.removeItem('templateId');
-       sessionStorage.removeItem('selectedTemplateId');
+      sessionStorage.removeItem('selectedTemplateId');
     }
   };
 
@@ -509,76 +509,83 @@ const UpdatedResume: React.FC = () => {
                     </div>
                   </Link>
                   {resumes && resumes.map((resume: any) => (
-                      <div
-                        key={resume.resume_id}
-                        className='col text-center my-3 px-4 position-relative'
-                        onMouseEnter={() => setHoveredResume(resume.resume_id)}
-                        onMouseLeave={() => setHoveredResume(null)}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          const target = e.currentTarget;
-                          const clickY = e.clientY - target.getBoundingClientRect().top;
-                          const height = target.clientHeight;
+                    <div
+                      key={resume.resume_id}
+                      className='col text-center my-3 px-4 position-relative'
+                      onMouseEnter={() => setHoveredResume(resume.resume_id)}
+                      onMouseLeave={() => setHoveredResume(null)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const target = e.currentTarget;
+                        const clickY = e.clientY - target.getBoundingClientRect().top;
+                        const height = target.clientHeight;
 
-                          if (clickY < height / 1.2) {
-                            EditResume(resume.resume_data, resume.resume_id, resume.template_id, resume.resume_name);
-                          }
-                        }}
-                        style={{ cursor: 'pointer', WebkitTapHighlightColor: 'transparent' }}
-                      >
-                        <div className='resume-item'>
-                          <img src={resume.image || nodata.src} alt="" loading="lazy" />
-                          <GaugeChart value={resume.resume_completion} />
-                          {hoveredResume === resume.resume_id && (
-                            <div className="pin-drawer">
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  handlePinResume(resume.resume_id, resume.resume_pined);
-                                }}
-                                className={`pin-button ${pinnedResumes.includes(resume.resume_id) ? 'pinned' : ''}`}
-                              >
-                                {resume.resume_pined === 1 ? <RiUnpinFill /> : <MdPushPin />}
-                              </button>
-                            </div>
-                          )}
-                          {resume.resume_id && (
-                            <div className="preview my-element" data-aos="fade-up" data-aos-delay="100">
-                              <br />
-                              <p className='text-start'>
-                                <p>{resume?.resume_name || "Untitled"}</p>
-                                {new Date(resume.created_at).toLocaleDateString('en-US', {
-                                  year: 'numeric',
-                                  month: 'long',
-                                  day: 'numeric'
-                                })}
-                                {', '}
-                                ({new Date(resume.created_at).toLocaleTimeString('en-US', {
-                                  hour: '2-digit',
-                                  minute: '2-digit'
-                                })})
-                              </p>
-                              <button onClick={(e) => {
+                        if (clickY < height / 1.2) {
+                          EditResume(resume.resume_data, resume.resume_id, resume.template_id, resume.resume_name);
+                        }
+                      }}
+                      style={{ cursor: 'pointer', WebkitTapHighlightColor: 'transparent' }}
+                    >
+                      <div className='resume-item'>
+                        <Image
+                          src={resume.image || nodata.src}
+                          alt=""
+                          width={350}
+                          height={280}
+                          unoptimized
+                          style={{ width: '100%', height: 'auto' }}
+                        />
+                        <GaugeChart value={resume.resume_completion} />
+                        {hoveredResume === resume.resume_id && (
+                          <div className="pin-drawer">
+                            <button
+                              onClick={(e) => {
                                 e.stopPropagation();
-                                setDeleteResumeId(resume.resume_id);
-                                setDelOpen(true);
+                                handlePinResume(resume.resume_id, resume.resume_pined);
                               }}
-                                disabled={isLoading}
-                                className='preview-button p-0 z-1'>
-                                <MdDelete />
-                              </button>
-                            </div>
-                          )}
-                        </div>
+                              className={`pin-button ${pinnedResumes.includes(resume.resume_id) ? 'pinned' : ''}`}
+                            >
+                              {resume.resume_pined === 1 ? <RiUnpinFill /> : <MdPushPin />}
+                            </button>
+                          </div>
+                        )}
+                        {resume.resume_id && (
+                          <div className="preview my-element" data-aos="fade-up" data-aos-delay="100">
+                            <br />
+                            <p className='text-start'>
+                              <p>{resume?.resume_name || "Untitled"}</p>
+                              {new Date(resume.created_at).toLocaleDateString('en-US', {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
+                              })}
+                              {', '}
+                              ({new Date(resume.created_at).toLocaleTimeString('en-US', {
+                                hour: '2-digit',
+                                minute: '2-digit'
+                              })})
+                            </p>
+                            <button onClick={(e) => {
+                              e.stopPropagation();
+                              setDeleteResumeId(resume.resume_id);
+                              setDelOpen(true);
+                            }}
+                              disabled={isLoading}
+                              className='preview-button p-0 z-1'>
+                              <MdDelete />
+                            </button>
+                          </div>
+                        )}
                       </div>
-                  
+                    </div>
+
                   ))}
                 </div>
                 {renderPagination()}
               </>
             ) : null}
-            
+
             {activeTab === 'coverLetters' ? (
               <div className={`row ${coverLetters?.length > 3 ? "justify-content-center" : "justify-content-start"} text-start p-2 pt-4 m-0`}>
                 <Link href="/cover-letter"
@@ -592,7 +599,7 @@ const UpdatedResume: React.FC = () => {
                   </div>
                 </Link>
                 {coverLetters && coverLetters.length > 0 ? (
-                  coverLetters.map((coverLetter:any) => (
+                  coverLetters.map((coverLetter: any) => (
                     <div
                       key={coverLetter.cover_letter_id}
                       className='col text-center my-3 px-4 position-relative'
@@ -609,7 +616,14 @@ const UpdatedResume: React.FC = () => {
                       }}
                     >
                       <div className='resume-item'>
-                        <img src={coverLetter.image || coverLetter.template_image} alt="Cover Letter" loading="lazy" />
+                        <Image
+                          src={coverLetter.image || coverLetter.template_image}
+                          alt="Cover Letter"
+                          width={350}
+                          height={280}
+                          unoptimized
+                          style={{ width: '100%', height: 'auto' }}
+                        />
                         {hoveredCoverLetter === coverLetter.id && (
                           <div className="pin-drawer">
                             {/* Add pin functionality if needed */}
@@ -665,7 +679,7 @@ const UpdatedResume: React.FC = () => {
       </CustomModal>
 
       {/* <ResumeProvider> */}
-        <SafeAds />
+      <SafeAds />
       {/* </ResumeProvider> */}
     </>
   );
