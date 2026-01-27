@@ -1,12 +1,24 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import ReviewResume from './CreateResume';
-import ViewPackage from './ViewPackage';
-import Faq from './faq';
-import HowWorks from './HowWorks';
-import Career from './Career';
+import dynamic from 'next/dynamic';
 import Loader from '@/Layout/Loader';
+
+const ReviewResume = dynamic(() => import('./CreateResume'), {
+  loading: () => <Loader />,
+});
+const ViewPackage = dynamic(() => import('./ViewPackage'), {
+  loading: () => <Loader />,
+});
+const Faq = dynamic(() => import('./faq'), {
+  loading: () => <Loader />,
+});
+const HowWorks = dynamic(() => import('./HowWorks'), {
+  loading: () => <Loader />,
+});
+const Career = dynamic(() => import('./Career'), {
+  loading: () => <Loader />,
+});
 import { utm } from '@/services/utm/Index';
 // import "@/styles/Home.css";
 import ATSScore from './ATSScore';
