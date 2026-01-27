@@ -38,27 +38,27 @@ const Finalize: React.FC = () => {
 
     if (resumeKey) {
       // Try to get content from localStorage using the key from URL
-      const savedContent = localStorage.getItem(resumeKey) || '';
+      const savedContent = getFromLocalStorage(resumeKey) || '';
 
       if (savedContent) {
         setResumeContent(savedContent);
-        setResumeName(resumeNameParam || localStorage.getItem('resumeName') || 'Untitled');
+        setResumeName(resumeNameParam || getFromLocalStorage('resumeName') || 'Untitled');
         setOriginalContent(savedContent);
       } else {
         // Fallback or handle missing content
-        const savedContentBackup = localStorage.getItem('resumeData') || '';
+        const savedContentBackup = getFromLocalStorage('resumeData') || '';
         if (savedContentBackup) {
           setResumeContent(savedContentBackup);
-          setResumeName(localStorage.getItem('resumeName') || 'Untitled');
+          setResumeName(getFromLocalStorage('resumeName') || 'Untitled');
           setOriginalContent(savedContentBackup);
         }
       }
     } else {
       // If no key in URL, try to get from localStorage (legacy/fallback behavior)
-      const savedContent = localStorage.getItem('resumeData') || '';
+      const savedContent = getFromLocalStorage('resumeData') || '';
       if (savedContent) {
         setResumeContent(savedContent);
-        setResumeName(localStorage.getItem('resumeName') || 'Untitled');
+        setResumeName(getFromLocalStorage('resumeName') || 'Untitled');
         setOriginalContent(savedContent);
       } else {
         router.push('/');
