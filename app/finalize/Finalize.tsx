@@ -272,9 +272,10 @@ const Finalize: React.FC = () => {
     const contentToUse = normalizedContent; // or forcedBlackContent
 
     const docStr = `
-      <!DOCTYPE html>
       <html xmlns:o="urn:schemas-microsoft-com:office:office"
-            xmlns:w="urn:schemas-microsoft-com:office:word">
+            xmlns:w="urn:schemas-microsoft-com:office:word"
+            xmlns:v="urn:schemas-microsoft-com:vml"
+            xmlns:m="http://schemas.microsoft.com/office/2004/12/omml">
       <head>
         <meta charset="utf-8"/>
         <meta name="ProgId" content="Word.Document"/>
