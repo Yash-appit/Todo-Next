@@ -57,7 +57,7 @@ const getFromLocalStorage = (key: string) => {
 const SelectTemplates = ({ step3, setStep3, step4, setStep4, Generate }: SelectTemplatesProps) => {
     const [templates, setTemplates] = useState<any[]>([]);  // Initialize as an empty array
     const [isLoading, setIsLoading] = useState(true);
-    const [selectedTemplateId, setSelectedTemplateId] = useState<number | null>(getFromLocalStorage('selectedTemplateId') ? Number(getFromLocalStorage('selectedTemplateId')) : null); // State to track selected template
+    const [selectedTemplateId, setSelectedTemplateId] = useState<number | null>(getFromLocalStorage('templateId') ? Number(getFromLocalStorage('templateId')) : null); // State to track selected template
     const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
     const [selectedImage, setSelectedImage] = useState<string | null>(null); // State to store the selected image URL
     const [token, setToken] = useState(getFromLocalStorage('token'));

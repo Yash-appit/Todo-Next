@@ -309,7 +309,7 @@ const UpdatedResume: React.FC = () => {
       setToSessionStorage("ResumeId", resumeId.toString());
       setToLocalStorage("resumeId", resumeId.toString());
 
-      setToSessionStorage("templateId", template_id);
+      setToLocalStorage("templateId", template_id);
       setToSessionStorage("selectedTemplateId", template_id);
       setToLocalStorage("resumeImage", resumeData.resume_data?.personaldetails?.imageUrl);
       setToLocalStorage("customHeading", JSON.stringify(resumeData?.resume_data?.customHeading || []));
