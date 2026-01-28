@@ -1,0 +1,16 @@
+﻿assets/Fonts/Arial-Black.ttf
+assets/Fonts/Arial-Bold-Italic.ttf
+assets/Fonts/Arial-Bold.ttf
+assets/Fonts/Arial.ttf
+assets/Fonts/Gambetta-VariableItalic.ttf
+assets/Fonts/Inter-Bold.ttf
+assets/Fonts/Inter-Regular.woff2
+assets/Fonts/Inter-SemiBold.woff2
+assets/Fonts/Roboto-Bold.ttf
+assets/Fonts/Roboto-Medium.ttf
+assets/Fonts/Roboto-Regular.ttf
+assets/Fonts/Rubik-SemiBold.ttf
+assets/Fonts/Satoshi-Black.ttf
+assets/Fonts/Satoshi-Bold.ttf
+assets/Fonts/Satoshi-Medium.ttf
+assets/Fonts/Satoshi-Regular.ttf

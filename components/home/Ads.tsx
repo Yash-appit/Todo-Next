@@ -69,7 +69,7 @@ const Ads: React.FC = () => {
             ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
           }
         } catch (error) {
-          console.error('Error initializing ads:', error);
+          console.log('Error initializing ads:', error);
         }
       }, 100);
       
