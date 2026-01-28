@@ -19,7 +19,8 @@
 
 .text-rotate-word {
   display: inline-flex;
-  font-family: Arial-Bold !important;
+  font-family: Arial !important;
+  font-weight: 600 !important;
 }
 
 .text-rotate-lines {
@@ -30,7 +31,8 @@
 
 .text-rotate-element {
   display: inline-block;
-  font-family: Arial-Bold !important;
+  font-family: Arial !important;
+  font-weight: 600 !important;
   color: #0A5840 !important;
 }
 

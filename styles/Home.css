@@ -50,7 +50,8 @@
   margin-bottom: 0;
   line-height: 32px;
   color: #5C5C5C;
-  font-family: Arial-Bold;
+  font-family: Arial;
+  font-weight: 600;
 }
 
 .rev-res .col-lg-3 {
@@ -58,7 +59,7 @@
 }
 
 .rev-res p {
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 16px;
   color: #414141;
 
@@ -96,7 +97,8 @@
   text-align: center;
   margin-bottom: 20px;
   color: #5C5C5C;
-  font-family: Arial-Bold;
+  font-family: Arial;
+  font-weight: 600;
 }
 
 .rev-res .resp hr {
@@ -130,7 +132,8 @@
 
 
 .rev-res h2 {
-  font-family: Arial-Bold;
+  font-family: Arial;
+  font-weight: 600;
 }
 
 .rev-res .lottie {
@@ -139,7 +142,7 @@
 
 .rev-res a,
 .rev-bg button {
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 15px !important;
   z-index: 2;
   line-height: inherit;
@@ -540,7 +543,8 @@
 }
 
 .view-pack h2 {
-  font-family: Arial-Bold;
+  font-family: Arial;
+  font-weight: 600;
   font-size: 52px;
 }
 
@@ -562,8 +566,8 @@
 
 .view-pack h2 span {
   /* color: #0A5941; */
-  /* font-weight: 600; */
-  font-family: Arial-Bold;
+  font-weight: 600;
+  font-family: Arial;
   font-size: 52px;
 
 }
@@ -597,7 +601,7 @@
 
 .view-pack a {
   padding: 14px 28px 14px 28px !important;
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 16px !important;
 }
 
@@ -702,7 +706,8 @@
 }
 
 .how-work p {
-  font-family: Roboto-Medium;
+  font-family: var(--font-roboto);
+  font-weight: 500;
 }
 
 .how-work a {
@@ -756,22 +761,26 @@
 
 .package-faq .any {
   font-size: 32px !important;
-    font-family: Inter-Bold !important;
+    font-family: var(--font-inter) !important;
+    font-weight: 700 !important;
 }
 
 .package-faq .ques h4 {
   color: #0A5941;
-   font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 700;
   font-size: 32px;
 }
 
 .package-faq .ques p {
   color: #0A5941;
-  font-family: Inter-Semi-bold;
+  font-family: var(--font-inter);
+  font-weight: 600;
 }
 
 .package-faq .MuiAccordionSummary-root p {
-  font-family: Inter-Semi-bold;
+  font-family: var(--font-inter);
+    font-weight: 600;
   font-size: 18px;
   text-align: left;
   display: flex;
@@ -790,7 +799,7 @@
 
 .package-faq a {
   padding: 8px 20px !important;
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 15px !important;
 }
 
@@ -966,7 +975,8 @@
 
 .career-sec .career span {
   color: #3D3939B2;
-  font-family: Inter-Semi-bold;
+  font-family: var(--font-inter);
+  font-weight: 600;
   font-size: 20px;
   /* margin: 10px 0; */
 }
@@ -1036,7 +1046,8 @@
 }
 
 .ats-score .upload p {
-  font-family: Inter-Bold;
+  font-family: var(--font-inter);
+  font-weight: 600;
   margin: 25px 0;
 }
 

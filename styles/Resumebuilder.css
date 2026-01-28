@@ -62,7 +62,8 @@
     justify-content: center;
     border: none;
     font-size: 25px;
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 600;
 }
 
 .resume-main .ql-editor {
@@ -430,7 +431,8 @@
 .download-pop .prim-but-2 {
     display: flex;
     align-items: center;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 /* .download-pop  .prim-but-2 {
@@ -444,7 +446,7 @@
 }
 
 .resume-sidebar span {
-    font-family: Roboto-Medium;
+    font-family: var(--font-roboto);
     font-weight: 500;
 
 }
@@ -531,7 +533,7 @@
     padding: 0;
     width: 100%;
     font-size: 15px;
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
 }
 
 .resume-main .quill .ql-editor {
@@ -575,11 +577,11 @@
 .ql-toolbar.ql-snow,
 .ql-container.ql-snow {
     border-color: #0A584099 !important;
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
 }
 
 .ql-editor.ql-blank::before {
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
     font-style: normal !important;
     font-weight: 500;
     font-size: 15px;
@@ -602,13 +604,13 @@
 }
 
 .resume-main .progress-slid {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 13px;
 }
 
 .resume-main .progress-slid span {
     color: #0A5840;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
 }
 
@@ -627,7 +629,7 @@
 
 .resume-main .MuiFormLabel-root {
     color: #5B5B5B !important;
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
     font-weight: 500;
     z-index: 1;
 }
@@ -752,7 +754,8 @@
 }
 
 .templates button {
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     font-size: 17px;
     z-index: 1;
 }
@@ -760,7 +763,8 @@
 .templates h6,
 .templates h5 {
     color: #000 !important;
-    font-family: Arial-Bold;
+    font-family: Arial;
+    font-weight: 600;
 }
 
 .templates .col-lg-6 {
@@ -902,13 +906,15 @@ border-radius: 5px;
     align-items: center;
     display: flex;
     padding: 3px 20px 3px 20px !important;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     font-size: 17px !important;
 }
 
 .templates .dropdown-item {
     color: #0A5840;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     font-size: 16px !important;
 }
 
@@ -1001,7 +1007,8 @@ border-radius: 5px;
 .resume-main .head-name {
     color: #0A5840;
     align-items: baseline;
-    font-family: Arial-Bold;
+    font-family: Arial;
+    font-weight: 600;
     display: flex;
     padding-left: 25px;
 }
@@ -1033,7 +1040,8 @@ border-radius: 5px;
     font-size: 16px;
     padding: 12px;
     line-height: normal;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     text-align: center;
     max-width: 160px;
     border: #0A584099 solid 1px;
@@ -1136,7 +1144,8 @@ border-radius: 5px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 
@@ -1329,17 +1338,20 @@ border-radius: 5px;
 
 .share-link-section .MuiAccordionSummary-content span {
     color: #0A5840;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 
 }
 
 .download-pop .prim-but {
     padding: 5px 40px !important;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .download-pop .h4 {
-    font-family: Arial-Bold;
+    font-family: Arial;
+    font-weight: 600;
     font-size: 25px !important;
     color: #000 !important;
 }
@@ -1391,7 +1403,8 @@ border-radius: 5px;
     /* For Safari */
     -moz-appearance: none;
     /* For Firefox */
-    font-family: Arial-Bold;
+    font-family: Arial;
+    font-weight: 600;
 }
 
 .font-setting {
@@ -1465,7 +1478,8 @@ border-radius: 5px;
     color: #fff;
     background: linear-gradient(180deg, rgba(10, 88, 64, 0.6) -57.5%, #0A5840 100%);
     border-radius: 5px 5px 0 0;
-    font-family: Arial-Bold;
+    font-family: Arial;
+    font-weight: 600;
 }
 
 /* .skill-section .MuiTabs-flexContainer {

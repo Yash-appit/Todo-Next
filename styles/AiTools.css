@@ -21,7 +21,8 @@
 .ai-bg .col-lg-6 .head-main {
     color: #414141;
     text-transform: capitalize;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 /* .ai-bg .col-lg-6 .head-main {
@@ -30,17 +31,20 @@
 
 .ai-bg .col-lg-6 p {
     color: #414141;
-    font-family: Inter-Semi-bold;
+      font-family: var(--font-inter);
+    font-weight: 500;
     line-height: normal;
     margin-bottom: 0;
 }
 
 .ai-bg .col-lg-6 h1 {
-    font-family: Arial-Bold;
+     font-family: Arial;
+            font-weight: 600;
 }
 
 .ai-bg .col-lg-6 span {
-    font-family: Arial-Bold;
+     font-family: Arial;
+            font-weight: 600;
 }
 
 
@@ -59,19 +63,20 @@
 
 .career-objective-bg .col-lg-6 p {
     color: #384347;
-    font-family: Inter;
+    font-family: var(--font-inter);
     line-height: 25px;
     font-size: 15px;
 }
 
 .career-objective-bg .col-lg-6 li {
     color: #384347;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 15px;
 }
 
 .career-objective-bg .col-lg-6 h2 {
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
@@ -120,18 +125,20 @@
 
 .career-objective-bg .approach p {
     color: #464948;
-    font-family: Inter-Semi-bold;
+       font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .career-objective-bg .approach .prim-but {
-    font-family: Inter;
+    font-family: var(--font-inter);
     /* font-weight: 500; */
     font-size: 16px !important;
     padding: 10px 20px !important;
 }
 
 .career-objective-bg .approach h1 {
-    font-family: Inter-Semi-bold;
+      font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .career-objective-bg .icon {
@@ -147,14 +154,15 @@
 }
 
 .career-objective-bg .tools .col h6 {
-    font-family: Inter-Semi-bold;
+      font-family: var(--font-inter);
+    font-weight: 500;
     margin-bottom: 20px;
     font-size: 18px;
     color: #000;
 }
 
 .career-objective-bg .tools .col p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     color: #6B7280;
 }
 
@@ -205,7 +213,7 @@
 }
 
 .ai-bg .main-but span {
-    font-family: Inter;
+    font-family: var(--font-inter);
     /* font-weight: 500; */
     font-size: 15px !important;
 }

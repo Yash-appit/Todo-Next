@@ -1035,7 +1035,8 @@ background-color: #D9D9D9;
 }
 
 .ats .col-lg-8 p {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .ats .file-drop-area {
@@ -1053,7 +1054,8 @@ background-color: #D9D9D9;
 
 
 .ats .file-upload-container h5 {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
     font-size: 20px;
     text-align: center;
 }
@@ -1066,7 +1068,8 @@ background-color: #D9D9D9;
 
 .ats .file-drop-area p {
     font-size: 13px;
-    font-family: Inter-Semi-bold;
+     font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .ats label {
@@ -1087,7 +1090,8 @@ background-color: #D9D9D9;
 
 .ats .score h4 {
     border: none;
-    font-family: Arial-Bold;
+      font-weight: 600;
+  font-family: Arial;
     padding: 10px;
 }
 
@@ -1124,7 +1128,7 @@ background-color: #D9D9D9;
     /* min-height: 92%; */
     border-radius: 5px;
     background: transparent;
-    font-family: Inter;
+    font-family: var(--font-inter);
     /* overflow: hidden; */
     font-weight: 500;
     font-size: 16px;
@@ -1340,17 +1344,20 @@ background-color: #D9D9D9;
 
 
 .feedback-page h5 {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
 
 }
 
 .feedback-page h5 span {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
     color: #0A5840;
 }
 
 .feedback-page .form-label {
-    font-family: Inter-Semi-bold;
+      font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .feedback-page .main-star {
@@ -1364,14 +1371,16 @@ background-color: #D9D9D9;
 .generate-tool h4 {
     border-bottom: 1px solid #0a584188;
     padding: 10px 40px;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
     text-align: left;
     font-size: 20px;
     margin-bottom: 0;
 }
 
 .generate-tool h4 span {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .generate-tool .form {
@@ -1385,12 +1394,14 @@ background-color: #D9D9D9;
 
 .generate-tool h5 {
     text-align: left;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
     font-size: 18px;
 }
 
 .generate-tool h5 span {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
     color: #007bff;
 }
 
@@ -1414,7 +1425,8 @@ background-color: #D9D9D9;
     color: #0A5840;
     border-radius: 30px;
     border: #0A5840 solid 1px;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
     padding: 5px 10px;
     background: transparent;
     min-width: min-content;
@@ -1450,13 +1462,15 @@ background-color: #D9D9D9;
     color: #5B5B5B !important;
     font-size: 14px;
     padding: 20px 10px;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .generate-tool .sec-but {
     font-size: 14px !important;
     padding: 7px 15px !important;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
     text-transform: capitalize;
 }
 
@@ -1465,22 +1479,25 @@ background-color: #D9D9D9;
 }
 
 .generate-tool .empty h6 {
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     font-size: 17px;
 }
 
 .generate-tool .empty p {
-    font-family: Inter;
-    font-family: 500;
+    font-family: var(--font-inter);
+    font-weight: 500;
     font-size: 15px;
 }
 
 .ai-dialog .MuiDialogTitle-root div {
-    font-family: Inter-Semi-bold;
+       font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .ai-modal .modal-title {
-    font-family: Inter-Semi-bold;
+       font-family: var(--font-inter);
+    font-weight: 500;
     font-size: 20px;
 }
 
@@ -1626,7 +1643,7 @@ background-color: #D9D9D9;
 }
 
 .resume-writer table {
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-weight: 600;
     color: #4C4B4B;
     font-size: 15px;
@@ -1669,7 +1686,7 @@ background-color: #D9D9D9;
 }
 
 .resume-writer td span {
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-weight: 700;
 }
 
@@ -1698,11 +1715,13 @@ background-color: #D9D9D9;
 .req-form-dialog .MuiDialogTitle-root {
     display: flex;
     align-items: baseline;
-    font-family: Arial-Bold;
+    font-family: Arial;
+    font-weight: 600;
 }
 
 .req-form-dialog .MuiDialogTitle-root p {
-    font-family: Arial-Bold;
+    font-family: Arial;
+    font-weight: 600;
 }
 
 .req-form-dialog .MuiDialogTitle-root {
@@ -1718,7 +1737,8 @@ background-color: #D9D9D9;
 .req-form-dialog .status span {
     color: #212121;
     padding: 3px 5px;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     border-radius: 4px;
 }
 
@@ -1729,7 +1749,8 @@ background-color: #D9D9D9;
 
 .req-form-dialog .col-lg-4 p,
 .req-form-dialog .col-lg-8 p {
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     font-size: 20px;
 }
 
@@ -1754,7 +1775,7 @@ background-color: #D9D9D9;
     min-width: 160px;
     padding: 4px 10px !important;
     font-size: 18px !important;
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-weight: 700 !important;
 }
 
@@ -1767,7 +1788,8 @@ background-color: #D9D9D9;
     color: #0A5840;
     padding: 3px 8px 5px 8px;
     border-radius: 50%;
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-roboto);
+    font-weight: 500;
     font-size: 16px;
     box-shadow: 0 0 2px 0;
     width: max-content;

@@ -4,13 +4,14 @@
 }
 
 .contact h1 {
-    font-family: Arial-Bold;
+  font-weight: 600;
+  font-family: Arial;
     color: #0A5840;
     font-size: 60px;
 }
 
 .contact p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     color: #717171;
 }
 
@@ -23,7 +24,7 @@
     border-radius: 5px;
     resize: none;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     color: #333;
     border-bottom: #8D8D8D solid 1px !important;
     border-radius: 0 !important;
@@ -35,7 +36,7 @@
     border-bottom: #8D8D8D solid 1px !important;
     min-height: 40px;
     border-radius: 0 !important;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     box-shadow: none !important;
 }
@@ -43,7 +44,7 @@
 .contact label {
     width: 100%;
     color: #8D8D8D !important;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     font-size: 14px;
 }
@@ -61,7 +62,8 @@
 
 .contact .cont-inf h4 {
     color: #fff;
-    font-family: Arial-Bold;
+     font-weight: 600;
+  font-family: Arial;
     margin-bottom: 10px;
 }
 
@@ -218,7 +220,8 @@
 
 
 .career-advice h1 {
-    font-family: Arial-Bold;
+      font-weight: 600;
+  font-family: Arial;
     font-size: 50px;
 }
 
@@ -230,7 +233,7 @@
 }
 
 .career-advice p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
 }
 
@@ -242,7 +245,8 @@
 
 .career-advice .gridlay p,
 .career-advice .gridlay li {
-    font-family: Roboto-Medium;
+    font-family: var(--font-roboto);
+    font-weight: 500;
     font-size: 11px;
 }
 
@@ -374,20 +378,20 @@
 
 
 .temp-head h1 {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 34px;
 
 }
 
 .temp-head p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 19px;
     color: #3F3F3F;
 
 }
 
 .temp-head a {
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
     font-weight: 500 !important;
     font-size: 16px !important;
     padding: 15px 30px !important;
@@ -428,7 +432,7 @@
 }
 
 .temp-rev h3 {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 22px;
 }
 
@@ -464,13 +468,14 @@
 
 
 .temp-rev .gridlay p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 14px;
 }
 
 .temp-rev-head p,
 .temp-rev-head span {
-    font-family: Roboto-Bold;
+      font-weight: 600;
+  font-family: Arial;
 }
 
 .review-slider h4 {
@@ -493,7 +498,7 @@
 
 .res-work h2,
 .res-work p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     color: #3F3F3F;
     font-weight: 400;
 }
@@ -503,7 +508,7 @@
 }
 
 .res-work a {
-    font-family: Inter !important;
+    font-family: var(--font-inter) !important;
     font-weight: 500 !important;
     font-size: 16px !important;
     padding: 15px 30px !important;
@@ -707,7 +712,8 @@
 
 .templat .col h4 {
     color: #313B47;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
     font-size: 28px;
 }
 
@@ -717,14 +723,15 @@
 
 .templat .col p {
     color: #757575;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 15px;
 }
 
 .about-us .head {
     text-align: center;
     text-transform: capitalize;
-    font-family: Arial-Bold;
+  font-weight: 600;
+  font-family: Arial;
     color: #0A5840;
 }
 
@@ -747,7 +754,7 @@
 }
 
 .about-us .det {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     font-size: 18px;
     line-height: 38.4px;
@@ -766,7 +773,8 @@
 
     .ats-sec h1,
     .ats-sec h1 span {
-        font-family: Roboto-Bold;
+         font-weight: 600;
+  font-family: Arial;
         font-size: 40px !important;
     }
 
@@ -806,28 +814,33 @@
 }
 
 .ats-sec h1 {
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 600;
     font-size: 55px;
 }
 
 .ats-sec h1 span {
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 600;
     font-size: 55px;
 }
 
 .ats-sec2 .head {
     color: #4D4D4D;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .ats-sec2 h2 {
-    font-family: Arial-Bold;
+     font-weight: 600;
+  font-family: Arial;
     margin: 25px 0;
 
 }
 
 .ats-sec2 p {
-    font-family: Inter-Semi-bold;
+    font-family: var(--font-inter);
+    font-weight: 500;
 }
 
 .ats-sec2 .tilted-card-inner img {
@@ -849,7 +862,8 @@
 
 .ats-sec2 .ats2 h2,
 .ats-sec2 .ats2 h3 {
-    font-family: Arial-Black !important;
+    font-family: Arial !important;
+    font-weight: 900;
 
 }
 
@@ -1082,7 +1096,7 @@
 }
 
 .res-write .hired .col h4 {
-    font-family: Inter;
+    font-family: var(--font-inter);
     text-align: center;
     color: #1E2532 !important;
     font-weight: 400;
@@ -1253,11 +1267,12 @@
 }
 
 .res-write-form h2 {
-    font-family: Arial-Bold;
+     font-weight: 600;
+  font-family: Arial;
 }
 
 .res-write-form p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     color: #717171;
 }
@@ -1275,11 +1290,11 @@
 .res-write-form .col-lg-12 .prim-but {
     min-width: 250px;
     font-size: 15px !important;
-    font-family: Inter;
+    font-family: var(--font-inter);
 }
 
 .res-write-form label {
-    font-family: Inter;
+    font-family: var(--font-inter);
 }
 
 .res-write h2 span {
@@ -1309,7 +1324,7 @@
 }
 
 .ready-start .col-lg-5 button {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 15px !important;
 }
 
@@ -1335,17 +1350,18 @@
 }
 
 .faq-section p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     padding-left: 10px;
 }
 
 .faq-list p {
-    font-family: Inter;
+    font-family: var(--font-inter);
 }
 
 .faq-list h2 {
-    font-family: Inter-Bold;
+    font-family: var(--font-inter);
+    font-weight: 600;
 }
 
 .faq-list .MuiPaper-root {
@@ -1371,7 +1387,8 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-family: Arial-Bold;
+      font-weight: 600;
+  font-family: Arial;
 }
 
 .faq-list a svg {
@@ -1424,7 +1441,7 @@
 }
 
 .res-build .res-but span {
-    font-family: Inter !important;
+    font-family: var(--font-inter)!important;
     font-size: 15px !important;
 
 }
@@ -1436,7 +1453,7 @@
 
 .res-build .package-faq .prim-but {
     padding: 8px 20px !important;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 15px !important;
     display: inline;
     margin: 15px 0;
@@ -1449,7 +1466,8 @@
 
 .res-build .package-faq h4 {
     color: #0A5941 !important;
-    font-family: Inter-bold !important;
+    font-family: var(--font-inter) !important;
+    font-weight: 600 !important;
     font-size: 32px !important;
 }
 
@@ -1459,7 +1477,8 @@
 
 .res-build .steps h5,
 .res-build .steps .second-main {
-    font-family: Inter-Bold;
+font-family: var(--font-inter) !important;
+    font-weight: 600 !important;
     color: #414141;
 }
 
@@ -1469,17 +1488,20 @@
 
 .res-build .steps span,
 .res-build .steps h1 {
-    font-family: Arial-Bold;
+      font-weight: 600;
+          font-family: Arial;
 }
 
 .res-build .steps .approach span,
 .res-build .steps .approach {
-    font-family: Arial-Bold;
+      font-family: Arial;
+            font-weight: 600;
     font-size: 40px;
 }
 
 .res-build .elevate {
-    font-family: Arial-Bold !important;
+ font-family: Arial !important;
+            font-weight: 600 !important;
     font-size: 55px !important;
 }
 
@@ -1494,7 +1516,8 @@
 .res-build .steps .bg h3 {
     font-size: 35px;
     margin-top: 10px;
-    font-family: Inter-Bold;
+    font-family: var(--font-inter) !important;
+    font-weight: 600 !important;
 }
 
 .res-build .steps .bg h2 {
@@ -1502,7 +1525,8 @@
     border: 1.25px solid #B3B3B3;
     width: max-content;
     padding: 8px 18px;
-    font-family: Inter-Bold;
+  font-family: var(--font-inter) !important;
+    font-weight: 600 !important;
     font-size: 28px;
     margin: auto;
 }
@@ -1521,7 +1545,8 @@
 .news-letter-dialog .prim-but2 {
     background: #0A5840 !important;
     border-radius: 5px;
-    font-family: Inter-Semi-bold;
+   font-family: var(--font-inter) !important;
+    font-weight: 500 !important;
     font-size: 17px;
     padding: 8px 30px;
 }
@@ -1531,16 +1556,18 @@
     border-radius: 5px;
     outline: #0A5840 !important;
     border: #0A5840 solid 1px !important;
-    font-family: Inter-Semi-bold;
+  font-family: var(--font-inter) !important;
+    font-weight: 500 !important;
 }
 
 .news-letter-dialog p {
-    font-family: Inter;
+   font-family: var(--font-inter);
+
 }
 
 .news-letter-dialog input,
 .news-letter-dialog span {
-    font-family: Roboto;
+    font-family: var(--font-roboto);
 }
 
 .news-letter-dialog .close-but {
@@ -1607,7 +1634,7 @@
 }
 
 .digital-business-card .rev-slider p {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 13px;
     color: #272829BF;
 }
@@ -1621,7 +1648,8 @@
 }
 
 .digital-business-card h2 span {
-    font-family: Roboto-Bold;
+    font-family: var(--font-roboto);
+    font-weight: 600;
 }
 
 .digital-business-card .main h1,

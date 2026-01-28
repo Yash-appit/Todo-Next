@@ -176,7 +176,7 @@ font-size: 30px;
 .main-offcanvas a,
 .main-offcanvas button {
     z-index: 1;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
 }
 
@@ -187,7 +187,7 @@ font-size: 30px;
 }
 
 .navbar button {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     /* min-width: 120px; */
     font-size: 18px !important;
@@ -296,7 +296,7 @@ font-size: 30px;
 }
 
 #features-dropdown div {
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
 }
 
@@ -334,7 +334,8 @@ font-size: 30px;
 
 .dropdown-section-title h5 {
     font-size: 18px;
-    font-family: Arial-Bold;
+     font-weight: 600;
+  font-family: Arial;
 
 }
 
@@ -518,7 +519,8 @@ font-size: 30px;
 
 .features-dropdown-content .col-lg-4 h4 {
     font-size: 17px !important;
-    font-family: Arial-Bold;
+    font-weight: 600;
+  font-family: Arial;
     margin-top: 10px;
     color: #000;
     transition: transform 0.3s ease;
@@ -602,7 +604,7 @@ font-size: 30px;
     margin-bottom: 15px;
     font-size: 16px !important;
     text-decoration: none;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-weight: 500;
     transition: ease 0.3s;
 }
@@ -610,7 +612,7 @@ font-size: 30px;
 .footer .col-md-4 a {
     color: #0A5840 !important;
     text-decoration: none;
-    font-family: Inter;
+    font-family: var(--font-inter);
 
 }
 
@@ -629,7 +631,8 @@ font-size: 30px;
     color: #0A5840;
     padding-bottom: 10px;
     font-size: 22px !important;
-    font-family: Arial-Bold;
+   font-weight: 600;
+  font-family: Arial;
 }
 
 .footer .main-mail p {
