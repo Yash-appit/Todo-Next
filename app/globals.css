@@ -37,14 +37,14 @@
 
 @font-face {
   font-family: Arial;
-  src: url("../assets/Fonts/Arial.TTF") format("truetype");
+  src: url("../assets/Fonts/Arial.ttf") format("truetype");
   font-display: swap;
   font-weight: 400;
 }
 
 @font-face {
   font-family: Arial-Bold;
-  src: url("../assets/Fonts/Arial-bold.TTF") format("truetype");
+  src: url("../assets/Fonts/Arial-bold.ttf") format("truetype");
   font-display: swap;
   font-weight: 700;
 }
@@ -52,7 +52,7 @@
 
 @font-face {
   font-family: Arial-Bold-Italic;
-  src: url("../assets/Fonts/Arial-Bold-Italic.TTF") format("truetype");
+  src: url("../assets/Fonts/Arial-Bold-Italic.ttf") format("truetype");
   font-display: swap;
   font-weight: 700;
   font-style: italic;
@@ -60,7 +60,7 @@
 
 @font-face {
   font-family: Arial-Black;
-  src: url("../assets/Fonts/Arial-Black.TTF") format("truetype");
+  src: url("../assets/Fonts/Arial-Black.ttf") format("truetype");
   font-display: swap;
   font-weight: 900;
 }
