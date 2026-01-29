@@ -127,7 +127,7 @@ const SelectTemplates: React.FC<TemplatesProps> = ({ Generate }) => {
                                     width={300}
                                     height={400}
                                     unoptimized
-                                    style={{ width: '100%', height: 'auto' }}
+                                    // style={{ width: '100%', height: 'auto' }}
                                 />
                                 {/* <p>{temp.id}</p> */}
                             </label>
