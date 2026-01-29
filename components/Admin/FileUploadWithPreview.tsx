@@ -306,6 +306,10 @@ const FileUploadPreview: React.FC = () => {
     }
   };
 
+
+
+
+  
   const getSeverityColor = (severity: string) => {
     switch (severity) {
       case 'High': return 'error';
@@ -570,6 +574,11 @@ const FileUploadPreview: React.FC = () => {
               {!apiError && uploadedFiles.length > 0 && (
                 <div className="col border-0">
                   <div className='position-relative edit mt-4'>
+                       {score && (
+                    <div className="bg">
+                      <button className='prim-but' onClick={() => editResume(resumeData)}>Edit Your Resume</button>
+                    </div>
+                  )}
                     {uploadedFiles && uploadedFiles.map((fileData) => (
                       <img
                         src={fileData?.thumbnail}

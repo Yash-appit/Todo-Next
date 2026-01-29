@@ -194,7 +194,7 @@ const DeclarationsAndReferences: React.FC<DeclarationsAndReferencesProps> = ({
   const validateCharacterLimit = (markdownContent: string, index: number, type: 'declaration' | 'reference'): boolean => {
     const plainText = getPlainTextFromMarkdown(markdownContent);
     const charCount = plainText.length;
-    const limit = 500;
+    const limit = 4000;
 
     if (charCount > limit) {
       if (type === 'declaration') {
@@ -367,7 +367,7 @@ const DeclarationsAndReferences: React.FC<DeclarationsAndReferencesProps> = ({
 
     const newTimeout = setTimeout(() => {
       trigger(fieldName as any);
-    }, 500);
+    }, 4000);
 
     setTypingTimeout(newTimeout);
   };
@@ -417,7 +417,7 @@ const DeclarationsAndReferences: React.FC<DeclarationsAndReferencesProps> = ({
           {declarationFields.map((field, index) => {
             const currentDeclaration = watch(`declarations.${index}.declaration`) || '';
             const plainText = getPlainTextFromMarkdown(currentDeclaration);
-            const remainingChars = 500 - plainText.length;
+            const remainingChars = 4000 - plainText.length;
 
             return (
               <div key={field.id} className="row mb-2 m-0">
@@ -530,12 +530,12 @@ const DeclarationsAndReferences: React.FC<DeclarationsAndReferencesProps> = ({
                             }
                           }}
                           onBlur={field.onBlur}
-                          placeholder="Write your declaration statement... (max 500 characters)"
+                          placeholder="Write your declaration statement... (max 4000 characters)"
                         />
 
                         {declarationCharErrors[index] && (
                           <div className="text-danger small mt-1">
-                            Maximum 500 characters allowed!
+                            Maximum 4000 characters allowed!
                           </div>
                         )}
                       </div>
@@ -585,7 +585,7 @@ const DeclarationsAndReferences: React.FC<DeclarationsAndReferencesProps> = ({
           {referenceFields.map((field, index) => {
             const currentDetails = watch(`referenceDetails.${index}.details`) || '';
             const plainText = getPlainTextFromMarkdown(currentDetails);
-            const remainingChars = 500 - plainText.length;
+            const remainingChars = 4000 - plainText.length;
 
             return (
               <div key={field.id} className="row mb-2 m-0">
@@ -758,12 +758,12 @@ const DeclarationsAndReferences: React.FC<DeclarationsAndReferencesProps> = ({
                             }
                           }}
                           onBlur={field.onBlur}
-                          placeholder="Additional details about the reference... (max 500 characters)"
+                          placeholder="Additional details about the reference... (max 4000 characters)"
                         />
 
                         {referenceCharErrors[index] && (
                           <div className="text-danger small mt-1">
-                            Maximum 500 characters allowed!
+                            Maximum 4000 characters allowed!
                           </div>
                         )}
                       </div>

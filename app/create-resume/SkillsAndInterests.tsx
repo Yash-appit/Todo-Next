@@ -27,20 +27,20 @@ const validateSkillsAndInterests = {
   },
   detailSkill: {
     maxLength: {
-      value: 500,
-      message: 'Skills description must not exceed 500 characters'
+      value: 4000,
+      message: 'Skills description must not exceed 4000 characters'
     }
   },
   detailInterest: {
     maxLength: {
-      value: 500,
-      message: 'Interest description must not exceed 500 characters'
+      value: 4000,
+      message: 'Interest description must not exceed 4000 characters'
     }
   },
   detailStrength: {
     maxLength: {
-      value: 500,
-      message: 'Strength description must not exceed 500 characters'
+      value: 4000,
+      message: 'Strength description must not exceed 4000 characters'
     }
   }
 };
@@ -133,7 +133,7 @@ const SkillsAndInterests: React.FC<SkillsAndInterestsProps> = ({
 
   const [typingTimeout, setTypingTimeout] = useState<NodeJS.Timeout | null>(null);
   const [charCount, setCharCount] = useState(0);
-  const MAX_CHAR_LIMIT = 500;
+  const MAX_CHAR_LIMIT = 4000;
   const detailStrengthValue = watch('detailStrength');
   const detailInterestValue = watch('detailInterest');
   const detailSkillValue = watch('detailSkill');

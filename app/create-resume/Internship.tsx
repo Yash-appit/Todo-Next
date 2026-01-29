@@ -202,7 +202,7 @@ const Internship: React.FC<InternshipProps> = ({ setResumeData, Generate, step2,
   const validateCharacterLimit = (markdownContent: string, index: number): boolean => {
     const plainText = getPlainTextFromMarkdown(markdownContent);
     const charCount = plainText.length;
-    const limit = 500;
+    const limit = 4000;
 
     if (charCount > limit) {
       setCharacterErrors(prev => ({ ...prev, [index]: true }));
@@ -387,7 +387,7 @@ const Internship: React.FC<InternshipProps> = ({ setResumeData, Generate, step2,
             {fields.map((field, index) => {
               const currentDetail = watch(`internship.${index}.detail`) || '';
               const plainText = getPlainTextFromMarkdown(currentDetail);
-              const remainingChars = 500 - plainText.length;
+              const remainingChars = 4000 - plainText.length;
 
               return (
                 <div key={field.id} className='row m-0'>
@@ -726,12 +726,12 @@ const Internship: React.FC<InternshipProps> = ({ setResumeData, Generate, step2,
                               }
                             }}
                             onBlur={field.onBlur}
-                            placeholder="Describe your responsibilities, projects, and skills gained... (max 500 characters)"
+                            placeholder="Describe your responsibilities, projects, and skills gained... (max 4000 characters)"
                           />
 
                           {characterErrors[index] && (
                             <div className="text-danger small mt-1">
-                              Maximum 500 characters allowed!
+                              Maximum 4000 characters allowed!
                             </div>
                           )}
                         </div>

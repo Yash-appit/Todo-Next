@@ -412,7 +412,7 @@ const Personaldetails: React.FC<PersonaldetailsProps> = ({ setResumeData, Genera
   const validateCharacterLimit = (markdownContent: string, fieldName: 'aboutUs' | 'objective'): boolean => {
     const plainText = getPlainTextFromMarkdown(markdownContent);
     const charCount = plainText.length;
-    const limit = fieldName === 'aboutUs' ? 700 : 500;
+    const limit = fieldName === 'aboutUs' ? 3000 : 4000;
 
     if (charCount > limit) {
       const errorMessage = `Character limit exceeded by ${charCount - limit} characters. Please reduce the content.`;
@@ -896,7 +896,7 @@ const Personaldetails: React.FC<PersonaldetailsProps> = ({ setResumeData, Genera
                 control={control}
                 render={({ field }) => {
                   const plainText = getPlainTextFromMarkdown(field.value || '');
-                  const remainingChars = 500 - plainText.length;
+                  const remainingChars = 4000 - plainText.length;
 
                   return (
                     <>

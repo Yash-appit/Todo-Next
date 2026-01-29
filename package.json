@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.7",
     "@mui/x-charts": "^8.24.0",
+    "@turbodocx/html-to-docx": "^1.19.0",
     "@uiw/react-md-editor": "^4.0.11",
     "axios": "^1.13.2",
     "bootstrap": "^5.3.8",
@@ -45,6 +46,8 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/file-saver": "^2.0.7",
+    "@types/html-docx-js": "^0.3.4",
+    "@types/html-to-docx": "^1.8.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

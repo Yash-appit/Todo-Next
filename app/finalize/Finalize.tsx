@@ -272,24 +272,17 @@ const Finalize: React.FC = () => {
     const contentToUse = normalizedContent; // or forcedBlackContent
 
     const docStr = `
+      <!DOCTYPE html>
       <html xmlns:o="urn:schemas-microsoft-com:office:office"
-            xmlns:w="urn:schemas-microsoft-com:office:word"
-            xmlns:v="urn:schemas-microsoft-com:vml"
-            xmlns:m="http://schemas.microsoft.com/office/2004/12/omml">
+            xmlns:w="urn:schemas-microsoft-com:office:word">
       <head>
         <meta charset="utf-8"/>
-        <meta name="ProgId" content="Word.Document"/>
-        <meta name="Generator" content="Microsoft Word 15"/>
-        <meta name="Originator" content="Microsoft Word 15"/>
-
         <title>${resumeName}</title>
   
         <!--[if gte mso 9]>
         <xml>
           <w:WordDocument>
             <w:View>Print</w:View>
-            <w:Zoom>100</w:Zoom>
-            <w:DoNotOptimizeForBrowser/>
             <w:AutoHyphenation/>
           </w:WordDocument>
         </xml>

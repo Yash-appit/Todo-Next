@@ -191,7 +191,7 @@ const Projects: React.FC<ProjectsProps> = ({ setResumeData, Generate, step2, tip
   const validateCharacterLimit = (markdownContent: string, index: number): boolean => {
     const plainText = getPlainTextFromMarkdown(markdownContent);
     const charCount = plainText.length;
-    const limit = 500;
+    const limit = 4000;
 
     if (charCount > limit) {
       setCharacterErrors(prev => ({ ...prev, [index]: true }));
@@ -376,7 +376,7 @@ const Projects: React.FC<ProjectsProps> = ({ setResumeData, Generate, step2, tip
             {fields.map((field, index) => {
               const currentDescription = watch(`projects.${index}.projectDescription`) || '';
               const plainText = getPlainTextFromMarkdown(currentDescription);
-              const remainingChars = 500 - plainText.length;
+              const remainingChars = 4000 - plainText.length;
 
               return (
                 <div key={field.id} className='row m-0'>
@@ -741,12 +741,12 @@ const Projects: React.FC<ProjectsProps> = ({ setResumeData, Generate, step2, tip
                               }
                             }}
                             onBlur={field.onBlur}
-                            placeholder="Describe the project, your contributions, technologies used, and outcomes... (max 500 characters)"
+                            placeholder="Describe the project, your contributions, technologies used, and outcomes... (max 4000 characters)"
                           />
 
                           {characterErrors[index] && (
                             <div className="text-danger small mt-1">
-                              Maximum 500 characters allowed!
+                              Maximum 4000 characters allowed!
                             </div>
                           )}
                         </div>

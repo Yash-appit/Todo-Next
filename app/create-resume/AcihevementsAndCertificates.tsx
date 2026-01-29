@@ -224,7 +224,7 @@ const AchievementsAndCertificates: React.FC<AchievementsAndCertificatesProps> = 
   const validateCharacterLimit = (markdownContent: string, index: number, type: 'achievement' | 'certificate'): boolean => {
     const plainText = getPlainTextFromMarkdown(markdownContent);
     const charCount = plainText.length;
-    const limit = 500;
+    const limit = 4000;
 
     if (charCount > limit) {
       if (type === 'achievement') {
@@ -419,7 +419,7 @@ const AchievementsAndCertificates: React.FC<AchievementsAndCertificatesProps> = 
           {achievementFields.map((field, index) => {
             const currentDetail = watch(`achievements.${index}.detail`) || '';
             const plainText = getPlainTextFromMarkdown(currentDetail);
-            const remainingChars = 500 - plainText.length;
+            const remainingChars = 4000 - plainText.length;
 
             return (
               <div key={field.id} className="row m-0 mx-3">
@@ -530,12 +530,12 @@ const AchievementsAndCertificates: React.FC<AchievementsAndCertificatesProps> = 
                             }
                           }}
                           onBlur={field.onBlur}
-                          placeholder="Describe the achievement, significance, and impact... (max 500 characters)"
+                          placeholder="Describe the achievement, significance, and impact... (max 4000 characters)"
                         />
 
                         {achievementCharErrors[index] && (
                           <div className="text-danger small mt-1">
-                            Maximum 500 characters allowed!
+                            Maximum 4000 characters allowed!
                           </div>
                         )}
                       </div>
@@ -593,7 +593,7 @@ const AchievementsAndCertificates: React.FC<AchievementsAndCertificatesProps> = 
           {certificateFields.map((field, index) => {
             const currentDetail = watch(`certificates.${index}.detail`) || '';
             const plainText = getPlainTextFromMarkdown(currentDetail);
-            const remainingChars = 500 - plainText.length;
+            const remainingChars = 4000 - plainText.length;
 
             return (
               <div key={`cert-${field.id}-${index}`} className="row mx-3">
@@ -677,12 +677,12 @@ const AchievementsAndCertificates: React.FC<AchievementsAndCertificatesProps> = 
                             }
                           }}
                           onBlur={field.onBlur}
-                          placeholder="Describe the certificate, skills learned, and relevance... (max 500 characters)"
+                          placeholder="Describe the certificate, skills learned, and relevance... (max 4000 characters)"
                         />
 
                         {certificateCharErrors[index] && (
                           <div className="text-danger small mt-1">
-                            Maximum 500 characters allowed!
+                            Maximum 4000 characters allowed!
                           </div>
                         )}
                       </div>
