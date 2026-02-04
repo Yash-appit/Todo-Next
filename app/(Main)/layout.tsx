@@ -4,7 +4,8 @@ import Navbar from "@/Layout/Navbar";
 import Footer from "@/Layout/Footer";
 import { RefreshProvider } from "@/context/RefreshContext";
 import type { Metadata } from "next";
-import { WEBSITE_URL } from "@/config";
+
+const WEBSITE_URL = process.env.NEXT_PUBLIC_WEBSITE_URL || 'https://todoresume.com';
 
 export const metadata: Metadata = {
   title: "TodoResume Free Resume & Cover Letter Builder | Career Tools",
