@@ -123,7 +123,7 @@ const Footer = () => {
             {/* <hr /> */}
 
             <div className="d-flex justify-content-center copy-right mt-5">
-              <p className="text-start mt-4 pt-2"><RiCopyrightLine /> 2025 TodoResume, All Rights Reserved.</p>
+              <p className="text-start mt-4 pt-2"><RiCopyrightLine /> 2026 TodoResume, All Rights Reserved.</p>
 
               {/* <div className="d-flex justify-content-end mt-3">
                 <TiSocialFacebook />
