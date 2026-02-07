@@ -259,16 +259,18 @@ const EmailTempMain = () => {
 
 
                 </div>
-                <div className="col-lg-6 mb-4 pe-0 border-0">
+                {!success && !jobDescription && (
+                    <div className="col-lg-6 mb-4 pe-0 border-0">
 
-                    {!success && !jobDescription && (
+
                         <div className="bg">
                             <Image src={cb} alt="" />
                         </div>
-                    )}
 
-                    {/* <Ads /> */}
-                </div>
+
+                        {/* <Ads /> */}
+                    </div>
+                )}
 
                 {success && jobDescription && (
                     <div className="col-lg-6 border-0 mb-4 pe-0 border-0">
